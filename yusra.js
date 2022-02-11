@@ -14,3 +14,12 @@ function revealFact(){
     console.log("button was clicked")
     element.innerText = "I am working on this"
 }
+
+$(document).ready(function(){
+    $(".btn1").click(function(){
+      $("p").fadeOut();
+    });
+    $(".btn2").click(function(){
+      $("p").fadeIn();
+    });
+  });
