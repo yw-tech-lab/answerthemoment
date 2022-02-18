@@ -38,3 +38,27 @@ main {
     min-height: 90vh;
     padding: 20px;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    border: solid 5px red;
+}
+
+.guiding-principles {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    width: 1000px;
+}
+
+.guiding-principles div {
+    width: 250px;
+    height: 250px;
+    background-color: cornflowerblue;
+    margin: 30px;
+    border-radius: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
