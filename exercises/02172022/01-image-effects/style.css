@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body {
+    margin: 0px;
+}
+p, h1, h2, h3, h4, h5 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+    font-size: 2em;
+    font-family: "Oswald", sans-serif;
+}
+h2 {
+    color: white;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.parallax-one, .parallax-two, .parallax-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 100vh;
+    /* filter: grayscale(100%); */
+    /* https://www.w3schools.com/cssref/css3_pr_filter.asp */
+}
+
+.parallax-one {
+  background-image: url(http://media.nj.com/southjerseyhssports/photo/girls-soccer-roundup-photo-lmn-3200-9037787jpg-a65fde8e9554fd62.jpg);
+}
+
+.parallax-two {
+  background-image: url(http://static.wixstatic.com/media/847c88_c3ce55d312a42b0d1eaea5c9903d1a4f.jpg_1024);
+}
+
+.parallax-three {
+  background-image: url(http://static.wixstatic.com/media/847c88_c3ce55d312a42b0d1eaea5c9903d1a4f.jpg_1024);
+}
