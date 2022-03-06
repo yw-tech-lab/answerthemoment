@@ -12,7 +12,7 @@
 // function revealFact(){
 //     let element = document.getElementById("fact");
 //     console.log("button was clicked")
-//     element.innerText = "I wear a hijab"
+//     element.innerText = "I am working on this"
 // }
 
 // $(document).ready(function(){
@@ -23,3 +23,4 @@
 //       $("p").fadeIn();
 //     });
 //   });
+
