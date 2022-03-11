@@ -14,9 +14,12 @@ html {
 }
 
 .bg-image-color {
-    color: white;
+    
+
+    
+    color: black;
     height: 100vh;
-    background-color: rgba(0, 100, 100, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     margin-top: -100vh;
     z-index: 100;
 }
