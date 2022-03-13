@@ -50,6 +50,7 @@ main {
     flex-wrap: wrap;
     border: solid 1px black;
     width: 1000px;
+    color: white;
 }
 
 .guiding-principles div {
