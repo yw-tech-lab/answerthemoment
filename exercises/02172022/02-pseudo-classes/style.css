@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+.div1, .div2, .div3 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div1 {
+    background-color: #F9F9F9;
+    border: solid 1px #444;
+    padding: 20px;
+}
+
+.div1 button, .hidden-message {
+    display: none;
+}
+
+.div1:hover {
+    background: #EEE;
+}
+
+.div1:hover button, .div1:hover .hidden-message {
+    display: block;
+}
+
+.div2 {
+    background: purple;
+    transition: all 1s ease-out;
+}
+.div2:hover {
+    background: blue;
+    opacity: 0.5;
+}
+
+.hidden-message2 {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.div3 {
+    background: rgb(128, 82, 128);
+    transition: all 1s ease-out;
+}
+
+.div3:active, .div3:focus {
+    background: rgb(211, 152, 235);
+}
+
+.div3:active .hidden-message2, .div3:focus .hidden-message2 {
+    opacity: 1;
+}
