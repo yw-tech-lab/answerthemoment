@@ -38,3 +38,34 @@ main {
     min-height: 90vh;
     padding: 20px;
 }
+.contact-form{
+    background-color: #f99373;
+    padding: 30px;
+    width: 45%;
+}
+.form-image{
+    display: flex;
+}
+.form-image img{
+    width: 50%;
+    margin-left:20px;
+}
+
+input, textarea{
+    width: 100%; 
+    height: 40px;
+}
+select{
+    width: 100%; 
+    height: 40px;
+}  
+
+
+#about-business{
+height: 150px;
+}
+label{
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 2px;
+}
