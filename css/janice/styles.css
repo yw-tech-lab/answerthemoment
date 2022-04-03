@@ -24,10 +24,10 @@ header li {
     margin-left: 15px;
 }
 
-main {
+/* main {
     margin-left: 15vw;
     margin-right: 15vw;
-}
+} */
 
 .logo {
     font-weight: bold;
@@ -41,13 +41,14 @@ main {
 .contact-form{
     background-color: #f99373;
     padding: 30px;
-    width: 45%;
+    width: 58%;
 }
 .form-image{
     display: flex;
+    align-items: flex-start;
 }
 .form-image img{
-    width: 50%;
+    width: 40%;
     margin-left:20px;
 }
 

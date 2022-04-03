@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 
-html,
-body {
-  margin: 0;
+main > section#testimonials {
+    margin: 0px;
+    padding: 5vh 5vw;
+    background-color: #109496; 
+    height: 100vh;
 }
-body * {
-    box-sizing: border-box;
+
+main > section#testimonials  h2 {
+    color: white;
+    text-align: center;
 }
 
 .carousel {
@@ -47,7 +51,7 @@ body * {
     transform: translateX(calc(-100% * var(--current-slide)));
     display: flex;
     color: white;
-    height: 100vh;
+    height: 80vh;
 }
 
 .slide {
@@ -63,7 +67,6 @@ body * {
     align-items: center;
     padding: 0vh 15vw;
     box-sizing: border-box;
-    background-color: #109496; 
 }
 
 /* .slide .quote-symbol {
@@ -72,7 +75,7 @@ body * {
     position: relative;
 } */
 
-.slide cite{
+.slide cite {
     text-transform: uppercase;
     color: #603958;
     font-style: normal;
