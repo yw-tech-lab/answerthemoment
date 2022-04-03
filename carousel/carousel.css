@@ -55,9 +55,9 @@ main > section#testimonials  h2 {
 }
 
 .slide {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    line-height: 1.3em;
+    line-height: 1.3em; */
     font-weight: 300;
     flex: 0 0 100%;
     display: flex;
@@ -68,11 +68,11 @@ main > section#testimonials  h2 {
     box-sizing: border-box;
 }
 
-.slide .quote-symbol {
+/* .slide .quote-symbol {
     font-size: 4em;
     top: 50px;
     position: relative;
-}
+} */
 
 .slide cite {
     text-transform: uppercase;
