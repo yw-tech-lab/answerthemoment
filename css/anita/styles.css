@@ -1,6 +1,12 @@
 body * {
     box-sizing: border-box;
 }
+/* HTML Rule */
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0px;
@@ -33,8 +39,8 @@ main {
     font-weight: bold;
 }
 
-.section {
-    border: solid 1px #000;
-    min-height: 90vh;
-    padding: 20px;
+p {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
 }
