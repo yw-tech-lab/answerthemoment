@@ -13,24 +13,30 @@ body {
 
 header {
     border: solid 1px #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: greenyellow;
+    background-color: green;
     
 }
 nav {
-margin: 0 auto;
-float: right;
+    margin: 0 auto;
+   
 }
 
-nav ul li{
+nav a{
     color: white;
-}
+    text-decoration: none;
+    padding-left: 40px;
 
-header ul {
+}
+ 
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+/*header ul {
     display: flex;
     list-style-type: none;
 
@@ -40,7 +46,7 @@ header li {
     float: right;
     
 }
-
+*/
 
 
 .logo {
@@ -57,11 +63,11 @@ header li {
    
 }
 
-/*#yellow_pic {
+#yellow_pic {
     padding-top: 50px;
     padding-left: 55px;
 
-}*/
+}
 #quote {
     font-size: 15px;
     font-weight:50px;
