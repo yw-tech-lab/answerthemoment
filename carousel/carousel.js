@@ -37,7 +37,7 @@ function setUpCarousel(carousel) {
     currentSlideElement.setAttribute('aria-hidden', false);
 
     clearTimeout(timer);
-    timer = setInterval(handleNext, 10000); // rotates every 10 seconds
+    timer = setInterval(handleNext, 5000); // rotates every 5 seconds
   }
 
   // get elements
@@ -46,7 +46,7 @@ function setUpCarousel(carousel) {
   const slidesContainer = carousel.querySelector('[data-carousel-slides-container]');
 
   let currentSlide = 0;
-  let timer = setInterval(handleNext, 10000); // rotates every 10 seconds
+  let timer = setInterval(handleNext, 5000); // rotates every 5 seconds
   const numSlides = slidesContainer.children.length;
 
   // set up events
