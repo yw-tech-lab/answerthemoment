@@ -1,13 +1,15 @@
 
 * {box-sizing: border-box;}
 body {
-  font-family: Verdana, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: 0%;
 }
+
 .mySlides {
   display: none;
   width: 90vw;
 }
+
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -16,6 +18,12 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
+
+.quote{
+  font-size: 65px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 section#testimonials{
   display: flex;
   flex-direction: column;
@@ -88,19 +96,19 @@ cite{
   }
 }
 
-@keyframes fadeInOut {
+ @keyframes fadeInOut {
   0% {
     opacity: .4;
     margin-left: 100vw;
   } 
-  20% {
+  80% {
     opacity: 1;
     margin-left: 0vw;
   }
-  80% {
+  20% {
     opacity: .4;
     margin-left: -100vw;
-  }
+  } 
   100% {
     opacity: .4;
     margin-left: 100vw;
