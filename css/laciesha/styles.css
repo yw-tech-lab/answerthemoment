@@ -18,14 +18,27 @@ header {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: greenyellow;
+    
+}
+nav {
+margin: 0 auto;
+float: right;
+}
+
+nav ul li{
+    color: white;
 }
 
 header ul {
     display: flex;
     list-style-type: none;
+
 }
 header li {
-    margin-left: 15px;
+    margin-left: 20px;
+    float: right;
+    
 }
 
 
