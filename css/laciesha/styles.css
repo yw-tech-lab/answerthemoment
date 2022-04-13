@@ -8,7 +8,7 @@ body * {
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: peachpuff;
+    /* background-color: rgb(41, 100, 23); */
 }
 
 header {
@@ -31,15 +31,24 @@ header li {
 
 
 .logo {
-    font-weight: bold;
-    font-size: 27px;
+    width: 25vw;
+    float: right;
+    margin-top: -25vw;
+    z-index: 100;
+    position: relative;
+
+}
+.landing {
+    width: 100%;
+    
+   
 }
 
-#yellow_pic {
+/*#yellow_pic {
     padding-top: 50px;
     padding-left: 55px;
 
-}
+}*/
 #quote {
     font-size: 15px;
     font-weight:50px;
@@ -79,5 +88,6 @@ h2 {
         margin-right: auto;
         margin-top: 300px;
     }
+
 
 }

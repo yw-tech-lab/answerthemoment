@@ -24,10 +24,10 @@ header li {
     margin-left: 15px;
 }
 
-main {
+/* main {
     margin-left: 15vw;
     margin-right: 15vw;
-}
+} */
 
 .logo {
     font-weight: bold;
@@ -61,3 +61,20 @@ column-gap: 20px;
 /* .text {
     border: solid 2px blue;
  } */
+
+ .numbers {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-direction: row;
+     flex-wrap: nowrap;
+    align-content: space-around
+ }
+
+ .numbers > div {
+     border: solid 1px black;
+     height: 300px;
+     width: 25%;
+     align-content: space-between;
+     text-align: center;
+ }
