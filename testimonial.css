@@ -1,113 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+body{
+  font-family: Montserrat; 
+ }
 
-* {box-sizing: border-box;}
-body {
-/*   font-family: Verdana, sans-serif; */
-  margin: 0%;
+ section#testimonials {
+    margin: 0px;
+    padding: 5vh 5vw;
+    background-color: #109496; 
+    height: 100vh;
 }
-.mySlides {
-  display: none;
-  width: 90vw;
+
+section#testimonials  h2 {
+    color: white;
+    text-align: center;
 }
-/* img {vertical-align: middle;} */
 
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.carousel {
+  --current-slide: 0;
   position: relative;
-  margin: auto;
+  overflow: hidden;
 }
-section#testimonials{
-  display: flex;
-  flex-direction: column;
-  /* background-color: #13bbbb; */
-  background-color: #109496;  
-  color: white;  
-  height: 100vh;
-  padding: 5vw;
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+
+    /* basic styling */
+    padding: 0;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.1s;
 }
-/* Caption text */
-.slideshow-container .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+
+.carousel-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-button_next {
+    /* The "next slide button" will be at the right */
+    right: 0;
+}
+
+.slides {
+    transition: transform 0.5s;
+    transform: translateX(calc(-100% * var(--current-slide)));
+    display: flex;
+    color: white;
+    height: 80vh;
+}
+
+.slide {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    font-weight: 300;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 15vw;
+    box-sizing: border-box;
+}
+
+.slide .quote-symbol {
+  font-size: 65px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+} 
+
+.slide cite {
+    text-transform: uppercase;
+    color: #603958;
+    font-style: normal;
+  }
+
+@media screen and (min-width: 768px) {
+  .carousel-button {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+/* ----- */
+
+.content {
   width: 100%;
-  text-align: center;
+  margin: auto;
+  padding: 5rem;
+
+  background-size: cover;
+  background-position: center;
+
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
 }
 
-.slideshow-container cite{
-  text-transform: uppercase;
-  color: #603958;
-}
-/* Number text (1/3 etc) */
-.slideshow-container .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.slideshow-container .active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s; */
-  animation-name: fadeInOut;
-  animation-duration: 5s;
-}
-
-/* @-webkit-keyframes fade { 
-  from {opacity: .4} 
-  to {opacity: 1}
-}*/
-
-@keyframes fade {
-  from {
-    opacity: .4;
-    margin-left: 100vw;
-  } 
-  to {
-    opacity: 1;
-    margin-left: 0vw;
-  }
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: .4;
-    margin-left: 100vw;
-  } 
-  20% {
-    opacity: 1;
-    margin-left: 0vw;
-  }
-  80% {
-    opacity: .4;
-    margin-left: -100vw;
-  }
-  100% {
-    opacity: .4;
-    margin-left: 100vw;
-  } 
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.text-container {
+  max-width: 50ch;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
