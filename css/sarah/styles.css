@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body * {
     box-sizing: border-box;
 }
@@ -5,15 +9,22 @@ body * {
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
 }
 
 header {
-    border: solid 1px #000;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    border-bottom: solid 1px #EEE;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    height: 80px;
+    background-color: white;
 }
 
 header ul {
@@ -27,6 +38,8 @@ header li {
 main {
     margin-left: 15vw;
     margin-right: 15vw;
+    margin-top: 80px;
+    background-color: white;
 }
 
 .logo {
@@ -34,7 +47,8 @@ main {
 }
 
 .section {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
+    scroll-margin-top: 80px;
     min-height: 90vh;
     padding: 20px;
 }
