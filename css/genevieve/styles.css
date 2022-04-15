@@ -1,4 +1,4 @@
-body * {
+/* body * {
     box-sizing: border-box;
 }
 
@@ -10,12 +10,12 @@ body {
     max-width: 960px;
     min-width: 640px;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
-img {
+#services img {
     width: 270px;
     height: 270px;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .flex-container {
