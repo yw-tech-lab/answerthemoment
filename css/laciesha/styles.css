@@ -63,11 +63,8 @@ header li {
    
 }
 
-#yellow_pic {
-    padding-top: 50px;
-    padding-left: 55px;
 
-}
+
 #quote {
     font-size: 15px;
     font-weight:50px;
@@ -93,14 +90,12 @@ h2 {
     font-style:normal;
       
 }
+#landingpic{
+    width: 100%;
+}
 @media only screen and (max-width: 1000px) {
     
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     
-    }
     .absolute {
         display: block;
         margin-left: auto;
