@@ -240,8 +240,10 @@ button {
     border: 3px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 40px;
-    text-align: center;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .grid-item img {
       width: 150px;
