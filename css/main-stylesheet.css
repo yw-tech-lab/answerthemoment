@@ -16,6 +16,14 @@ main > section {
     margin-right: 10vw;
 }
 
+
+main {
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: auto 10%;
+    background-position: top right;
+}
+
 .section {
     border: solid 1px #000;
     min-height: 90vh;
@@ -248,3 +256,4 @@ button {
   .grid-item img {
       width: 150px;
   }
+
