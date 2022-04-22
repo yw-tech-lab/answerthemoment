@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer the Moment Style Guide</title>
+    <link rel="stylesheet" href="style-guide.css">
+    
+
+</head>
+<body>
+  <div class="atm">
+  <header>ANSWER THE MOMENT STYLE GUIDE</header>
+  </div>
+
+<section class="top">
+  <div class="colp"> 
+    <h1>COLOR PALATTE</h1>
+        <div class="row">               
+          <div class="colorone swatch"></div>
+          <p><em>emerald green</em></p>
+          <div>seagreen</div>
+        </div>
+
+        <div class="row">  
+          <div class="colortwo swatch"></div>
+          <p><em>seagreen</em></p>
+          <div>turquoise</div>
+        </div>
+        <div class="row">
+          <div class="colorthree swatch"></div>
+          <p><em>yellow</em></p>
+          <div>yellow</div>
+        </div>
+        <div class="row">
+          <div class="colorfour swatch"></div>
+          <p><em>teal</em></p>
+          <div>teal</div>
+        </div>
+        <div class="row">
+          <div class="colorfive swatch"></div>  
+          <p><em>peach</em></p>
+          <div>peachpuff</div>
+        </div>
+        <div class="row">
+          <div class="colorsix swatch"></div>
+          <p><em>royalblue</em></p>
+          <div>royalblue</div>
+        </div>
+        <div class="row">
+          <div class="colorseven swatch"></div>
+          <p><em>red</em></p>
+          <div>red</div>
+        </div>
+  </div>
+  
+  <div class="fonts"> 
+     
+      <h1>TYPOGRAPHY</h1>
+
+                 
+            <h1>header</h1>
+            <p><em>Font Monteserett</em></p>
+            <h2>header</h2>
+            <p><em>Font Monteserett</em></p>
+            <h3>header</h3>
+            <p><em>Font Monteserett</em></p>        
+            <h4>header</h4>
+            <p><em>Font Monteserett</em></p>
+            
+    </div>
+    </section>
+         <section class="middle">    
+             <h1>Buttons</h1>
+     
+    <div class="row">
+            <div class="col-one buttons"></div>
+            <p><em>#f2e394</em></p>
+            <div>light yellow</div>
+          
+    <div class="row">
+            <div class="col-two buttons"></div>
+            <p><em>#d6d4e0</em></p>
+            <div>lightblue</div>
+            
+    <div class="row">
+            <div class="col-three buttons"></div>
+            <p><em>#92a8d1</em></p>
+            <div>polo blue</div>
+    </div>
+    </section>
+
+       <section class="semi">
+            <h1>Quotes</h1>
+
+            <div class="row">
+            <div class="stmt"></div>
+            <p><em>#ffffff</em></p>
+            <div>white</div>
+
+
+             <h1>Content</h1>
+  
+              <div class="row">
+              <div class="words"></div>
+              <p><em>#000000</em></p>
+              <div>black</div>   
+            
+    </section>
+
+    <section class="font">
+           <h2>Header Font</h2>
+           <p><em>Font size 25px</em></p>
+    </section>
+
+    <section class="fontb">
+        <h2>Body Copy Font</h2>
+        <p><em>Font size 20px</em></p>
+    </section>
+
+    <section class="top-nav">
+        <h2>Top Nav</h2>
+        <p>Font size 16px</p>
+
+        <section class="logo">
+          <h2>Logo</h2>
+          <p>Font size 12px</p>
+      </section>
+
+    </section>
+   </body>
+</html>
