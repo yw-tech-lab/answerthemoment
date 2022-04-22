@@ -240,7 +240,7 @@ button {
  .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 100px;
   }
   .grid-item {
