@@ -14,3 +14,10 @@ main > section {
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
+main {
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: auto 10%;
+    background-position: top right;
+}

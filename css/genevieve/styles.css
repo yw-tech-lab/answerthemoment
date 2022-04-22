@@ -8,19 +8,13 @@ body {
     width: 95%;
     max-width: 960px;
     min-width: 640px;
-
     font-family: 'Montserrat', sans-serif;
 }
 
-#services img {
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-}
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .flex-container p {
@@ -29,7 +23,9 @@ body {
 
 .guiding-principles, .services, .expertise {
     display: flex;
+    width: 30%;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -41,6 +37,7 @@ body {
     margin-top: 0px;
 }
 
+
 button {
     background-color: #01408c;
     border: none;
@@ -48,4 +45,10 @@ button {
     padding: 12px 25px;
     font-size: 16px;
     text-align: center;
+}
+
+.guiding-principles img, .services img, .expertise img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 25%;
 }
