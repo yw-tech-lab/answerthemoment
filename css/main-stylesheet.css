@@ -12,6 +12,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+h1, h2, h3, h4 {
+    font-family: 'League Spartan', sans-serif;
+}
 
 main > section {
     margin-left: 10vw;
@@ -27,13 +30,13 @@ main {
 }
 
 .section {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     min-height: 90vh;
     padding: 20px;
 }
 
 footer {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     display: flex;
     justify-content: center;
     align-items: center;
