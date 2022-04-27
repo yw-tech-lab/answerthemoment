@@ -25,9 +25,11 @@ header {
 .top {
     float: left;
     font-size: 25px;
+    color:white;
 }
 nav {
     margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
    
 }
 
@@ -37,6 +39,7 @@ nav a{
     padding-left: 40px;
     white-space: nowrap;
     font-size: 1.25vw;
+    
 
 }
  
@@ -61,7 +64,7 @@ header li {
 
 .logo {
     width: 25vw;
-    float: right;
+    float: left;
     z-index: 100;
     position: relative;
     font-size: 2vw;
@@ -81,6 +84,9 @@ header li {
     font-weight:50px;
     margin-left: 55px;
     text-align: center;
+    color:white;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

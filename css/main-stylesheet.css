@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@600&display=swap');
+
 body * {
     box-sizing: border-box;
 }
@@ -10,20 +12,31 @@ body {
 html {
     scroll-behavior: smooth;
 }
+h1, h2, h3, h4 {
+    font-family: 'League Spartan', sans-serif;
+}
 
 main > section {
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
+
+main {
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: auto 10%;
+    background-position: top right;
+}
+
 .section {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     min-height: 90vh;
     padding: 20px;
 }
 
 footer {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,50 +58,56 @@ header {
     top: 20px;
     z-index: 1000;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
+#top-header, #top-body {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+}
 .top {
-    float: left;
     font-size: 25px;
 }
-nav {
-    margin: 0 auto;
-   
-}
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
     padding-left: 40px;
     white-space: nowrap;
-    font-size: 1.25vw;
-
+    font-size: 1.2em;
 }
  
-nav ul{
+nav ul {
     display:flex;
     justify-content: flex-end;
     list-style: none;
+    padding: 0;
+}
 
+#top-body h1 {
 }
 
 .logo {
-    width: 25vw;
-    float: right;
-    z-index: 100;
-    position: relative;
+    width: 35vh;
+    z-index: 1000;
+    position: absolute;
     font-size: 2vw;
-    margin-top: -25vw;
-
+    top: 65vh;
+    left: 2.50vw;
 }
 .landing {
     width: 100%;  
 }
 
 #quote {
-    font-size: 1vw;
+    width: 30vw;
+    font-size: 1.7vw;
     font-weight:50px;
     margin-left: 55px;
+    margin-top: 10vh;
+    line-height: 2.3em;
     text-align: center;
 }
 
@@ -100,7 +119,6 @@ nav ul{
     position: absolute;
     top: 20%;
     right: 100px;
-    
 }
 
 h2 { 
@@ -232,7 +250,7 @@ button {
  .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding: 100px;
   }
   .grid-item {
@@ -248,3 +266,4 @@ button {
   .grid-item img {
       width: 150px;
   }
+
