@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="css/main-stylesheet.css">
         <link rel="stylesheet" href="carousel/carousel.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <script src="js/modal.js" type="text/javascript" defer></script>
         <script src="carousel/carousel.js" defer></script>
     </head>
     <body>
@@ -15,7 +17,7 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#speaking engagement">Speaking Engagements</a></li>
+                    <li><a href="#speaking">Speaking Engagements</a></li>
                     <li><a href="#clients">Clients</a></li>
                     <li><a href="#contact">Contact</a></li>
                    
@@ -83,6 +85,54 @@
                     <div class="grid-item"><img src="images/Synctera-color.jpg"></div>
                 </div>
             </section> 
+
+
+            <section class="section" id="speaking">
+                <h2>Speaking Engagements</h2>
+
+                <img src="images/Khalilah-Lyons.jpeg" alt="Khalila-Lyons">
+                <br>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">More</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <div class="row">
+               
+                            <img class="screenshot" src="images/Round_Table.jpg" />
+                            
+                            <div class="description">
+                                <h3> Receivables Roundtable</h3>
+        
+                                <p>In this podcast, Adam Parks talks with Khalilah Lyons about surface-level, perfunctory approaches to DEI 
+                                    and the contrast of more meaningful, responsible, yet bottom-line-oriented approaches.
+                                </p>
+                                <a href="https://youtu.be/qW7iI9ZBKHs">Listen Now</a> 
+                            </div>
+                        </div>  <!--end row  -->
+                        <div class="row">
+                            <img class="screenshot" src="https://media-exp1.licdn.com/dms/image/C4E2DAQECMJqQpaCzYA/profile-treasury-image-shrink_800_800/0/1631400569327?e=2147483647&v=beta&t=htLSP6dmnJQ1MVNvPAcIgwFOGitxivkZTOrKfMgjKfo" />
+        
+                            <div class="description">
+                                <h3>Khalilah Lyons and Cranla Warren</h3>
+                               <p><a href="https://youtu.be/_rU9iLHvh5I">Listen Now</a> </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img class="screenshot" src="images/Virtual_Speech.jpg" />
+        
+                            <div class="description">
+                                <h3>Virtual Speech</h3>
+                                <a href="https://onedrive.live.com/?authkey=%21AJrE4H7yCPNY3bk&cid=0E3C552A4242947F&id=E3C552A4242947F%219301&parId=E3C552A4242947F%217715&o=OneUp">Listen Now</a> 
+                            </div>
+                        </div>
+                    </div>  <!--end modal content  -->
+                </div>  <!--end modal background  -->
+            </section>
 
             <section class="section" id="testimonials">
                 <h2>Testimonials</h2>
