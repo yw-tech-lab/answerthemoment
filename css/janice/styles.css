@@ -70,3 +70,19 @@ label{
     display: inline-block;
     padding-bottom: 2px;
 }
+.row{
+    display: flex;
+     margin-bottom: 15px;
+}
+.screenshot{
+    border: solid 1px black;
+    width: 150px;
+    margin-right: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description h3{
+    margin-top: 0px;
+}
