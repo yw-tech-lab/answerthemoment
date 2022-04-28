@@ -7,14 +7,17 @@ body * {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4 {
     font-family: 'League Spartan', sans-serif;
 }
+
 
 main > section {
     margin-left: 10vw;
@@ -63,9 +66,10 @@ header {
     justify-content: space-between;
     
 }
-#top-header, #top-body {
+#top-header, #hero {
     color: white;
     font-family: 'League Spartan', sans-serif;
+    margin: 0px;
 }
 .top {
     font-size: 25px;
@@ -86,39 +90,45 @@ nav ul {
     padding: 0;
 }
 
-#top-body h1 {
+#hero {
+    background-image: url('../landing_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr .2fr;
+    grid-template-areas: 
+        "tl tc tr gutter"
+        "cl cc quote gutter"
+        "cl cc quote gutter"
+        "logo cc br gutter";
+    background-position: top center;
 }
 
 .logo {
-    width: 35vh;
-    z-index: 1000;
-    position: absolute;
-    font-size: 2vw;
-    top: 65vh;
-    left: 2.50vw;
-}
-.landing {
-    width: 100%;  
+    /* border: solid 1px #000; */
+    margin: 20px;
+    max-width: 18vw;
+    min-width: 200px;
+    grid-area: logo;
 }
 
 #quote {
-    width: 30vw;
-    font-size: 1.7vw;
-    font-weight:50px;
-    margin-left: 55px;
-    margin-top: 10vh;
-    line-height: 2.3em;
+    /* border: solid 1px #000; */
     text-align: center;
+    grid-area: quote;
 }
 
-.relative {
-    position: relative;
+#quote h1 {
+    font-size: 2.7em;
+    line-height: 1.1em;
+    margin: 0;
 }
 
-.absolute {
-    position: absolute;
-    top: 20%;
-    right: 100px;
+#quote h2 {
+    font-size: 2.0em;
+    line-height: 1.1em;
 }
 
 h2 { 
@@ -170,7 +180,13 @@ label{
  Janice Speaking
  ***************/
 
-.row{
+#speaking {
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 2vh 10vw;
+}
+
+.row {
     display: flex;
      margin-bottom: 15px;
 }
@@ -268,23 +284,38 @@ button {
 /**********
  Anita
  **********/
- .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    /* background-color: #ffffff; */
-    padding: 100px;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 3px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 40px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .grid-item img {
-      width: 150px;
-  }
 
+#logos h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    color: #ef7200;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: #f0f0f0; */
+    padding: 20px 0px;
+}
+.grid-item, .grid-item-2 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid 1px #000; */
+}
+.grid-item {
+    width: 25%;
+}
+.grid-item-2 {
+    width: 33%;
+}
+.grid-item img, .grid-item-2 img {
+    width: 50%;
+    filter: grayscale(1);
+}
+.grid-item-2 img {
+    width: 70%;
+}
