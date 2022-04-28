@@ -24,10 +24,10 @@ header li {
     margin-left: 15px;
 }
 
-/* main {
+main {
     margin-left: 15vw;
     margin-right: 15vw;
-} */
+}
 
 .logo {
     font-weight: bold;
@@ -38,51 +38,29 @@ header li {
     min-height: 90vh;
     padding: 20px;
 }
-.contact-form{
-    background-color: #f99373;
-    padding: 30px;
-    width: 58%;
-}
-.form-image{
+
+.center {
     display: flex;
-    align-items: flex-start;
-}
-.form-image img{
-    width: 40%;
-    margin-left:20px;
+    justify-content: center;
+    border: solid 5px red;
 }
 
-input, textarea{
-    width: 100%; 
-    height: 40px;
-}
-select{
-    width: 100%; 
-    height: 40px;
-}  
-
-
-#about-business{
-height: 150px;
-}
-label{
-    padding-top: 10px;
-    display: inline-block;
-    padding-bottom: 2px;
-}
-.row{
+.guiding-principles {
     display: flex;
-     margin-bottom: 15px;
-}
-.screenshot{
+    flex-wrap: wrap;
+    justify-content: space-around;
     border: solid 1px black;
-    width: 150px;
-    margin-right: 15px;
-    height: 150px;
+    width: 1000px;
+    color: white;
+}
+
+.guiding-principles div {
+    width: 250px;
+    height: 250px;
+    background-color: cornflowerblue;
+    margin: 30px;
+    border-radius: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.description h3{
-    margin-top: 0px;
 }

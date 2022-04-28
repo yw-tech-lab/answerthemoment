@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+*/
+
 body{
-  font-family: Montserrat; 
+  font-family: Calibri;
  }
 
  section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: #77abac; 
+    background-color: #ECE2D0; 
     height: 100vh;
 }
 
@@ -26,7 +28,7 @@ section#testimonials  h2 {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    color: white;
+    color: black;
 
     /* basic styling */
     padding: 0;
@@ -53,7 +55,7 @@ section#testimonials  h2 {
     transition: transform 0.5s;
     transform: translateX(calc(-100% * var(--current-slide)));
     display: flex;
-    color: white;
+    color: black;
     height: 80vh;
 }
 
@@ -72,14 +74,14 @@ section#testimonials  h2 {
 }
 
 .slide .quote-symbol {
-  font-size: 65px;
+  font-size: 100px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
 } 
 
 .slide cite {
     text-transform: uppercase;
-    color: #603958;
+    color: #FFA724;
     font-style: normal;
   }
 

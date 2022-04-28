@@ -1,16 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@600&display=swap');
+
 body * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
+}
+h1, h2, h3, h4 {
+    font-family: 'League Spartan', sans-serif;
 }
 
 main > section {
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
+
+main {
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: auto 10%;
+    background-position: top right;
+}
+
+.section {
+    /* border: solid 1px #000; */
+    min-height: 90vh;
+    padding: 20px;
+}
+
+footer {
+    /* border: solid 1px #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+
+/*****************
+ Laciasha's CSS
+******************/
+header {
+    /* border: solid 1px #000; */
+    padding-left: 20px;
+    padding-right: 40px;
+   /* background-color: green; */
+    position: absolute;
+    top: 20px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#top-header, #top-body {
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+}
+.top {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+ 
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+
+#top-body h1 {
+}
+
+.logo {
+    width: 35vh;
+    z-index: 1000;
+    position: absolute;
+    font-size: 2vw;
+    top: 65vh;
+    left: 2.50vw;
+}
+.landing {
+    width: 100%;  
+}
+
+#quote {
+    width: 30vw;
+    font-size: 1.7vw;
+    font-weight:50px;
+    margin-left: 55px;
+    margin-top: 10vh;
+    line-height: 2.3em;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 20%;
+    right: 100px;
+}
+
+h2 { 
+    font-style:normal;  
+}
+#landingpic{
+    width: 100%;
+}
+
+
+/***************
+ Janice Form
+ ***************/
+
+ .contact-form{
+    background-color: #f99373;
+    padding: 30px;
+    width: 58%;
+}
+.form-image{
+    display: flex;
+    align-items: flex-start;
+}
+.form-image img{
+    width: 40%;
+    margin-left:20px;
+}
+
+input, textarea{
+    width: 100%; 
+    height: 40px;
+}
+select{
+    width: 100%; 
+    height: 40px;
+}  
+
+
+#about-business{
+    height: 150px;
+}
+label{
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+/***************
+ Janice Speaking
+ ***************/
+
+.row{
+    display: flex;
+     margin-bottom: 15px;
+}
+.screenshot{
+    border: solid 1px black;
+    width: 150px;
+    margin-right: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description h3{
+    margin-top: 0px;
+}
+
+
+/*******************
+ Genevieve
+ *******************/
+#services img {
+    width: 270px;
+    height: 270px;
+    border-radius: 25%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container p {
+    width: 80%;
+}
+
+.guiding-principles, .services, .expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container h2 {
+    padding-top: 10px;
+}
+
+.flex-container p {
+    margin-top: 0px;
+}
+
+button {
+    background-color: #01408c;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+/*****************
+ Gillian
+ *****************/
+
+.stuff {
+    display: flex;
+    /* border: solid 2px red; */
+    /* align-items: flex-start; */
+    column-gap: 20px; 
+}
+  
+.bio_pic {
+    height: auto;
+    max-width: 300px; 
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   align-content: space-around
+}
+
+.numbers > div {
+    border: solid 1px black;
+    height: 300px;
+    width: 25%;
+    align-content: space-between;
+    text-align: center;
+}
+
+
+/**********
+ Anita
+ **********/
+ .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: #ffffff; */
+    padding: 100px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item img {
+      width: 150px;
+  }
+

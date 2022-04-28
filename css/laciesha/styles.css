@@ -12,30 +12,63 @@ body {
 }
 
 header {
-    border: solid 1px #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* border: solid 1px #000; */
     padding-left: 20px;
     padding-right: 20px;
+   /* background-color: green; */
+    position: absolute;
+    top: 50px;
+    z-index: 1000;
+    width: 100%;
+    
+}
+.top {
+    float: left;
+    font-size: 25px;
+    color:white;
+}
+nav {
+    margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
+   
 }
 
-header ul {
+nav a{
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    white-space: nowrap;
+    font-size: 1.25vw;
+    
+
+}
+ 
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+/*header ul {
     display: flex;
     list-style-type: none;
+
 }
 header li {
-    margin-left: 15px;
+    margin-left: 20px;
+    float: right;
+    
 }
-
+*/
 
 
 .logo {
     width: 25vw;
-    float: right;
-    margin-top: -25vw;
+    float: left;
     z-index: 100;
     position: relative;
+    font-size: 2vw;
+    margin-top: -25vw;
 
 }
 .landing {
@@ -44,16 +77,16 @@ header li {
    
 }
 
-/*#yellow_pic {
-    padding-top: 50px;
-    padding-left: 55px;
 
-}*/
+
 #quote {
-    font-size: 15px;
+    font-size: 1vw;
     font-weight:50px;
     margin-left: 55px;
     text-align: center;
+    color:white;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -63,31 +96,17 @@ header li {
 
 .absolute {
     position: absolute;
-    top: 250px;
+    top: 20%;
     right: 100px;
     
 }
 
 
 h2 {
-    font-size: 20px;
+    
     font-style:normal;
       
 }
-@media only screen and (max-width: 1000px) {
-    
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    
-    }
-    .absolute {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 300px;
-    }
-
-
+#landingpic{
+    width: 100%;
 }
