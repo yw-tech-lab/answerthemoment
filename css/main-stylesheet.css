@@ -15,6 +15,21 @@ p {
     line-height: 1.6em;
 }
 
+nav a, nav a:link, nav a:visited, nav a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #0182ab;
+    font-weight: bold;
+}
+a:hover {
+    color: #ffa724;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -44,13 +59,6 @@ main > section {
     padding: 10vh 0;
 }
 
-footer {
-    /* border: solid 1px #000; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-}
 
 
 h2 {
@@ -158,8 +166,15 @@ h2 {
     grid-template-columns: 1fr 1fr;
 }
 
+#contact label {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 1.1em;
+}
+
 .contact-form{
-    background-color: #f99373;
+    background-color: #7fc596;
     padding: 30px;
     width: 100%;
 }
@@ -292,7 +307,8 @@ label{
 }
 
 button {
-    background-color: #01408c;
+    /* background-color: #01408c; */
+    background-color: #f2580e;
     border: none;
     color: white;
     padding: 12px 25px;
@@ -373,4 +389,28 @@ button {
 }
 .grid-item-2 img {
     width: 70%;
+}
+
+
+/*******************/
+/* Laciesha Footer */
+/*******************/
+.top {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.top button {
+    width: 50%;
+}
+
+footer {
+    /* border: solid 1px #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+footer p {
+    margin: 20px;
 }

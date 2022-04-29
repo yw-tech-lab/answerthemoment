@@ -3,13 +3,17 @@
 section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: #109496; 
+    background-color: #7fc596; 
     height: 100vh;
 }
 
 section#testimonials h2, section#testimonials p {
     color: white;
     text-align: center;
+}
+
+section#testimonials p { 
+    font-weight: 500;
 }
 
 .carousel {
