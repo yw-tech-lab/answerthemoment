@@ -15,18 +15,6 @@ p {
     line-height: 1.6em;
 }
 
-nav a, nav a:link, nav a:visited, nav a:active {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-    transition: all 0.3s linear;
-}
-
-nav a:hover {
-    opacity: 0.5;
-}
-
 a, a:link, a:visited, a:active {
     text-decoration: none;
     color: #0182ab;
@@ -44,34 +32,31 @@ h1, h2, h3, h4 {
     font-family: 'League Spartan', sans-serif;
 }
 
-
-main > section {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-
-/* main {
-    background-image: url('../genevieve-images/circle-waves.png');
-    background-repeat: no-repeat;
-    background-size: auto 10%;
-    background-position: top right;
-} */
-
 .section {
-    /* border: solid 1px #000; */
-    min-height: 90vh;
-    /* padding: 20px; */
-    padding: 10vh 0;
+    padding: 10vh 15vw;
 }
-
-
 
 h2 {
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 2.4em;
+    margin-bottom: 10vh;
 }
 
+h3 {
+    font-size: 1.6em;
+    /* margin-bottom: 10vh; */
+}
+
+nav a, nav a:link, nav a:visited, nav a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
 
 /*****************
  Laciasha's CSS
@@ -226,7 +211,6 @@ label{
 #speaking {
     background-color: #F4F4F4;
     margin: 0;
-    padding: 2vh 10vw;
 }
 
 .speaking-summary {
@@ -283,15 +267,6 @@ label{
 /*******************
  Genevieve
  *******************/
-#services {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-#services img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 25%; */
-}
 
 .flex-container {
     display: flex;
@@ -303,12 +278,16 @@ label{
 }
 .bg-image {
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30vh;
-    min-height: 250px;
+    background-size: 100% 100%;
+    background-position: center center;
+    width: 20vw;
+    height: 20vw;
     margin-bottom: 20px;
     /* border-radius: 25%; */
+    transition: all 0.5s ease-in;
+}
+.bg-image:hover {
+    background-size: 105% 105%;
 }
 .bg-image.principles {
     background-image: url('../genevieve-images/compass-guiding-principles.jpg')
@@ -390,12 +369,12 @@ button {
  Anita
  **********/
 
-#clients h2 {
+/* #clients h2 {
     text-align: center;
     font-size: 3em;
     font-weight: 500;
     color: #ef7200;
-}
+} */
 
 .grid-container {
     display: flex;

@@ -6,15 +6,17 @@ function createModal(container) {
     var modal = document.querySelector(modalSelector);
 
     // Get the button that opens the modal
-    var btn = document.querySelector(buttonSelector);
+    var btns = document.querySelectorAll(buttonSelector);
 
     // Get the <span> element that closes the modal
     var span = document.querySelector(closeSelector);
 
     // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
+    btns.forEach(btn => {
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+    });
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
