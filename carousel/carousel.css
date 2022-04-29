@@ -16,6 +16,10 @@ section#testimonials p {
     font-weight: 500;
 }
 
+section#testimonials strong {
+    color: #0182ab;
+}
+
 .carousel {
   --current-slide: 0;
   position: relative;
@@ -73,9 +77,13 @@ section#testimonials p {
 }
 
 .slide .quote-symbol {
-  font-size: 65px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  position: relative;
+    font-size: 120px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    position: relative;
+    left: -17px;
+    top: 50px;
+    width: 0;
 } 
 
 .slide cite {

@@ -344,7 +344,7 @@ button {
   
 .bio_pic {
     height: auto;
-    max-width: 300px; 
+    width: 20vw; 
 }
 
 .numbers {
