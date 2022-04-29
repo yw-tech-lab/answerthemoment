@@ -19,6 +19,12 @@ nav a, nav a:link, nav a:visited, nav a:active {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+nav a:hover {
+    opacity: 0.5;
 }
 
 a, a:link, a:visited, a:active {
@@ -277,25 +283,53 @@ label{
 /*******************
  Genevieve
  *******************/
+#services {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
 #services img {
-    width: 270px;
-    height: 270px;
-    border-radius: 25%;
+    width: 100%;
+    height: auto;
+    /* border-radius: 25%; */
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
 }
-
-.flex-container p {
-    width: 80%;
+.flex-container > div {
+    width: calc(33% - 50px);
+    justify-content: flex-start;
 }
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    min-height: 250px;
+    margin-bottom: 20px;
+    /* border-radius: 25%; */
+}
+.bg-image.principles {
+    background-image: url('../genevieve-images/compass-guiding-principles.jpg')
+}
+.bg-image.services {
+    background-image: url('../genevieve-images/dei-services.jpg')
+}
+.bg-image.expertise {
+    background-image: url('../genevieve-images/expertise-pic.jpg')
+}
+
+/* .flex-container p {
+    width: 80%;
+} */
 
 .guiding-principles, .services, .expertise {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .flex-container h2 {
@@ -413,4 +447,13 @@ footer {
 }
 footer p {
     margin: 20px;
+}
+
+
+/************************
+ Sarah's CSS
+*************************/
+#experience {
+    height: auto;
+    min-height: auto;
 }
