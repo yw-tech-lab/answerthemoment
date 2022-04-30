@@ -9,7 +9,7 @@ section#testimonials {
 
 section#testimonials h2, section#testimonials p {
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 section#testimonials p { 
@@ -78,11 +78,11 @@ section#testimonials strong {
 
 .slide .quote-symbol {
     font-size: 120px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Playfair Display', serif;
     position: relative;
     position: relative;
-    left: -17px;
-    top: 50px;
+    left: -4px;
+    top: 55px;
     width: 0;
 } 
 
