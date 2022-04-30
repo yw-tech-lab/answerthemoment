@@ -186,7 +186,7 @@ h2 {
 }
 .form-annotation p {
     margin-top: 0;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 
 input, textarea{
