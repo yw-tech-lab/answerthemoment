@@ -12,7 +12,6 @@ body {
 
 p, li {
     color: #555;
-    /* line-height: 1.6em; */
     font-size: 1.1em;
     line-height: 1.6em;
 }
@@ -20,11 +19,6 @@ p, li {
 p:first-child {
     margin-top: 0;
 }
-
-/* .text p {
-    font-size: 1.2em;
-    line-height: 1.7em !important;
-} */
 
 a, a:link, a:visited, a:active {
     text-decoration: none;
@@ -54,7 +48,6 @@ h2 {
 
 h3 {
     font-size: 1.6em;
-    /* margin-bottom: 10vh; */
 }
 
 nav a, nav a:link, nav a:visited, nav a:active {
@@ -135,7 +128,6 @@ nav ul {
 }
 
 #quote {
-    /* border: solid 1px #000; */
     text-align: center;
     grid-area: quote;
 }
@@ -324,10 +316,9 @@ label{
     margin-top: 0;
 }
 
-/* .opener-right h2,
-.opener-left h2 {
+.opener-right h2 {
     justify-self: center;
-} */
+}
 
 .flex-container {
     display: flex;
@@ -389,6 +380,7 @@ button {
     font-size: 16px;
     text-align: center;
     transition: all 0.2s ease-in;
+    border-radius: 4px;
 }
 
 button:hover {
@@ -433,11 +425,12 @@ button:hover {
     /* background-color: #f0f0f0; */
     padding: 20px 0px;
 }
-.grid-item, .grid-item-2 {
+.grid-item, .grid-item-2, .grid-item-33 {
     padding: 20px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 140px;
     /* border: solid 1px #000; */
 }
 .grid-item {
@@ -446,12 +439,16 @@ button:hover {
 .grid-item-2 {
     width: 25%;
 }
+.grid-item-33 {
+    width: 25%;
+}
 .grid-item img, .grid-item-2 img {
-    width: 50%;
+    width: 60%;
     /* filter: grayscale(1); */
 }
-.grid-item-2 img {
-    width: 70%;
+
+.grid-item-33 img {
+    width: 60%;
 }
 
 
