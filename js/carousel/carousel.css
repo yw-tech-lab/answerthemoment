@@ -77,16 +77,6 @@ section#testimonials strong {
     box-sizing: border-box;
 }
 
-.slide .quote-symbol {
-    font-size: 120px;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    position: relative;
-    left: -4px;
-    top: 55px;
-    width: 0;
-} 
-
 .slide cite {
     text-transform: uppercase;
     color: #603958;

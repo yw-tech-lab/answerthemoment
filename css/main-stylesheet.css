@@ -42,7 +42,8 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-    font-size: 2.4em;
+    /* font-size: 2.4em; */
+    font-size: 3em;
     margin-bottom: 5vh;
 }
 
@@ -488,4 +489,30 @@ footer a:hover {
 #experience {
     height: auto;
     min-height: auto;
+}
+#quote2 {
+    background-color: #F4F4F4;
+}
+#quote2 p {
+    font-size: 2.5em;
+    color: #0182ab;
+    /* margin: 10vh 0; */
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.quote-symbol {
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    position: relative;
+    left: -4px;
+    top: 35px;
+    width: 0;
+} 
+
+#quote2 .quote-symbol {
+    font-size: 120px;
+    top: 55px;
 }
