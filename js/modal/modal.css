@@ -17,19 +17,38 @@
 .modal-content {
     background-color: #fefefe;
     margin: 5vh auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 5px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#speaking .modal-content {
+    width: 80%;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0px 30px 30px 30px;
+    height: 80vh;
+    overflow-y: auto;
+    margin-right: 7px;
 }
     
 /* The Close Button */
 .close {
     color: #aaa;
-    float: right;
+    align-self: flex-end;
     font-size: 28px;
+    justify-self: flex-end;
     font-weight: bold;
-    margin-top: -16px;
+    margin-top: 0px;
+    margin-right: 8px;
 }
     
 .close:hover,

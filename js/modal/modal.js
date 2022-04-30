@@ -35,3 +35,4 @@ createModal('#speaking');
 createModal('.guiding-principles');
 createModal('.services');
 createModal('.expertise');
+createModal('#bio');

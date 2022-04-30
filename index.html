@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="css/main-stylesheet.css">
-        <link rel="stylesheet" href="carousel/carousel.css">
-        <link rel="stylesheet" href="css/modal.css">
-        <script src="js/modal.js" type="text/javascript" defer></script>
-        <script src="carousel/carousel.js" defer></script>
+        <link rel="stylesheet" href="js/carousel/carousel.css">
+        <link rel="stylesheet" href="js/modal/modal.css">
+        <script src="js/modal/modal.js" type="text/javascript" defer></script>
+        <script src="js/carousel/carousel.js" defer></script>
     </head>
     <body>
         <header id="top-header">
             <div class="top">Answer The Moment, LLC</div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">What We Offer</a></li>
                     <li><a href="#speaking">Speaking</a></li>
                     <li><a href="#clients">Clients</a></li>
                     <li><a href="#bio">Bio</a></li>
@@ -39,12 +38,29 @@
                 <img class="logo" src="whitelogo.png" />   
             </section>
 
-            <section class="section" id="experience">
-                Brief sentence on what the business is about and 20+ years of experience (example: https://www.hello-collective.com/)
+            <section class="section">
+                <div class="opener-right">
+                    <p>
+                        As a trusted provider of Diversity, Equity and Inclusion (DEI) Consulting, 
+                        with <strong>20+ years of experience</strong> working with corporate and non-profit clients, 
+                        I provide solutions to <strong>support and sustain transformative outcomes</strong>.
+                    </p>
+                    <h2>What I do</h2>
+                </div>
+            </section>
+            <section class="section">
+                <div class="opener-left">
+                    <h2>How I Help</h2>
+                    <p>
+                        Through my customized, practical and relevant approach to work, 
+                        I integrate passion and purpose to <strong>disrupt narratives</strong> 
+                        and <strong>create cultures of inclusion</strong> where people can 
+                        connect as humans, live human excellence. 
+                    </p>
+                </div>
 
             </section>
             <section class="section" id="services">
-                <h2>What My Company Offers</h2>
                 <section class="flex-container">
                     <div class="guiding-principles">
                         <div class="bg-image principles btn"></div>
@@ -56,7 +72,9 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                Guiding Principles!
+                                <div class="modal-body">
+                                    Guiding Principles here.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +88,9 @@
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                Services!
+                                <div class="modal-body">
+                                    Services here.
+                                </div>
                             </div>
                         </div>
                     </div>    
@@ -78,13 +98,18 @@
                         <div class="bg-image expertise btn"></div>
                         <!-- <img src="genevieve-images/expertise-pic.jpg" alt="expertise"> -->
                         <h3>Expertise</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan in lacus eu faucibus. Vestibulum ac est dui. Cras dapibus lobortis purus at gravida. Aliquam id sem consectetur nulla commodo rhoncus.</p>
+                        <p>I specialize in creating safe spaces for people to 
+                            boldly venture into unfamiliar conversations that 
+                            untap their hidden potential and activate their brilliance.
+                        </p>
                         <button class="btn">Learn More</button>
                         <div class="modal">
                             <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                Expertise!
+                                <div class="modal-body">
+                                    Expertise here.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,40 +133,42 @@
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <div class="row">
-               
-                            <div class="screenshot">
-                                <img src="images/receivables.png" />
-                            </div>
-                            <div class="description">
-                                <h3> Receivables Roundtable</h3>
-        
-                                <p>In this podcast, Adam Parks talks with Khalilah Lyons about surface-level, perfunctory approaches to DEI 
-                                    and the contrast of more meaningful, responsible, yet bottom-line-oriented approaches.
-                                </p>
-                                <a href="https://youtu.be/qW7iI9ZBKHs" target="_blank">Listen Now</a> 
-                            </div>
-                        </div>  <!--end row  -->
-                        <div class="row">
-                            <div class="screenshot">
-                                <img src="images/cranla-warren.png" />
-                            </div>
-        
-                            <div class="description">
-                                <h3>Khalilah Lyons and Cranla Warren</h3>
-                                <p>Summary text TBD.</p>
-                                <a href="https://youtu.be/_rU9iLHvh5I" target="_blank">Listen Now</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <img class="screenshot" src="images/virtual-speech.png" />
-                            
-                            <div class="description">
-                                <h3>Reflections on Community</h3>
-                                <p>Khalilah Lyons reflects on the importance of community in her personal and professional life, and experiencing life through the "B List."</p>
-                                <a href="https://vimeo.com/704329328" target="_blank">Listen Now</a>
-                            </div>
-                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                
+                                <div class="screenshot">
+                                    <img src="images/receivables.png" />
+                                </div>
+                                <div class="description">
+                                    <h3> Receivables Roundtable</h3>
+            
+                                    <p>In this podcast, Adam Parks talks with Khalilah Lyons about surface-level, perfunctory approaches to DEI 
+                                        and the contrast of more meaningful, responsible, yet bottom-line-oriented approaches.
+                                    </p>
+                                    <a href="https://youtu.be/qW7iI9ZBKHs" target="_blank">Listen Now</a> 
+                                </div>
+                            </div>  <!--end row  -->
+                            <div class="row">
+                                <div class="screenshot">
+                                    <img src="images/cranla-warren.png" />
+                                </div>
+            
+                                <div class="description">
+                                    <h3>Khalilah Lyons and Cranla Warren</h3>
+                                    <p>Summary text TBD.</p>
+                                    <a href="https://youtu.be/_rU9iLHvh5I" target="_blank">Listen Now</a>
+                                </div>
+                            </div> <!--end row -->
+                            <div class="row">
+                                <img class="screenshot" src="images/virtual-speech.png" />
+                                
+                                <div class="description">
+                                    <h3>Reflections on Community</h3>
+                                    <p>Khalilah Lyons reflects on the importance of community in her personal and professional life, and experiencing life through the "B List."</p>
+                                    <a href="https://vimeo.com/704329328" target="_blank">Listen Now</a>
+                                </div>
+                            </div> <!--end row -->
+                        </div> <!--end modal body  -->
                     </div>  <!--end modal content  -->
                 </div>  <!--end modal background  -->
             </section>
@@ -160,7 +187,11 @@
                     <div class="grid-item-2"><img src="images/logos/pivotal-impact.png"></div>   
                     <div class="grid-item-2"><img src="images/logos/ihhp.svg"></div>    
                     <div class="grid-item"><img src="images/logos/chicago-scholars.jpg"></div>
-                    <div class="grid-item-2"><img src="images/logos/storybolt.png"></div>   
+                    <div class="grid-item-2"><img src="images/logos/storybolt.png"></div> 
+                    <div class="grid-item">TODO: Grant Thorton</div>
+                    <div class="grid-item">TODO: General Mills</div>
+                    <div class="grid-item">TODO: Health of Ontario Pension Plan</div>
+
                 </div>
             </section> 
 
@@ -297,15 +328,79 @@
             </section>
 
             <section class="section" id="bio">
-                <h2>About the Founder</h2>
-                <div class="stuff">
+                <div class="photo-container">
                     <div class="text">
-                        <p>Khalilah is a disrupter of dominant cultural norms at start ups, small corporations, consulting firms, VCs, and non-profits. Listed third as one of <a href="https://blog.onmogul.com/top-100-leaders-in-dei-in-2021" target="_blank">Mogul's Top 100 Diversity, Equity and Inclusion Leaders in 2021</a>, Khalilah has extensive experience and an engaging, no nonsense approach that makes her sought after as a thought leader, facilitator, coach and advisor.</p>
+                        <h2>About the Founder</h2>
+                        <p>Khalilah is a disrupter of dominant cultural norms at start ups, small corporations, consulting firms, VCs, and non-profits. Listed third as one of <a href="https://blog.onmogul.com/top-100-leaders-in-dei-in-2021" target="_blank">Mogul's Top 100</a> Diversity, Equity and Inclusion Leaders in 2021, 
+                            Khalilah has extensive experience and an engaging, 
+                            no nonsense approach that makes her sought after as a 
+                            <strong>thought leader</strong>, <strong>facilitator</strong>, <strong>coach</strong> and <strong>advisor</strong>.</p>
+                        <button class="btn">More</button>
 
-                        <!-- <p>Lead by an appreciation for the rhythms of cultures and people, and the necessity to respect those rhythms, her work as a keynote speaker, mentor, advisory council member, thought leader and volunteer have offered platforms for sharing actionable inspiration, creating privilege and empowering the brilliance of others. As founder of Answer the Moment, LLC. she partners with many different organizations ready to start their diversity, equity and inclusion journey as a DEI partner bridging capability gaps to create inspiring and engaging cultures that bring the best talent and the best from talent. Her unique approach layers the “how” and “why” we stand the way we do into the “what” of diversity, equity and inclusion.</p>
+                        <!-- The Modal -->
+                        <div class="modal">
 
-                        <p>As managing director and co-founder of <a href="#">Candidly Connecting</a>, she is igniting bold and essential conversations with children and their parents. Through this online platform, parents are equipped with tools, resources, and role models to begin having real dialogue and understand the diverse resilience that enables communities to thrive. With digestible coaching and a dynamic, online community, parents and children can create diversity and inclusion naturally in their daily lives through the power of storytelling.</p> 
-                        <p>Khalilah believes in the power that bold conversations have to shift cultures where lived experiences are appreciated and all identities can genuinely flourish.</p> -->
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-body">
+                                    <h2>About the Founder</h2>
+                                    <p>
+                                        Khalilah is a disrupter of dominant cultural norms 
+                                        at start ups, small corporations, consulting firms, VCs, 
+                                        and non-profits. 
+                                        Listed third as one of <a href="https://blog.onmogul.com/top-100-leaders-in-dei-in-2021" target="_blank">Mogul's Top 100</a> 
+                                        Diversity, Equity and Inclusion Leaders in 2021, 
+                                        Khalilah has extensive experience and an engaging, 
+                                        no nonsense approach that makes her sought after as a 
+                                        <strong>thought leader</strong>, <strong>facilitator</strong>, 
+                                        <strong>coach</strong> and <strong>advisor</strong>.
+                                    </p>
+                                    
+                                    <p>
+                                        Lead by an appreciation for the rhythms of cultures 
+                                        and people, and the necessity to respect those rhythms, 
+                                        her work as a <strong>keynote speaker</strong>, 
+                                        <strong>keynote speaker</strong>mentor, 
+                                        <strong>advisory council member</strong>,
+                                        <strong>thought leader</strong>, and
+                                        <strong>volunteer</strong> 
+                                        have offered platforms for 
+                                        sharing actionable inspiration, creating privilege and 
+                                        empowering the brilliance of others. 
+                                        As founder of Answer the Moment, LLC. she partners 
+                                        with many different organizations ready to start their 
+                                        diversity, equity and inclusion journey as a 
+                                        DEI partner bridging capability gaps to create 
+                                        inspiring and engaging cultures that bring the best 
+                                        talent and the best from talent. Her unique approach 
+                                        layers the “how” and “why” we stand the way we do into 
+                                        the “what” of diversity, equity and inclusion.
+                                    </p>
+
+                                    <p>
+                                        As managing director and co-founder of 
+                                        <a href="#">Candidly Connecting</a>, she is igniting
+                                        bold and essential conversations with children and their 
+                                        parents. Through this online platform, parents are 
+                                        equipped with tools, resources, and role models to 
+                                        begin having real dialogue and understand the diverse 
+                                        resilience that enables communities to thrive. With 
+                                        digestible coaching and a dynamic, online community, 
+                                        parents and children can create diversity and inclusion 
+                                        naturally in their daily lives through the power of 
+                                        storytelling.
+                                    </p> 
+                                    <p>
+                                        Khalilah believes in the power that bold conversations 
+                                        have to shift cultures where lived experiences are 
+                                        appreciated and all identities can genuinely flourish.
+                                    </p>
+                                </div>
+                            </div><!-- end modal content -->
+                        </div><!-- end modal-->
+                    
+                    
                     </div>
 
                     <div class="pic">
@@ -390,10 +485,9 @@
             </section>
 
             <footer>
-                <p><a href= "https://www.instagram.com/iamkhalilahlyons/">instagram</a></p>
-                <p><a href="#">twitter</a></p>
-                <p><a href= "https://www.linkedin.com/in/khalilahlyons/">linkedin</a></p>
-                
+                <a href="https://www.instagram.com/iamkhalilahlyons/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/khalilahlyons/" target="_blank"><i class="fab fa-linkedin"></i></a>   
             </footer>
         </main>
 

@@ -11,9 +11,20 @@ body {
 }
 
 p {
-    color: #444;
+    color: #555;
+    /* line-height: 1.6em; */
+    font-size: 1.1em;
     line-height: 1.6em;
 }
+
+p:first-child {
+    margin-top: 0;
+}
+
+/* .text p {
+    font-size: 1.2em;
+    line-height: 1.7em !important;
+} */
 
 a, a:link, a:visited, a:active {
     text-decoration: none;
@@ -38,7 +49,7 @@ h1, h2, h3, h4 {
 
 h2 {
     font-size: 2.4em;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 h3 {
@@ -213,6 +224,14 @@ label{
     margin: 0;
 }
 
+#speaking p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#speaking h3 {
+    margin-bottom: 5px;
+}
+
 .speaking-summary {
     display: grid;
     grid-template-columns: 300px auto;
@@ -239,7 +258,7 @@ label{
 
 .row {
     display: grid;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     grid-template-columns: 150px auto;
     align-items: flex-start;
 }
@@ -267,6 +286,43 @@ label{
 /*******************
  Genevieve
  *******************/
+/* .section {
+    border: solid 1px #000;
+} */
+.opener-right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 10vh;
+}
+.opener-right h2,
+.opener-right p {
+    margin-top: 0;
+}
+
+.opener-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    column-gap: 50px;
+}
+.opener-left h2,
+.opener-left p {
+    margin-top: 0;
+}
+/* .opener h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    color: #444;
+    line-height: 1.3em;
+    margin: 10vh 0 15vh 0;
+} */
+
+.opener-left strong,
+.opener-right strong {
+    color: #ffa724;
+}
 
 .flex-container {
     display: flex;
@@ -280,8 +336,8 @@ label{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     margin-bottom: 20px;
     /* border-radius: 25%; */
     transition: all 0.5s ease-in;
@@ -335,33 +391,17 @@ button {
  Gillian
  *****************/
 
-.stuff {
+.photo-container {
     display: flex;
-    /* border: solid 2px red; */
-    /* align-items: flex-start; */
-    column-gap: 20px; 
+    column-gap: 100px; 
+}
+#bio h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
   
 .bio_pic {
-    height: auto;
-    width: 20vw; 
-}
-
-.numbers {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
-   align-content: space-around
-}
-
-.numbers > div {
-    border: solid 1px black;
-    height: 300px;
-    width: 25%;
-    align-content: space-between;
-    text-align: center;
+    width: 25vw; 
 }
 
 
@@ -384,9 +424,9 @@ button {
     padding: 20px 0px;
 }
 .grid-item, .grid-item-2 {
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     /* border: solid 1px #000; */
 }
@@ -423,9 +463,15 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    background-color: #F4F4F4;
 }
-footer p {
+footer a, footer a:link, footer a:visited {
     margin: 20px;
+    color: #444;
+    font-size: 50px;
+}
+footer a:hover {
+    color: #0182ab;
 }
 
 
