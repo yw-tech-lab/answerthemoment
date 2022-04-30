@@ -435,21 +435,21 @@ button:hover {
     /* border: solid 1px #000; */
 }
 .grid-item {
-    width: 25%;
+    width: 33%;
 }
 .grid-item-2 {
-    width: 25%;
+    width: 33%;
 }
 .grid-item-33 {
-    width: 25%;
+    width: 33%;
 }
-.grid-item img, .grid-item-2 img {
-    width: 60%;
+.grid-item img {
+    width: 50%;
     /* filter: grayscale(1); */
 }
 
-.grid-item-33 img {
-    width: 60%;
+.grid-item-2 img, .grid-item-33 img {
+    width: 80%;
 }
 
 
