@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-p {
+p, li {
     color: #555;
     /* line-height: 1.6em; */
     font-size: 1.1em;
@@ -228,6 +228,9 @@ label{
     margin-top: 0px;
     margin-bottom: 10px;
 }
+#speaking h2 {
+    margin-top: 0px;
+}
 #speaking h3 {
     margin-bottom: 5px;
 }
@@ -289,40 +292,42 @@ label{
 /* .section {
     border: solid 1px #000;
 } */
-.opener-right {
+
+.opener-right, 
+.opener-left {
+    padding: 5vh 15vw;
     display: grid;
-    grid-template-columns: 2fr 1fr;
     align-items: center;
     column-gap: 50px;
-    margin-top: 10vh;
-}
-.opener-right h2,
-.opener-right p {
-    margin-top: 0;
 }
 
 .opener-left {
-    display: grid;
+    padding-top: 15vh;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
-    column-gap: 50px;
 }
-.opener-left h2,
-.opener-left p {
-    margin-top: 0;
+
+.opener-right {
+    grid-template-columns: 2fr 1fr;
 }
-/* .opener h2 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 30px;
-    color: #444;
-    line-height: 1.3em;
-    margin: 10vh 0 15vh 0;
-} */
+
+
 
 .opener-left strong,
 .opener-right strong {
     color: #ffa724;
 }
+
+.opener-right h2,
+.opener-right p,
+.opener-left h2,
+.opener-left p {
+    margin-top: 0;
+}
+
+/* .opener-right h2,
+.opener-left h2 {
+    justify-self: center;
+} */
 
 .flex-container {
     display: flex;
@@ -383,6 +388,11 @@ button {
     padding: 12px 25px;
     font-size: 16px;
     text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    background: #f2580e99;
 }
 
 
