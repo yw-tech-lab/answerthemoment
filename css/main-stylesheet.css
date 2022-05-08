@@ -505,6 +505,9 @@ footer a:hover {
 }
 #quote2 {
     background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #quote2 p {
     font-size: 2.5em;
@@ -513,6 +516,7 @@ footer a:hover {
     font-family: 'League Spartan', sans-serif;
     text-align: center;
     line-height: 1.2em;
+    max-width: 65vw;
 }
 
 .quote-symbol {
@@ -739,6 +743,10 @@ footer a:hover {
     /***********/
     /* Contact */
     /***********/
+
+    #quote2 p {
+        max-width: 100%;
+    }
     #contact {
         display: flex;
         flex-direction: column;
