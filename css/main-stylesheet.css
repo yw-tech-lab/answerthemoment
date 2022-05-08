@@ -256,10 +256,10 @@ label{
 .speaking-summary img {
     width: 100%;
 }
-.speaking-summary > div {
+.speaking-summary > .summary-text {
     margin-left: 30px;
 }
-.speaking-summary > div p:first-child {
+.speaking-summary > .summary-text p:first-child {
     margin-top: 0;
 }
 
@@ -673,9 +673,21 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
-    .speaking-summary > div {
+    .speaking-summary > .summary-text {
         padding: 10vh 5vw 0 5vw;
         margin-left: 0;
+    }
+
+    .speaking-summary .pic {
+        background-image: url('../images/Khalilah-Lyons.jpeg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vw;
+        background-attachment: fixed;
+    }
+    .speaking-summary .speaking-pic {
+        /* width: 100%; */
+        display: none;
     }
 
     /*********/
@@ -706,8 +718,16 @@ footer a:hover {
         display: flex;
         flex-direction: column-reverse;
     }
+    .photo-container .pic {
+        background-image: url('../khalilahbluedress.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vw;
+        background-attachment: fixed;
+    }
     .photo-container .bio_pic {
-        width: 100%;
+        /* width: 100%; */
+        display: none;
     }
 
     /***********/
