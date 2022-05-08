@@ -172,73 +172,6 @@ h2 {
 .menu-button { display: none; }
 .mobile { display: none; }
 
-@media screen and (max-width: 1250px) {
-    #hero {
-        max-height: 730px;
-    }
-}
-@media screen and (max-width: 930px) {
-    #hero {
-        background-size: 75vw auto;
-        grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
-        grid-template-areas: "logo . quote .";
-        max-height: 730px;
-    } 
-    .quote h1 { font-size: 2.0em; }
-    .quote h2 { font-size: 1.8em; }
-    header { padding-right: 5px; }
-    .menu-button {
-        display: inline;
-        background-color: transparent;
-        border: solid 2px transparent;
-        padding: 3px 12px;
-        font-size: 20px;
-    }
-    .menu-button:hover {
-        border: solid 2px white;
-        background: #FFFFFF22;
-    }
-    nav { display: none; }
-}
-
-@media screen and (max-width: 700px) {
-    #hero {
-        background-image: url(../landing_image.jpg);
-        background-size: cover;
-        height: calc(100vw * 0.6);
-        background-position-x: center;
-    }
-
-    .logo { display: none; }
-    .mobile.quote {
-        width: 100%;
-        max-width: 100%;
-        padding: 40px;
-        color: #0182ab;
-        font-family: 'League Spartan', sans-serif;
-        background: #f2f2f2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 300px;
-    }
-    .desktop { display: none !important; }
-    .mobile { display: inherit; }
-}
-
-@media screen and (max-width: 500px) {
-    #hero {
-        background-image: url(../landing_image.jpg);
-        background-size: cover;
-        height: calc(100vw);
-    }
-    .mobile.quote {
-        height: 300px;
-    }
-    .quote h1 { font-size: 1.8em; }
-    .quote h2 { font-size: 1.6em; }
-}
-
 
 /***************
  Janice Form
@@ -520,11 +453,11 @@ button:hover {
 .grid-item,
 .grid-item-2,
 .grid-item-33 {
-    width: 33%;
+    width: 25%;
 }
 
 .grid-item img {
-    width: 50%;
+    width: 75%;
     /* filter: grayscale(1); */
 }
 
@@ -597,7 +530,45 @@ footer a:hover {
     top: 55px;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1250px) {
+    /***********/
+    /* Landing */
+    /***********/
+    #hero {
+        max-height: 730px;
+    }
+}
+@media screen and (max-width: 930px) {
+    /***********/
+    /* Landing */
+    /***********/
+    #hero {
+        background-size: 75vw auto;
+        grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
+        grid-template-areas: "logo . quote .";
+        max-height: 730px;
+    } 
+    .quote h1 { font-size: 2.0em; }
+    .quote h2 { font-size: 1.8em; }
+    header { padding-right: 5px; }
+    .menu-button {
+        display: inline;
+        background-color: transparent;
+        border: solid 2px transparent;
+        padding: 3px 12px;
+        font-size: 20px;
+    }
+    .menu-button:hover {
+        border: solid 2px white;
+        background: #FFFFFF22;
+    }
+    nav { display: none; }
+
+
+    /************/
+    /* Services */
+    /************/
     .flex-container {
         flex-direction: column;
     }
@@ -626,7 +597,9 @@ footer a:hover {
         display: none;
     }
 
+    /*********/
     /* Logos */
+    /*********/
     .grid-item,
     .grid-item-2,
     .grid-item-33 {
@@ -634,17 +607,145 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    /***********/
+    /* General */
+    /***********/
+    .section {
+        padding: 10vh 5vw;
+    }
+
+    /***********/
+    /* Landing */
+    /***********/
+    #hero {
+        background-image: url(../landing_image.jpg);
+        background-size: cover;
+        height: calc(100vw * 0.6);
+        background-position-x: center;
+    }
+
+    .logo { display: none; }
+    .mobile.quote {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px;
+        color: #0182ab;
+        font-family: 'League Spartan', sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+    }
+    .desktop { display: none !important; }
+    .mobile { display: inherit; }
+
+    /****************/
+    /* What I offer */
+    /****************/
+    #overview {
+        padding: 10vh 5vw;
+    }
+    .opener-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .opener-left h2,
+    .opener-right h2  {
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .opener-right {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0vh 5vw 0vh 5vw;
+    }
+
+    /************/
+    /* Speaking */
+    /************/
+    #speaking {
+        padding: 0 0 10vh 0;
+    }
+    .speaking-summary {
+        display: flex;
+        flex-direction: column;
+    }
+    .speaking-summary > div {
+        padding: 10vh 5vw 0 5vw;
+        margin-left: 0;
+    }
+
+    /*********/
     /* Logos */
+    /*********/
     .grid-item,
     .grid-item-2,
     .grid-item-33 {
-        width: 100%;
+        width: 33%;
     }
 
     .grid-item img,
     .grid-item-2 img,
     .grid-item-33 img {
+        width: 70%;
+    }
+
+    /*********************/
+    /* About the Founder */
+    /*********************/
+    #bio {
+        padding: 0 0 10vh 0;
+    }
+    #bio .text {
+        padding: 10vh 5vw;
+    }
+    .photo-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photo-container .bio_pic {
+        width: 100%;
+    }
+
+    /***********/
+    /* Contact */
+    /***********/
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .form-annotation {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hero {
+        background-image: url(../landing_image.jpg);
+        background-size: cover;
+        height: calc(100vw);
+    }
+    .mobile.quote {
+        height: 300px;
+    }
+    .quote h1 { font-size: 1.8em; }
+    .quote h2 { font-size: 1.6em; }
+
+    /*********/
+    /* Logos */
+    /*********/
+    .grid-item,
+    .grid-item-2,
+    .grid-item-33 {
         width: 50%;
+    }
+
+    .grid-item img,
+    .grid-item-2 img,
+    .grid-item-33 img {
+        width: 80%;
     }
 }
