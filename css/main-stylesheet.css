@@ -172,12 +172,17 @@ h2 {
 .menu-button { display: none; }
 .mobile { display: none; }
 
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
+    #hero {
+        max-height: 730px;
+    }
+}
+@media screen and (max-width: 930px) {
     #hero {
         background-size: 75vw auto;
         grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
         grid-template-areas: "logo . quote .";
+        max-height: 730px;
     } 
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
@@ -200,7 +205,7 @@ h2 {
     #hero {
         background-image: url(../landing_image.jpg);
         background-size: cover;
-        height: calc(100vw * 0.7);
+        height: calc(100vw * 0.6);
         background-position-x: center;
     }
 
@@ -215,7 +220,7 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: calc(100vh - 100vw * 0.7);
+        height: 300px;
     }
     .desktop { display: none !important; }
     .mobile { display: inherit; }
@@ -228,7 +233,7 @@ h2 {
         height: calc(100vw);
     }
     .mobile.quote {
-        height: calc(100vh - 100vw);
+        height: 300px;
     }
     .quote h1 { font-size: 1.8em; }
     .quote h2 { font-size: 1.6em; }
