@@ -57,6 +57,7 @@ nav a, nav a:link, nav a:visited, nav a:active {
     font-weight: bold;
     opacity: 1;
     transition: all 0.3s linear;
+    font-size: 1.0em;
 }
 
 nav a:hover {
@@ -72,7 +73,7 @@ header {
     padding-right: 40px;
    /* background-color: green; */
     position: absolute;
-    top: 20px;
+    top: 10px;
     z-index: 1000;
     width: 100%;
     display: flex;
@@ -80,6 +81,7 @@ header {
     justify-content: space-between;
     
 }
+
 #top-header, #hero {
     color: white;
     font-family: 'League Spartan', sans-serif;
@@ -92,7 +94,7 @@ header {
 nav a {
     color: white;
     text-decoration: none;
-    padding-left: 40px;
+    padding-left: 30px;
     white-space: nowrap;
     font-size: 1.2em;
 }
@@ -111,7 +113,6 @@ nav ul {
 } */
 
 #hero {
-    /* max-height: 600px; */
     height: 100vh;
     display: grid;
     grid-template-areas:
@@ -121,13 +122,14 @@ nav ul {
     background-image: url(../images/landing-alt.jpg);
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 65vw auto;
-    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    background-size: 60vw auto;
+    grid-template-columns: 20% 35% 30% 15%;
+    filter: saturate(0.9);
 }
 
 
 #hero .logo {
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     margin: 20px;
     max-width: 18vw;
     min-width: 200px;
@@ -136,8 +138,8 @@ nav ul {
     /* justify-self: flex-start; */
 }
 
-#hero #quote {
-    border: solid 1px black;
+#hero .quote {
+    /* border: solid 1px black; */
     max-width: 380px;
     display: flex;
     flex-direction: column;
@@ -149,73 +151,71 @@ nav ul {
     /* background-color: #7ec59f; */
 }
 
-#quote h1 {
+.quote h1 {
     font-size: 2.7em;
     line-height: 1.1em;
     margin: 0;
+    text-align: center;
 }
 
-#quote h2 {
+.quote h2 {
     font-size: 2.0em;
     line-height: 1.1em;
+    text-align: center;
 }
 
 h2 { 
     font-style:normal;  
 }
 
+.menu-button { display: none; }
 
-@media screen and (max-width: 1048px) {
+
+@media screen and (max-width: 900px) {
     #hero {
         background-size: 75vw auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "logo . quote";
-    }  
-
-    #quote h1, #quote-mobile h1 {
-        font-size: 2.2em;
-        line-height: 1.1em;
-        margin: 0;
+        grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
+        grid-template-areas: "logo . quote .";
+    } 
+    .quote h1 { font-size: 2.0em; }
+    .quote h2 { font-size: 1.8em; }
+    header { padding-right: 5px; }
+    .menu-button {
+        display: inline;
+        background-color: transparent;
+        border: solid 2px transparent;
+        padding: 3px 12px;
+        font-size: 20px;
     }
-    
-    #quote h2, #quote-mobile h2 {
-        font-size: 1.8em;
-        line-height: 1.1em;
+    .menu-button:hover {
+        border: solid 2px white;
+        background: #FFFFFF22;
     }
+    nav { display: none; }
 }
 
 @media screen and (max-width: 700px) {
     #hero {
         background-image: url(../landing_image.jpg);
         background-size: cover;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50vh 25vh;
-        grid-template-areas: 
-            "."
-            "quote";
-        height: calc(100vw * 0.7);
-    }  
+        height: calc(100vw * 0.75);
+    }
 
-    .logo {
-        display: none;
-    }
-    .desktop {
-        display: none !important;
-    }
-    .mobile {
-        display: block !important;
-    }
-    #quote-mobile {
+    .logo { display: none; }
+    .quote {
         width: 100%;
         max-width: 100%;
         padding: 40px;
         color: #0182ab;
-        /* margin: 10vh 0; */
         font-family: 'League Spartan', sans-serif;
     }
-    #quote-mobile h1 {
-        text-align: center;
-    }
+    .desktop { display: none !important; }
+    .mobile { display: inherit !important; }
+}
+
+@media screen and (max-width: 500px) {
+    .quote h1 { font-size: 1.8em; }
+    .quote h2 { font-size: 1.6em; }
 }
 
 
