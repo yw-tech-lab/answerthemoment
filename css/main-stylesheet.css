@@ -688,7 +688,7 @@ footer a:hover {
         width: 100vw;
         height: 70vw;
         min-height: 350px;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position-x: center;
         background-repeat: no-repeat;
     }
@@ -784,7 +784,7 @@ footer a:hover {
         background-size: cover;
         height: 100vw; 
         min-height: auto;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 }
 
