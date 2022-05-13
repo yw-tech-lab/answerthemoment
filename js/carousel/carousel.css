@@ -111,3 +111,10 @@ section#testimonials strong {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+  section#testimonials p {
+    padding: 9vh 7vw; 
+    font-size: 1rem;
+  }
+}
