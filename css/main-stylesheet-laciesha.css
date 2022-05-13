@@ -105,7 +105,7 @@ nav ul {
 }
 
 #hero {
-    background-image: url('../landing_image.jpg');
+    /* background-image: url('../landing_image.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -117,7 +117,15 @@ nav ul {
         "cl cc quote gutter"
         "cl cc quote gutter"
         "logo cc br gutter";
-    background-position: top center;
+    background-position: bottom center;
+    z-index: 200;
+}
+
+#landingpic {
+    width: 100%;
+    position: relative;
+    top: -100vh;
+    z-index: -100;
 }
 
 .logo {

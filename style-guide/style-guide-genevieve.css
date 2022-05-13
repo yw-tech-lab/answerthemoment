@@ -48,8 +48,8 @@ body * {
     border-bottom: solid 1px black;
     border-top: solid 1px black;
     margin-right: 25px;
+    
 }
-
 .semi {
     width: 100%;
     border-bottom: solid 1px black;
@@ -63,19 +63,31 @@ h1, h2, h3, h4 {
 }
 
 .colorone {
-    background-color: #F28705;
+    background-color: seagreen;
 }
 
 .colortwo {
-    background-color: #FFDAB9;
+    background-color: turquoise;
 }
 
 .colorthree {
-    background-color: #01408c;
+    background-color: yellow;
 }
 
 .colorfour {
-    background-color:#ffa724;
+background-color: teal;
+}
+
+.colorfive {
+    background-color: peachpuff;
+}
+
+.colorsix {
+    background-color: royalblue;
+}
+
+.colorseven {
+    background-color: red;
 }
     
 .swatch {
@@ -123,7 +135,6 @@ p {
 p {
     font-size: 1em;
 }
-
     .semi .stmt {
         border-radius: 100px; 
         width: 100px;

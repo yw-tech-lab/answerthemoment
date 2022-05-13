@@ -1,0 +1,41 @@
+.asset1 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: -100;
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 100vh;
+    left: 0px;
+    border: solid 3px teal;
+    /* background-position: top right; */
+}
+
+.asset2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -100;
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 200vh;
+    right: 0px;
+    border: solid 3px hotpink;
+}
+
+.asset3 {
+    width: 500vh;
+    height: 500vh;
+    position: absolute;
+    z-index: -100;
+    opacity: 0.5;
+    background-image: url('../genevieve-images/circle-waves.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 300vh;
+    left: -50vw;
+    border: solid 3px black;
+}
