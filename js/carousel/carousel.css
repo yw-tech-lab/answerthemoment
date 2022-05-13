@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
-body{
-  font-family: Montserrat; 
- }
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap'); */
 
- section#testimonials {
+section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: #77abac; 
+    background-color: #7fc596; 
     height: 100vh;
 }
 
-section#testimonials  h2 {
+section#testimonials h2, section#testimonials p {
     color: white;
-    text-align: center;
+    text-align: left;
+}
+
+section#testimonials p { 
+    font-weight: 500;
+}
+
+section#testimonials strong {
+    color: #0182ab;
 }
 
 .carousel {
@@ -42,6 +47,7 @@ section#testimonials  h2 {
 
 .carousel-button:hover {
     color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
 }
 
 .carousel-button_next {
@@ -58,8 +64,8 @@ section#testimonials  h2 {
 }
 
 .slide {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1.2em;
     line-height: 1.3em;
     font-weight: 300;
     flex: 0 0 100%;
@@ -70,12 +76,6 @@ section#testimonials  h2 {
     padding: 0vh 15vw;
     box-sizing: border-box;
 }
-
-.slide .quote-symbol {
-  font-size: 65px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  position: relative;
-} 
 
 .slide cite {
     text-transform: uppercase;

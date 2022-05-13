@@ -5,88 +5,259 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="css/main-stylesheet.css">
-        <link rel="stylesheet" href="carousel/carousel.css">
-        <script src="carousel/carousel.js" defer></script>
+        <link rel="stylesheet" href="js/carousel/carousel.css">
+        <link rel="stylesheet" href="js/modal/modal.css">
+        <script src="js/modal/modal.js" type="text/javascript" defer></script>
+        <script src="js/carousel/carousel.js" defer></script>
     </head>
     <body>
-        <header>
+        <header id="top-header">
             <div class="top">Answer The Moment, LLC</div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#speaking engagement">Speaking Engagements</a></li>
+                    <li><a href="#overview">About</a></li>
+                    <li><a href="#services">What I Offer</a></li>
+                    <li><a href="#speaking">Speaking</a></li>
                     <li><a href="#clients">Clients</a></li>
+                    <li><a href="#bio">Bio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                   
                 </ul>
             </nav>
-          
         </header>
-        <div class="relative">
-            <img id= "landingpic" class="landing" src="landing_image.jpg">
-            <div id="quote" class="absolute">
-                <h1>
-                    "CULTURE IS INVISIBLE,<br>
-                    SO IT'S CRITICAL TO BE <br>
-                    INTENTIONAL."
-                </h1>
-                <h2>-Khalilah Lyons, Founder</h2>
-            </div> 
-        </div>
-        <img class="logo" src="logo.png">   
 
         <main>
-            <section class="section" id="experience">
-                Brief sentence about her 20+ years of experience.
+            <section id="hero">
+                <!-- <img id= "landingpic" class="landing" src="landing_image.jpg"> -->
+                <div id="quote">
+                    <h1>
+                        “Culture is invisible
+                        so it's critical 
+                        to be intentional.
+                    </h1>
+                    <h2>-Khalilah Lyons, Founder</h2>
+                </div> 
+                <img class="logo" src="whitelogo.png" />   
             </section>
+
+            <section id="overview" class="opener-left">
+                <h2>What I do</h2>
+                <p>
+                    As a trusted provider of Diversity, Equity and Inclusion (DEI) Consulting, 
+                    with <strong>20+ years of experience</strong> working with corporate and non-profit clients, 
+                    I provide solutions to <strong>support and sustain transformative outcomes</strong>.
+                </p>
+            </section>
+
+            <section class="opener-right">
+                <p>
+                    Through my customized, practical and relevant approach to work, 
+                    I integrate passion and purpose to <strong>disrupt narratives</strong> 
+                    and <strong>create cultures of inclusion</strong> where people can 
+                    connect as humans, live human excellence. 
+                    I've lived the conversations that need to be 
+                    had to create cultural change.
+                </p>
+                <h2>How I Help</h2>
+            </section>
+
             <section class="section" id="services">
-                <h1>What My Company Offers</h1>
                 <section class="flex-container">
                     <div class="guiding-principles">
-                        <img src="genevieve-images/compass-guiding-principles.jpg" alt="hands">
-                        <h2>Guiding Principles</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan in lacus eu faucibus. Vestibulum ac est dui. Cras dapibus lobortis purus at gravida. Aliquam id sem consectetur nulla commodo rhoncus.</p>
-                        <button>Learn More</button>
+                        <div class="bg-image principles btn"></div>
+                        <!-- <img src="genevieve-images/compass-guiding-principles.jpg" alt="hands"> -->
+                        <h3>Guiding Principles</h3>
+                        <p>I focus on holistic 
+                            strategies that allow people to be vulnerable, 
+                            reflect on the nuances of their behaviors, 
+                            and ultimately create transformative outcomes. 
+                        </p>
+                        <button class="btn">Learn More</button>
+                        <div class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-body">
+                                    <h3>Guiding Principles</h3>
+                                    <p>To be edited...</p>
+                                    <ul>
+                                        <li>Empowered employees at every level</li>
+                                        <li>Ongoing evolution over one-time breakthroughs</li>
+                                        <li>Create space to be vulnerable</li>
+                                        <li>Start within limits to expand limits</li>
+                                        <li>High standards of accountability and engagement</li>
+                                        <li>Awareness to action</li>
+                                        <li>Narrative disruption</li>
+                                        <li>People the work, don't work the people</li>
+                                        <li>Close the intent-impact gap</li>
+                                        <li>DEI Excellence through holistic integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="services">
-                        <img src="genevieve-images/dei-services.jpg" alt="services">
-                        <h2>Services</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan in lacus eu faucibus. Vestibulum ac est dui. Cras dapibus lobortis purus at gravida. Aliquam id sem consectetur nulla commodo rhoncus.</p>
-                        <button>Learn More</button>
+                        <div class="bg-image services btn"></div>
+                        <!-- <img src="genevieve-images/dei-services.jpg" alt="services"> -->
+                        <h3>Services</h3>
+                        <p>
+                            I offer a full suite of diversity equity
+                            & inclusion premium services to organize, plan
+                            and scale your business, including facilitation, 
+                             coaching, and consulting.
+                        </p>
+                        <button class="btn">Learn More</button>
+                        <div class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-body">
+                                    <h3>Services</h3>
+                                    <p>1 sentence summary:</p>
+                                    <ul>
+                                        <li>Bold Dialogue Facilitation</li>
+                                        <li>Leadership Coaching & Development</li>
+                                        <li>Individual & Team DEI Coaching</li>
+                                        <li>DEI Practitioner Coaching for Beginners</li>
+                                        <li>Program and Workshops Design & Delivery</li>
+                                        <li>Customized Roadmaps, Frameworks & Toolkits</li>
+                                        <li>People Transition Management</li>
+                                        <li>Strategy Design & Development</li>
+                                        <li>Cultural Insights, Essentials & Considerations</li>
+                                        <li>Perspective Shift & Navigation</li>
+                                        <li>Content Creation</li>
+                                        <li>DEI Resource Curation</li>
+                                        <li>Signature E-List Approach</li>
+                                        <li>DEI Forum Advisory Packages for ERGs,
+                                        Councils, Committees, etc.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>    
                     <div class="expertise">
-                        <img src="genevieve-images/expertise-pic.jpg" alt="expertise">
-                        <h2>Expertise</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan in lacus eu faucibus. Vestibulum ac est dui. Cras dapibus lobortis purus at gravida. Aliquam id sem consectetur nulla commodo rhoncus.</p>
-                        <button>Learn More</button>
-                    </div>
+                        <div class="bg-image expertise btn"></div>
+                        <!-- <img src="genevieve-images/expertise-pic.jpg" alt="expertise"> -->
+                        <h3>Expertise</h3>
+                        <p>I specialize in creating safe spaces for people to 
+                            boldly venture into unfamiliar conversations that 
+                            untap their hidden potential and activate their brilliance.
+                        </p>
+                        <button class="btn">Learn More</button>
+                        <div class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-body">
+                                    <h3>Expertise</h3>
+                                    <p>Expertise to harness for your culture evolution:</p>
+                                    <ul>
+                                        <li>People Effectiveness</li>
+                                        <li>Team Dynamics</li>
+                                        <li>Talent Acquisition, Management & Engagement</li>
+                                        <li>Inclusive Leadership</li>
+                                        <li>DEI Evolution & Excellence</li>
+                                        <li>DEI Integration & Sustainability</li>
+                                        <li>Behavior Transformation & Sustainability</li>
+                                        <li>Humanity Nuances</li>
+                                        <li>Culture Essentials</li>
+                                        <li>Empathy Exercises</li>
+                                        <li>Momentum & Inspiration</li>
+                                        <li>Cultural Competence Building</li>
+                                        <li>Culture Transformation & Refinement</li>
+                                        <li>Communication for Excellence</li>
+                                        <li>Awareness for Empowerment</li>
+                                        <li>Brave Space Creation</li>
+                                        <li>Storytelling for Learning</li>
+                                        <li>Herman Brain Dominance Assessment Certified</li>
+                                    </ul>
+                                </div><!-- end modal body-->
+                            </div><!-- end modal container-->
+                        </div><!-- end modal-->
+                    </div><!-- end expertise container-->
                 </section>
             </section>
 
-            <section class="section" id="podcasts">
-                <h2>Podcasts</h2>
-                TBD: Janice
-            </section> 
+            <section class="section" id="speaking">
+                <div class="speaking-summary">
+                    <img class="btn" src="images/Khalilah-Lyons.jpeg" alt="Khalila Lyons image">
+                    <div>
+                        <h2>Speaking</h2>
+                        <p>TODO: Some summary sentence on speaking engagements. Text text text text text text text text text text text text text text text text.</p>
+                        <p>Text text text text text text text text text text text text text text text text.</p>
+                        <button class="btn">More</button>
+                    </div>
+                </div>
+                
 
-            <section class="section" id="logos">
-                <h2>Who I've Worked With</h2>
-                <div class="grid-container">
-                    <div class="grid-item"><img src="images/3Q-Digital-Logo.png"></div>
-                    <div class="grid-item"><img src="images/village-capital.png"></div>
-                    <div class="grid-item"><img src="images/Belk-Logo-500x262-1.jpg"></div>    
-                    <div class="grid-item"><img src="images/betmgm.png"></div>
-                    <div class="grid-item"><img src="images/covR_Q3E_400x400.png"></div>                  
-                    <div class="grid-item"><img src="images/download.png"></div>
-                    <div class="grid-item"><img src="images/i8v5tmea0tg2kv5mg0ux.png"></div>
-                    <div class="grid-item"><img src="images/KJ4IBPtm_400x400.png"></div>
-                    <div class="grid-item"><img src="images/Logo-number-3-language-e1564597068331.png"></div>
-                    <div class="grid-item"><img src="images/Synctera-color.jpg"></div>
+                <!-- The Modal -->
+                <div class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="modal-body">
+                            <div class="row">
+                
+                                <div class="screenshot">
+                                    <img src="images/receivables.png" />
+                                </div>
+                                <div class="description">
+                                    <h3> Receivables Roundtable</h3>
+            
+                                    <p>In this podcast, Adam Parks talks with Khalilah Lyons about surface-level, perfunctory approaches to DEI 
+                                        and the contrast of more meaningful, responsible, yet bottom-line-oriented approaches.
+                                    </p>
+                                    <a href="https://youtu.be/qW7iI9ZBKHs" target="_blank">Listen Now</a> 
+                                </div>
+                            </div>  <!--end row  -->
+                            <div class="row">
+                                <div class="screenshot">
+                                    <img src="images/cranla-warren.png" />
+                                </div>
+            
+                                <div class="description">
+                                    <h3>Khalilah Lyons and Cranla Warren</h3>
+                                    <p>Summary text TBD.</p>
+                                    <a href="https://youtu.be/_rU9iLHvh5I" target="_blank">Listen Now</a>
+                                </div>
+                            </div> <!--end row -->
+                            <div class="row">
+                                <img class="screenshot" src="images/virtual-speech.png" />
+                                
+                                <div class="description">
+                                    <h3>Reflections on Community</h3>
+                                    <p>Khalilah Lyons reflects on the importance of community in her personal and professional life, and experiencing life through the "B List."</p>
+                                    <a href="https://vimeo.com/704329328" target="_blank">Listen Now</a>
+                                </div>
+                            </div> <!--end row -->
+                        </div> <!--end modal body  -->
+                    </div>  <!--end modal content  -->
+                </div>  <!--end modal background  -->
+            </section>
+
+            <section class="section" id="clients">
+                <h2>Trusted By</h2>
+                <div class="grid-container">   
+                    <div class="grid-item-2"><img src="images/logos/3Q.png"></div>
+                    <div class="grid-item-2"><img src="images/logos/village-capital.png"></div>
+                    <div class="grid-item-2"><img src="images/logos/nasdaq-ec.png"></div>   
+                    <div class="grid-item"><img src="images/logos/betmgm.png"></div>        
+                    <div class="grid-item"><img src="images/logos/ifa-chicago.png"></div>
+                    <div class="grid-item"><img src="images/logos/ajilla.png"></div>  
+                    <div class="grid-item"><img src="images/logos/belk.jpg"></div> 
+                    <div class="grid-item-2"><img src="images/logos/synctera.jpg"></div>    
+                    <div class="grid-item-2"><img src="images/logos/pivotal-impact.png"></div>   
+                    <div class="grid-item-2"><img src="images/logos/ihhp.svg"></div>    
+                    <div class="grid-item"><img src="images/logos/chicago-scholars.jpg"></div>
+                    <div class="grid-item-2"><img src="images/logos/storybolt.png"></div> 
+                    <div class="grid-item-33"><img src="images/logos/grant-thornton.svg"></div>
+                    <div class="grid-item"><img src="images/logos/general-mills.svg"></div>
+                    <div class="grid-item-33"><img src="images/logos/hoopp.svg"></div>
                 </div>
             </section> 
 
+
             <section class="section" id="testimonials">
-                <h2>Testimonials</h2>
 
                 <div class="carousel" role="group" aria-roledescription="carousel" data-carousel aria-label="Student testimonials">
     
@@ -112,7 +283,12 @@
                         <div class="slide" role="group" aria-roledescription="slide" aria-hidden="false">
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                As a thought leader and a DEI expert, Khalilah not only delivers, but elevates difficult conversations within organizations masterfully by creating learning and exchange opportunities in a psychologically safe environment, while building lasting partnership opportunities.
+                                As a thought leader and a DEI expert, 
+                                Khalilah not only delivers, but <strong>elevates 
+                                difficult conversations</strong> within organizations 
+                                masterfully by creating learning and exchange 
+                                opportunities in a psychologically
+                                <strong>safe environment</strong>, while building lasting partnership opportunities.
                             </p>
                             <cite> 
                                 <b> -Sahar Hariri,</b> 
@@ -124,7 +300,13 @@
                         <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true">
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                Khalilah led our team in an engaging and impactful discussion on why diversity, equity and inclusion matter to all of us. Her workshop created a safe environment for individuals to speak up and share their personal experiences. Throughout the workshop, Khalilah provided relatable and specific examples to how unconscious bias impacts our day-to-day decisions and ways we can be more aware and mitigate these biases. The workshops left attendees with concrete actions they can take to be DEI leaders within their individual roles at the firm.
+                                Khalilah provided 
+                                <strong>relatable and specific examples</strong> of how unconscious bias impacts 
+                                our day-to-day decisions, and ways we 
+                                can be more aware and mitigate these biases. 
+                                The workshops left attendees with <strong>concrete 
+                                actions they can take to be DEI leaders</strong> within 
+                                their individual roles at the firm.
                             </p>
                             <cite>  <b>-Jonathan Phillip,</b>
                                 Manager of DEI of Grant Thorton
@@ -135,7 +317,16 @@
                         <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true"> 
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                Working with Khalilah fundamentally shifted the culture in our organization. As a young arts organization, Khalilah brought vivacity, creativity, poise, and intellect that I've rarely experienced in leadership. Her expertise does not simply check the box for Diversity, Equity, and Inclusion conversations - it permeates and shifts the culture of wherever she's working at a very human level. Khalilah is highly adaptable and dynamic, confident in any conversation with any person, and comfortable managing difficult conversations while staying true to the ultimate goal. Khalilah worked with us to assess what scope of work was best for our organization, and customized a proposal to meet our needs. I am incredibly grateful for the knowledge, work ethic, and energy that Khalilah brought to our organization, and we can't wait to continue to work with her in the future. I'd highly recommend Khalilah to any business or organization, large or small. Her contribution is invaluable; she's no doubt one of the best in her field.
+                                Working with Khalilah 
+                                <strong>fundamentally shifted the culture in our organization</strong>. 
+                                Her expertise does not simply check the box for 
+                                Diversity, Equity, and Inclusion conversations - 
+                                it permeates and shifts the culture. 
+                                Khalilah is <strong>highly adaptable and dynamic</strong>, confident 
+                                in any conversation with any person, and comfortable 
+                                managing difficult conversations while staying 
+                                true to the ultimate goal. She's no doubt one 
+                                of the <strong>best in her field</strong>.
                             </p>
                             <cite>
                                 <b>- Angie Gaffney,</b>
@@ -148,7 +339,11 @@
                         
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                Khalilah is a dynamic consultant and partner for our team as we work to ensure the DEI conversation is integrated into our work.  She is responsive, energetic and non-judgmental in her approach.  Khalilah ensures that each person feels heard and validated, but she is not afraid to respectfully challenge us as a team or individuals.
+                                Khalilah is responsive, 
+                                energetic and non-judgmental in her approach.  
+                                She ensures that each person feels heard and validated, 
+                                but she is <strong>not afraid to respectfully challenge us</strong>
+                                as a team or individuals.
                             </p>
                             <cite> 
                                 <b>-Susan Matejka,</b>
@@ -161,7 +356,13 @@
                         
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                Hearing Khalilah speak about how experiences shape us more than our achievements was so eye-opening and needed. Khalilah's delivery is calm, honest, and fueled with passion and presence in the moment. I left the presentation feeling empowered to connect more meaningfully and intentionally to the experiences I have in my day-to-day and not only in life's big moments.
+                                Hearing Khalilah speak about how <strong>our experiences 
+                                shape us more than our achievements</strong> was 
+                                so eye-opening and needed. I left the presentation 
+                                feeling empowered to connect more meaningfully 
+                                and intentionally to the experiences I 
+                                have in my day-to-day and not only in life's 
+                                big moments.
                             </p>
                             <cite> 
                                 <b>-KIRSTEN RAMOS, </b>
@@ -173,7 +374,8 @@
                         <div class="slide" role="group" aria-roledescription="slide" aria-hidden="true"> 
                             <p>
                                 <span class="quote-symbol">&#8220;</span>
-                                Khalilah is a strategic DEI thought-leader that eloquently connects with audiences in a way that allows them to unlock new learnings centered around diversity, equity, inclusion & belonging topics. Khalilah humanizes DEI concepts so that they are relatable and effectively reach employees where they are in their personal DEI journey.
+                                Khalilah is a strategic DEI thought-leader that eloquently connects with audiences in a way that allows them to unlock new learnings centered around diversity, equity, inclusion & belonging topics. 
+                                Khalilah <strong>humanizes DEI concepts so that they are relatable</strong> and effectively reach employees where they are in their personal DEI journey.
                             </p>
                             <cite> 
                                 <b>-Jyl Felicano,</b>
@@ -186,76 +388,143 @@
                 </div>
             </section>
 
-            <section class="section" id="about">
-                <h2>About the Founder</h2>
-                <div class="stuff">
+            <section class="section" id="bio">
+                <div class="photo-container">
+                    <div class="text">
+                        <h2>About the Founder</h2>
+                        <p>Khalilah is a disrupter of dominant cultural norms at start ups, small corporations, consulting firms, VCs, and non-profits. Listed third as one of <a href="https://blog.onmogul.com/top-100-leaders-in-dei-in-2021" target="_blank">Mogul's Top 100</a> Diversity, Equity and Inclusion Leaders in 2021, 
+                            Khalilah has extensive experience and an engaging, 
+                            no nonsense approach that makes her sought after as a 
+                            <strong>thought leader</strong>, <strong>facilitator</strong>, <strong>coach</strong> and <strong>advisor</strong>.</p>
+                        <button class="btn">More</button>
+
+                        <!-- The Modal -->
+                        <div class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="modal-body">
+                                    <h2>About the Founder</h2>
+                                    <p>
+                                        Khalilah is a disrupter of dominant cultural norms 
+                                        at start ups, small corporations, consulting firms, VCs, 
+                                        and non-profits. 
+                                        Listed third as one of <a href="https://blog.onmogul.com/top-100-leaders-in-dei-in-2021" target="_blank">Mogul's Top 100</a> 
+                                        Diversity, Equity and Inclusion Leaders in 2021, 
+                                        Khalilah has extensive experience and an engaging, 
+                                        no nonsense approach that makes her sought after as a 
+                                        <strong>thought leader</strong>, <strong>facilitator</strong>, 
+                                        <strong>coach</strong> and <strong>advisor</strong>.
+                                    </p>
+                                    
+                                    <p>
+                                        Led by an appreciation for the rhythms of cultures 
+                                        and people, and the necessity to respect those rhythms, 
+                                        her work as a <strong>keynote speaker</strong>, 
+                                        <strong>mentor</strong>, 
+                                        <strong>advisory council member</strong>,
+                                        <strong>thought leader</strong>, and
+                                        <strong>volunteer</strong> 
+                                        have offered platforms for 
+                                        sharing actionable inspiration, creating privilege and 
+                                        empowering the brilliance of others. 
+                                        As founder of Answer the Moment, LLC. she partners 
+                                        with many different organizations ready to start their 
+                                        diversity, equity and inclusion journey as a 
+                                        DEI partner bridging capability gaps to create 
+                                        inspiring and engaging cultures that bring the best 
+                                        talent and the best from talent. Her unique approach 
+                                        layers the “how” and “why” we stand the way we do into 
+                                        the “what” of diversity, equity and inclusion.
+                                    </p>
+
+                                    <p>
+                                        As managing director and co-founder of 
+                                        <a href="#">Candidly Connecting</a>, she is igniting
+                                        bold and essential conversations with children and their 
+                                        parents. Through this online platform, parents are 
+                                        equipped with tools, resources, and role models to 
+                                        begin having real dialogue and understand the diverse 
+                                        resilience that enables communities to thrive. With 
+                                        digestible coaching and a dynamic, online community, 
+                                        parents and children can create diversity and inclusion 
+                                        naturally in their daily lives through the power of 
+                                        storytelling.
+                                    </p> 
+                                    <p>
+                                        Khalilah believes in the power that bold conversations 
+                                        have to shift cultures where lived experiences are 
+                                        appreciated and all identities can genuinely flourish.
+                                    </p>
+                                </div>
+                            </div><!-- end modal content -->
+                        </div><!-- end modal-->
+                    
+                    
+                    </div>
+
                     <div class="pic">
                         <img class="bio_pic" src="khalilahbluedress.jpg" alt="KLpic">
                     </div>
-                    <div class="text">
-                    <p>KL Bio Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Dolor expedita asperiores cupiditate neque, voluptate recusandae 
-                    error reiciendis! Dolorem, architecto temporibus, in maxime 
-                    perspiciatis ut mollitia odit necessitatibus laborum corrupti tempora?</p>
-                    </div>
                 </div>
             </section> 
-            <!-- <section class="section" id="stats">
-                <h2>My Unique Value Add</h2>
-                <h3>short text + some stats</h3>
-                <div class="numbers">
-                    <div>
-                    <h3>20+</h3>
-                    <p>years of dynamic, comprehensive, and uniquely inclusive experiences that span
-                         across industry types, people types, leadership levels, institution types, 
-                         culture types, work method types</p>
-                    </div>
-                    <div>
-                    <h3>Top 100</h3>
-                    <p>Mogul's DEI Leaders</p>
-                    </div>
-                    <div>
-                    <h3>50+</h3>
-                    <p>Drupal experts</p>
-                    </div>
-                    <div>
-                    <h3>aquia certified</h3>
-                    <p>Drupal Developers and Architects</p>
-                    </div>
+
+
+
+
+            <section class="section" id="quote2">
+                <div class="stuff">
+                    <!-- <div class="pic">
+                        <img class="bio_pic" src="images/stairs-resized.jpeg" alt="KLpic">
+                    </div> -->
+                    <p>
+                        <span class="quote-symbol">&#8220;</span> Working with me, we will design an experience <br>of the journey, not just a completion of it.
+                    </p>
                 </div>
-            </section> -->
-            <section class="section" id="contact">
-                <h2>Contact</h2>
-                <div class="form-image">
-                    <form class="contact-form"> 
-                        <label for="fname">*First name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">*Last name:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
-                        <label for="mailto">*Email:</label><br>
-                        <input type="text" id="email" name="email"><br>
-                        <label for="phone">Phone:</label><br>
-                        <input type="tel" id="phone" name="phone"><br>
-                        <label for="how">How did you hear about me?</label>
-                        <select id="how" name="how">
-                            <option value="select">Select</option>
-                            <option value="wordofmouth">Word of Mouth</option>
-                            <option value="linkedin">LinkedIn</option>
-                            <option value="website">Website</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <label for="ifother">If other, please specify</label>
-                        <input type="text" id="ifother" name="ifother"><br>
-                        <label for="references">References</label>
-                        <input type="text" id="references" name="references"><br>
-                        <label for="about-business">Tell me about you and/or your business, and why you are interested in my services</label><br>
-                        <textarea id="about-business"></textarea>
-                    </form>
-                    <img src="images/Khalilah-Lyons.jpeg" alt="Khalila-Lyons">
-                </div>
+
             </section>
-            <footer id="footer">
-                Footer with social media
+
+
+            <section class="section" id="contact">
+                <div class="form-annotation">
+                    <h2>Let's get to work!</h2>
+                    <p>Let's talk about designing a tactical, approachable, and practical strategy that is relevant for you.</p>
+                    <!-- <img class="bio_pic" src="images/stairs-resized.jpeg" alt="KLpic"> -->
+                </div>
+                <form class="contact-form"> 
+                    <label for="fname">*First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">*Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="mailto">*Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <label for="how">How did you hear about me?</label>
+                    <select id="how" name="how">
+                        <option value="select">Select</option>
+                        <option value="wordofmouth">Word of Mouth</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="website">Website</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="ifother">If other, please specify</label>
+                    <input type="text" id="ifother" name="ifother"><br>
+                    <label for="about-business">Tell me about you and/or your business, and why you are interested in my services</label><br>
+                    <textarea id="about-business"></textarea>
+                </form>
+            </section>
+
+            <section class="top">
+                <!-- <button>back to top</button> -->
+                <p><a href="#">back to top</a></p>
+            </section>
+
+            <footer>
+                <a href="https://www.instagram.com/iamkhalilahlyons/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/khalilahlyons/" target="_blank"><i class="fab fa-linkedin"></i></a>   
             </footer>
         </main>
 
