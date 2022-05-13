@@ -1,61 +1,54 @@
-@charset "utf-8";
-
-@import url("main-stylesheet.css");
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-
-/* ============================================
-	Mobile Devices: 0 - 480 pixels
-   ============================================
-*/
-
-@media only screen and (max-width: 480px)
-
-h2 {
-    vertical-align: center;
-    text-align: center;
+.topnav {display: none;
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
-* {
-    font-family: "Raleway";
-    box-sizing: border-box;
-}
-
-.topnav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+body {
     background-color: #7fc596;
-    color: #FFF;
-    height: 50px;
-    padding: 1em;
 }
+@media screen and (max-width:600px){
+    #top-header {
+        display: none;
+    } 
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu > li {
-    margin: 0 1 rem;
-    overflow: hidden;
-}
-
-.menu-button-container {
-    display: none;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: center;
-}
+       /* Style the navigation menu */
+        .topnav {
+            display: block;
+            overflow: hidden;
+            background-color: #7fc596;
+            position: relative;
+        }
+        
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: #7fc596;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(68, 192, 140);
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #7fc596;
+            color: white;
+        }
+    }
