@@ -1,0 +1,54 @@
+.topnav {display: none;
+}
+
+body {
+    background-color: #7fc596;
+}
+@media screen and (max-width:600px){
+    #top-header {
+        display: none;
+    } 
+
+       /* Style the navigation menu */
+        .topnav {
+            display: block;
+            overflow: hidden;
+            background-color: #7fc596;
+            position: relative;
+        }
+        
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .topnav #myLinks {
+            display: none;
+        }
+        
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            background: #7fc596;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: white;
+            color: rgb(68, 192, 140);
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #7fc596;
+            color: white;
+        }
+    }
