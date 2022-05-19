@@ -4,7 +4,6 @@ section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
     background-color: #7fc596; 
-    height: 100vh;
 }
 
 section#testimonials h2, section#testimonials p {
@@ -60,7 +59,7 @@ section#testimonials strong {
     transform: translateX(calc(-100% * var(--current-slide)));
     display: flex;
     color: white;
-    height: 80vh;
+    height: 100vh;
 }
 
 .slide {
@@ -113,8 +112,17 @@ section#testimonials strong {
 }
 
 @media only screen and (max-width: 600px) {
-  section#testimonials p {
-    padding: 9vh 7vw; 
-    font-size: 1rem;
-  }
+    section#testimonials p, section#testimonials cite {
+        padding: 0; 
+        font-size: 1.1rem;
+    }
+    .slide {
+        padding: 0vh 10vw;
+        height: auto;
+        min-height: auto;
+    }
+
+    section#testimonials {
+        padding: 0vh 2vw;
+    }
 }
