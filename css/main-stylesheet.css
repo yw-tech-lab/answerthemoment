@@ -119,7 +119,7 @@ nav ul {
         "logo . quote .";
     /* background-color: #7fc596; */
     background-color: #7ec59f;
-    background-image: url(../images/landing-alt.jpg);
+    background-image: url(../images/landing-alt-resized.jpeg);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 60vw auto;
@@ -148,6 +148,7 @@ nav ul {
     text-align: center;
     margin-top: 80px;
     grid-area: quote;
+    opacity: 0;
     /* background-color: #7ec59f; */
 }
 
@@ -361,7 +362,7 @@ label{
     height: 18vw;
     margin-bottom: 20px;
     /* border-radius: 25%; */
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in; 
 }
 .bg-image:hover {
     background-size: 105% 105%;
@@ -641,6 +642,7 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         height: 300px;
+        opacity: 0;
     }
     .desktop { display: none !important; }
     .mobile { display: inherit; }
@@ -815,3 +817,41 @@ footer a:hover {
         width: 80%;
     }
 }
+
+
+
+
+
+/**************/
+/* Animations */
+/**************/
+
+
+/* Step 1: Define the Animation */
+@keyframes fadein-quote {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+/* @keyframes slide-right-to-left {
+    0% {
+        padding-left: 20vh;
+    }
+    100% {   
+        padding-left: 15vh;
+    }
+} */
+
+.quote {
+    animation: fadein-quote 0.5s ease-in-out 0.5s forwards;
+}
+
+/* .opener-left {
+    animation: slide-right-to-left 1s ease-in-out 1s forwards;
+} */

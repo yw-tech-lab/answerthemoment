@@ -14,13 +14,17 @@ function createModal(container) {
     // When the user clicks on the button, open the modal
     btns.forEach(btn => {
         btn.onclick = function() {
-            modal.style.display = "block";
+            modal.classList.add('show');
+            modal.classList.remove('hide');
+            // modal.style.display = "block";
         }
     });
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
-        modal.style.display = "none";
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+        // modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
