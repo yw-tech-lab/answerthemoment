@@ -91,9 +91,9 @@ nav ul {
         background: #FFFFFF22;
     }
 
-    nav {
+    /* nav {
         background-color: #89c29c;
-    }
+    } */
 
     nav ul {
         display: flex;
@@ -108,15 +108,24 @@ nav ul {
     nav ul a, nav ul a:link, nav ul a:visited, nav ul a:hover {
         display: flex;
         font-size: 1.2em !important;
-        padding: 5px 20px;
+        padding-left: 20px;
+        height: 50px;
         font-weight: normal;
+        align-items: center;
+    }
+
+    nav ul a:hover, nav ul a:active, nav ul a:focus {
+        background-color: white;
+        color: #5eac7b;
+        opacity: 1;
     }
 
     nav.show-menu ul {
         flex-direction: column;
         width: 100%;
-        height: 200px;
-        margin: 10px 0px;
+        height: 250px;
+        /* border: solid 1px #000; */
+        margin: 10px 0px 0px 0px;
         justify-content: flex-end;
     }
 }
