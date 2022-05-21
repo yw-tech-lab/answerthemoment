@@ -1,0 +1,102 @@
+header {
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 40px;
+    top: 10px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    margin: 0px;
+}
+
+nav a, nav a:link, nav a:visited, nav a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    transition: all 0.3s linear;
+    font-size: 1.0em;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+ 
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-button { display: none; }
+.mobile { display: none; }
+
+
+@media screen and (max-width: 930px) {
+    section {
+        scroll-margin-top: 60px;
+    }
+    main {
+        margin-top: 60px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: #5eac7b;
+        position: fixed;
+        padding: 0;
+        top: 0;
+    }
+
+    header .title-and-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px;
+    }
+    .menu-button {
+        display: inline;
+        background-color: transparent;
+        border: solid 2px transparent;
+        padding: 3px 12px;
+        font-size: 20px;
+    }
+    .menu-button:hover {
+        border: solid 2px white;
+        background: #FFFFFF22;
+    }
+    nav { 
+        background-color: #89c29c;
+    }
+    nav ul {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.35s;
+        margin: 0;
+    }
+
+    nav.show-menu ul {
+        flex-direction: column;
+        width: 100%;
+        height: 142px;
+        margin: 10px 0px;
+        justify-content: flex-end;
+    }
+}

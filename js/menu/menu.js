@@ -7,4 +7,16 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
+
+const toggleShow = () => {
+    document.querySelector("nav").classList.toggle('show-menu');
+};
+
+document.querySelectorAll("nav a").forEach(a => {
+    a.addEventListener('click', ev => {
+        console.log(ev);
+        document.querySelector("nav").classList.remove('show-menu');
+    })
+});
   

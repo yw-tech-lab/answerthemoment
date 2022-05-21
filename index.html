@@ -5,10 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="css/main-stylesheet.css">
+        <link rel="stylesheet" href="js/menu/menu.css">
         <link rel="stylesheet" href="js/carousel/carousel.css">
         <link rel="stylesheet" href="js/modal/modal.css">
         <script src="js/modal/modal.js" type="text/javascript" defer></script>
         <script src="js/carousel/carousel.js" defer></script>
+        <script src="js/menu/menu.js" defer></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWWQYHDGSS"></script>
@@ -21,8 +23,10 @@
     </head>
     <body>
         <header id="top-header">
-            <div class="top">Answer The Moment, LLC</div>
-            <button class="menu-button"><i class="fas fa-bars"></i></button>
+            <div class="title-and-button">
+                <div class="top">Answer The Moment, LLC</div>
+                <button onclick="toggleShow()" class="menu-button"><i class="fas fa-bars"></i></button>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#overview">What I Offer</a></li>
