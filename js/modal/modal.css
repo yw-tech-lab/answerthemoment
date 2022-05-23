@@ -44,20 +44,24 @@
     
 /* The Close Button */
 .close {
-    color: #aaa;
     align-self: flex-end;
-    font-size: 28px;
     justify-self: flex-end;
+    color: #aaa;
+    font-size: 2em;
     font-weight: bold;
-    margin-top: 0px;
-    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     
 .close:hover,
 .close:focus {
     color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .show {
@@ -92,6 +96,20 @@
         margin: 0;
         border: none;
         border-radius: 0;
+    }
+
+    .modal .close {
+        font-size: 3em;
+        display: none;
+    }
+    .modal.show .close {
+        display: flex;
+    }
+    .modal .close:hover {
+        background: #eee;
+    }
+    .modal .close:active, .close:focus {
+        outline: solid 1px #7ec59f;
     }
 }
 

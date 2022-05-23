@@ -498,7 +498,7 @@ footer a:hover {
     /* Landing */
     /***********/
     #hero {
-        max-height: 730px;
+        max-height: calc(100vh - 60px);
     }
 }
 @media screen and (max-width: 930px) {

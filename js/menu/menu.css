@@ -128,4 +128,12 @@ nav ul {
         margin: 10px 0px 0px 0px;
         justify-content: flex-end;
     }
+
+    nav ul a {
+        display: none !important;
+    }
+
+    nav.show-menu ul a {
+        display: flex !important;
+    }
 }
