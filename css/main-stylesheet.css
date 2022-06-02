@@ -799,3 +799,23 @@ footer a:hover {
 /* .opener-left {
     animation: slide-right-to-left 1s ease-in-out 1s forwards;
 } */
+
+
+/***************/
+/* Experiments */
+
+.flare-1, .flare-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    /* border: solid 1px #000; */
+    height: 150px
+}
+.flare-1 {
+    background-image: url(../new-assets/square-circle-left.png);
+}
+
+.flare-2 {
+    background-image: url(../new-assets/square-circle-right.png);
+}
