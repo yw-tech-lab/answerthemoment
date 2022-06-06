@@ -619,6 +619,9 @@ footer a:hover {
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
+    section#testimonials h2 {
+        display: none;
+    }
 
 
     /************/

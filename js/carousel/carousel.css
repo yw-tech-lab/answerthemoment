@@ -6,6 +6,11 @@ section#testimonials {
     background-color: #7fc596; 
 }
 
+section#testimonials h2 {
+    margin-left: 15vw;
+    margin-bottom: -40px;
+}
+
 section#testimonials h2, section#testimonials p {
     color: white;
     text-align: left;
@@ -59,7 +64,7 @@ section#testimonials strong {
     transform: translateX(calc(-100% * var(--current-slide)));
     display: flex;
     color: white;
-    height: 100vh;
+    min-height: 500px;
 }
 
 .slide {
