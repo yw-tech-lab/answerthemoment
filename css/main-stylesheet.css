@@ -840,6 +840,65 @@ footer a:hover {
 /* Animations */
 /**************/
 
+.scroll-element {
+    opacity: 0;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+}
+
+.scroll-element#services {
+    margin-top: 100px;
+}
+
+.scroll-element.pic {
+    left: 100px;
+    position: relative;
+}
+
+.scroll-element.text {
+    left: -100px;
+    position: relative;
+}
+
+.scroll-element.scrolled {
+    opacity: 1;
+}
+
+
+.scroll-element.pic.scrolled,
+.scroll-element.text.scrolled {
+    left: 0px;
+}
+.scroll-element#services.scrolled {
+    margin-top: 0px;
+}
+
+.scroll-element.services,
+.scroll-element.guiding-principles,
+.scroll-element.expertise {
+    transition-duration: 0.8s;
+    top: 150px;
+    position: relative;
+}
+
+.scroll-element.services {
+    transition-delay: 0s;
+}
+.scroll-element.guiding-principles {
+    transition-delay: 0.4s;
+}
+.scroll-element.expertise {
+    transition-delay: 0.8s;
+}
+
+
+.scroll-element.services.scrolled,
+.scroll-element.guiding-principles.scrolled,
+.scroll-element.expertise.scrolled {
+    top: 0px;
+}
 
 /* Step 1: Define the Animation */
 @keyframes fadein-quote {
