@@ -847,7 +847,7 @@ footer a:hover {
         opacity: 0;
         transition-delay: 0s;
         transition-property: all;
-        transition-duration: 0.8s;
+        transition-duration: 1s;
         transition-timing-function: ease-in;
     }
 
