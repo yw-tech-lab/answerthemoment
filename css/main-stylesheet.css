@@ -26,7 +26,7 @@ a, a:link, a:visited, a:active {
     font-weight: bold;
 }
 a:hover {
-    color: #ffa724;
+    color: #e57b30;
 }
 
 html {
@@ -135,8 +135,6 @@ h2 {
  Janice Form
  ***************/
 .submitbtn{
-    width:100%;
-    height: 50px;
     margin-top: 10px;
 }
 
@@ -272,7 +270,6 @@ label{
 
 .opener-right, 
 .opener-left {
-    padding: 5vh 15vw;
     display: grid;
     align-items: center;
     column-gap: 50px;
@@ -280,11 +277,12 @@ label{
 }
 
 .opener-left {
-    padding-top: 15vh;
+    padding: 15vh 15vw 15vh 15vw;
     grid-template-columns: 1fr 2fr;
 }
 
 .opener-right {
+    padding: 0vh 15vw 15vh 15vw;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -308,8 +306,9 @@ label{
 
 
 .opener-left strong,
-.opener-right strong {
-    color: #ffa724;
+.opener-right strong,
+#bio strong {
+    color: #e57b30;
 }
 
 .opener-right p,
@@ -332,37 +331,103 @@ label{
 .flex-container {
     display: flex;
     justify-content: space-between;
+    column-gap: 60px;
+    margin-top: 60px;
 }
 .flex-container > div {
-    width: calc(33% - 50px);
+    /* width: calc(33% - 50px); */
     justify-content: flex-start;
 }
 .bg-image {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
-    width: 18vw;
+    width: 100%;
     height: 18vw;
     margin-bottom: 20px;
-    /* border-radius: 25%; */
     transition: all 1s ease-in; 
+}
+.bg-image.services {
+    background-image: url('../new-assets/dei-services.png');
+}
+.bg-image.services::before {
+    content: '';
+    background-image: url('../new-assets/hex-dots.png');
+    width: 14vw;
+    height: 14vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -10vw;
+    top: -3vw;
+    z-index: -1;
 }
 .bg-image:hover {
     background-size: 105% 105%;
 }
 .bg-image.principles {
-    background-image: url('../genevieve-images/compass-guiding-principles.jpg')
-}
-.bg-image.services {
-    background-image: url('../genevieve-images/dei-services.jpg')
+    background-image: url('../genevieve-images/compass-guiding-principles.jpg');
+    filter: saturate(1.5);
 }
 .bg-image.expertise {
-    background-image: url('../genevieve-images/expertise-pic.jpg')
+    background-image: url('../new-assets/expertise-img.png');
 }
+.bg-image.expertise::before {
+    content: '';
+    background-image: url('../new-assets/triangle-dots.png');
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10.5vw;
+    top: 12vw;
+    z-index: -1;
+}
+
+
+img.guiding-principles {
+    width: 100%;
+}
+img.services {
+    width: 125%;
+    margin-left: -60px;
+}
+img.expertise {
+    width: 125%;
+    margin-right: -60px;
+    margin-top: 40px;
+}
+.hex, .ct {
+    width: 123px;
+    margin-top: -124px;
+    z-index: -1;
+    align-self: flex-end;
+    left: 59px;
+    position: relative;
+}
+/* .services {
+    background-image: url('../new-assets/hexagons.png');
+    background-size: 200px 300px;
+    background-position-y: top;
+    background-repeat: no-repeat;
+} */
+
+
 
 /* .flex-container p {
     width: 80%;
 } */
+
+#services h3 {
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+
+#services p {
+    font-size: 0.95em;
+}
 
 .guiding-principles, .services, .expertise {
     display: flex;
@@ -382,18 +447,27 @@ label{
 
 button {
     /* background-color: #01408c; */
-    background-color: #f2580e;
+    background-color: white;
     border: none;
-    color: white;
-    padding: 12px 25px;
+    color: black;
+    padding: 9px 20px;
     font-size: 16px;
     text-align: center;
     transition: all 0.2s ease-in;
-    border-radius: 4px;
+    /* border-radius: 4px; */
+    border: solid 2px black;
+}
+button.menu-button {
+    color: #fff;
+}
+
+button.close {
+    border: 0px;
 }
 
 button:hover {
-    background: #f2580e99;
+    background: black;
+    color: white;
 }
 
 
@@ -406,12 +480,15 @@ button:hover {
     display: flex;
     column-gap: 100px; 
 }
+#bio {
+    background: #F4F4F4;
+}
 #bio h2 {
     margin-top: 0;
     margin-bottom: 30px;
 }
   
-.bio_pic {
+.bio_pic, .u-turn-asset {
     width: 25vw; 
 }
 
@@ -468,11 +545,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #F4F4F4;
+    background-color: #444;
 }
 footer a, footer a:link, footer a:visited {
     margin: 20px;
-    color: #444;
+    color: #fff;
     font-size: 50px;
 }
 footer a:hover {
@@ -572,6 +649,24 @@ footer a:hover {
     .grid-item-33 {
         width: 50%;
     }
+
+     /***********/
+    /* Contact */
+    /***********/
+
+    .u-turn-asset {
+        display: none;
+    }
+    #quote2 p {
+        max-width: 100%;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .form-annotation {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -631,6 +726,10 @@ footer a:hover {
         padding: 0vh 5vw 0vh 5vw;
     }
 
+    .flare-1, .flare-2 {
+        margin-bottom: 40px;
+    }
+
     /************/
     /* Speaking */
     /************/
@@ -645,24 +744,6 @@ footer a:hover {
         padding: 10vh 5vw 0 5vw;
         margin-left: 0;
     }
-
-    /* .speaking-summary .pic {
-        background-image: url('../images/Khalilah-Lyons.jpeg');
-        background-size: contain;
-        width: 100vw;
-        height: 70vw;
-        min-height: 350px;
-        background-attachment: scroll;
-        background-position-x: center;
-        background-repeat: no-repeat;
-    } */
-    /* .speaking-summary .btn {
-        height: auto;
-    }
-    .speaking-summary .speaking-pic {
-        width: 60%;
-        margin-left: 5vw;
-    } */
 
     /*********/
     /* Logos */
@@ -707,40 +788,7 @@ footer a:hover {
         /* width: 100%; */
         display: none;
     }
-
-    /***********/
-    /* Contact */
-    /***********/
-
-    #quote2 p {
-        max-width: 100%;
-    }
-    #contact {
-        display: flex;
-        flex-direction: column;
-    }
-    #contact .form-annotation {
-        padding: 0;
-    }
 }
-
-/* @media screen 
-    and (max-width: 600px)
-    and (orientation: landscape) {
-     
-    .speaking-summary .pic {
-        background-size: cover;
-        height: 100vw; 
-        min-height: 550px;
-        background-attachment: scroll;
-    }   
-    .photo-container .pic {
-        width: 100vw;
-        height: calc(100vw * 4 / 3);
-        min-height: 500px;
-        background-attachment: scroll;
-    }
-} */
 
 @media screen 
     and (max-width: 600px)
@@ -748,10 +796,11 @@ footer a:hover {
     and (min-height: 400px) {
         
     .speaking-summary .pic {
-        background-size: cover;
+        /* background-size: contain;
         height: 100vw; 
         min-height: auto;
-        background-attachment: scroll;
+        background-attachment: scroll; */
+        display: none;
     }
 }
 
