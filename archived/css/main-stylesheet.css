@@ -296,12 +296,12 @@ label{
 }
 .flare-1 {
     background-position: left;
-    background-image: url(../images/square-circle-left.png);
+    background-image: url(../new-assets/square-circle-left.png);
 }
 
 .flare-2 {
     background-position: right;
-    background-image: url(../images/square-circle-right.png);
+    background-image: url(../new-assets/square-circle-right.png);
 }
 
 
@@ -349,11 +349,11 @@ label{
     transition: background-size 1s ease-in; 
 }
 .bg-image.services {
-    background-image: url('../images/dei-services.png');
+    background-image: url('../new-assets/dei-services.png');
 }
 .bg-image.services::before {
     content: '';
-    background-image: url('../images/hex-dots.png');
+    background-image: url('../new-assets/hex-dots.png');
     width: 14vw;
     height: 14vw;
     position: relative;
@@ -367,15 +367,15 @@ label{
     background-size: 105% 105%;
 }
 .bg-image.principles {
-    background-image: url('../images/compass-guiding-principles.jpg');
+    background-image: url('../genevieve-images/compass-guiding-principles.jpg');
     filter: saturate(1.5);
 }
 .bg-image.expertise {
-    background-image: url('../images/expertise-img.png');
+    background-image: url('../new-assets/expertise-img.png');
 }
 .bg-image.expertise::before {
     content: '';
-    background-image: url('../images/triangle-dots.png');
+    background-image: url('../new-assets/triangle-dots.png');
     width: 13vw;
     height: 13vw;
     position: relative;
@@ -408,7 +408,7 @@ img.expertise {
     position: relative;
 }
 /* .services {
-    background-image: url('../images/hexagons.png');
+    background-image: url('../new-assets/hexagons.png');
     background-size: 200px 300px;
     background-position-y: top;
     background-repeat: no-repeat;
