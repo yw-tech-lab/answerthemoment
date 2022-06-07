@@ -336,15 +336,15 @@ label{
     margin-top: 60px;
 }
 .flex-container > div {
-    /* width: calc(33% - 50px); */
     justify-content: flex-start;
+    /* border: solid 1px #000; */
 }
 .bg-image {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
-    width: 100%;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     margin-bottom: 20px;
     transition: background-size 1s ease-in; 
 }
@@ -862,12 +862,12 @@ footer a:hover {
 
     /* 1. Bio */
     .scroll-element.pic.bio {
-        left: 100px;
+        left: 50px;
         position: relative;
     }
 
     .scroll-element.text {
-        left: -100px;
+        left: -50px;
         position: relative;
     }
 
@@ -884,13 +884,13 @@ footer a:hover {
     }
 
     .scroll-element.services {
-        left: -150px;
+        left: -50px;
     }
     .scroll-element.guiding-principles {
         padding-top: 50px;
     }
     .scroll-element.expertise {
-        left: 150px;
+        left: 50px;
     }
 
     .scroll-element.services.scrolled,
