@@ -23,24 +23,27 @@ function createModal(container) {
             modal.querySelector('.close').setAttribute('data-button-id', ev.currentTarget.id);
             modal.setAttribute('aria-hidden', 'false');
             modal.querySelector('.close').focus();
+            document.body.style.overflowY = 'hidden';
         }
     });
 
-    // When the user clicks on <span> (x), close the modal
-    closeButton.onclick = function (ev) {
-        console.log(ev.currentTarget);
-        ev.currentTarget.setAttribute('aria-hidden', 'true');
+    const close = function (ev) {
+        // console.log(ev.currentTarget);
         modal.classList.remove('show');
         modal.classList.add('hide');
         modal.setAttribute('aria-hidden', 'true');
-        const sourceButtonId = ev.currentTarget.dataset.buttonId;
-        document.getElementById(sourceButtonId).focus();
-    }
+        document.querySelector(closeSelector).focus();
+        document.body.style.overflowY = 'auto';
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    closeButton.onclick = close;
+
 
     // When the user clicks anywhere outside of the modal, close it
     window.addEventListener('click', function(event) {
         if (event.target == modal) {
-            modal.style.display = "none";
+            close();
         }
     });
 };
