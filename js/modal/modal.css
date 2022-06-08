@@ -10,7 +10,6 @@
     overflow: auto; 
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
-    transition: all 0.3s;
     top: 100vh;
 }
 .modal.show {
@@ -20,16 +19,23 @@
     
 /* Modal Content/Box */
 
+.modal.show .modal-content {
+    top: 0vh;
+}
 .modal-content {
+    top: 100vh;
+    left: 15vw;
+    position: fixed;
     background-color: #fefefe;
-    margin: 5vh auto; 
+    margin: 5vh 15vw 5vh 0; 
     padding: 5px;
     border: 1px solid #888;
-    width: 60%;
+    width: 70vw;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    transition: all 0.3s;
 }
 
 #speaking .modal-content {
@@ -75,6 +81,15 @@
 
 
 @media screen and (max-width: 930px) {
+
+    .modal.show .modal-content {
+        top: 0;
+    }
+    .modal-content {
+        top: 0;
+        left: inherit;
+        position: inherit;
+    }
     .modal.show {
         display: block;
         left: 0vw;
