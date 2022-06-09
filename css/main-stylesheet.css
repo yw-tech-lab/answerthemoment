@@ -113,7 +113,7 @@ h3 {
     text-align: center;
     margin-top: 80px;
     grid-area: quote;
-    opacity: 0;
+    /* opacity: 0; */
     /* background-color: #7ec59f; */
 }
 
@@ -616,6 +616,7 @@ footer a:hover {
         grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
         grid-template-areas: "logo . quote .";
         max-height: 730px;
+        height: calc(100vh - 60px);
     } 
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
@@ -692,17 +693,13 @@ footer a:hover {
         padding: 10vh 5vw;
     }
 
-    .badge {
-        display: none;
-    }
-
     /***********/
     /* Landing */
     /***********/
     #hero {
         background-image: url(../images/landing-alt-resized.jpeg);
         background-size: cover;
-        height: calc(100vw * 1);
+        /* height: calc(100vw * 1); */
         background-position-x: center;
     }
 
@@ -717,8 +714,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 300px;
-        opacity: 0;
+        height: 225px;
+        /* opacity: 0; */
     }
     .desktop { display: none !important; }
     .mobile { display: inherit; }
@@ -813,6 +810,12 @@ footer a:hover {
     and (max-width: 600px)
     and (orientation: portrait)
     and (min-height: 400px) {
+
+
+
+    .badge {
+        display: none;
+    }
         
     .speaking-summary .pic {
         /* background-size: contain;
@@ -824,6 +827,10 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
+
+    .badge {
+        display: none;
+    }
     #hero {
         /* background-image: url(../images/landing_image_cropped.jpeg); */
         background-size: cover;
@@ -1012,6 +1019,6 @@ footer a:hover {
     }
 }
 
-.quote {
+/* .quote {
     animation: fadein-quote 0.5s ease-in-out 0.5s forwards;
-}
+} */
