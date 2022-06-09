@@ -1,9 +1,9 @@
 :root {
     --badge-size: 9rem;
-    /* --badge-color: #84c3a1; */
-    /* --text-color: #fff; */
-    --badge-color: #f8decd;
-    --text-color: #0f0d08;
+    --badge-color: #5bad7d;
+    --text-color: #fff;
+    /* --badge-color: #f8decd;
+    --text-color: #0f0d08; */
   
     /* You'll need to change the SVG text element's attributes after tinkering with the below variables */
     --main-text-size: 3rem;
@@ -13,8 +13,8 @@
 
 .badge {
     position: absolute;
-    left: 2.5vw;
-    bottom: 4vw;
+    left: 1.25vw;
+    bottom: 2vw;
 }
 
 text {
