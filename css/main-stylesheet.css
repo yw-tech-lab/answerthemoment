@@ -29,7 +29,7 @@ a:hover {
     color: #e57b30;
 }
 
-html, body {
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -995,7 +995,7 @@ footer a:hover {
     }
     100% {
         opacity: 0;
-        max-width: 1.5px;
+        max-width: 1px;
     }
 }
 

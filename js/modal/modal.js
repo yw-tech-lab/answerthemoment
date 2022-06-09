@@ -43,8 +43,7 @@ function createModal(container) {
 
         closeButton.setAttribute('data-button-id', ev.currentTarget.id);
         enableTabbing();
-         
-        document.body.style.overflowY = 'hidden';
+        document.querySelector('html').style.overflowY = 'hidden';
     }
 
     const close = ev => {
@@ -58,7 +57,7 @@ function createModal(container) {
         modal.classList.add('hide');
         modal.setAttribute('aria-hidden', 'true');
         disableTabbing();
-        document.body.style.overflowY = 'auto';
+        document.querySelector('html').style.overflowY = 'auto'
     };
 
     // When the user clicks on <span> (x), close the modal
@@ -73,6 +72,7 @@ function createModal(container) {
     });
 
     attachEventHandlers();
+    disableTabbing();
 };
 
 createModal('#speaking');
