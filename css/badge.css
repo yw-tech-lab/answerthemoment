@@ -10,6 +10,9 @@
     --top-text-size: 1.5rem;
     --bottom-text-size: 1.5rem;
 }
+body {
+    counter-reset: my-sec-counter;
+}
 
 .badge {
     position: absolute;
@@ -118,3 +121,31 @@ text {
     }
 } */
   
+
+@keyframes spin1 {
+    50% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes spin2 {
+    50% {
+        transform: rotate(74deg);
+    }
+    100% {
+        transform: rotate(44deg);
+    }
+}
+
+#burst-one {
+    animation: spin1 0.5s forwards;
+    animation-delay: 3s;
+}
+
+#burst-two {
+    animation: spin2 0.5s forwards;
+    animation-delay: 3s;
+}
