@@ -1,7 +1,8 @@
 :root {
     --badge-size: 9rem;
-    --badge-color: #5bad7d;
+    /* --badge-color: transparent; */
     --text-color: #fff;
+    --badge-color: #5bad7d;
     /* --badge-color: #f8decd;
     --text-color: #0f0d08; */
   
