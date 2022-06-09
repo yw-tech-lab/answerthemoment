@@ -5,8 +5,8 @@
   
     /* You'll need to change the SVG text element's attributes after tinkering with the below variables */
     --main-text-size: 3rem;
-    --top-text-size: 1.46rem;
-    --bottom-text-size: 1.46rem;
+    --top-text-size: 1.5rem;
+    --bottom-text-size: 1.5rem;
 }
 
 .badge {

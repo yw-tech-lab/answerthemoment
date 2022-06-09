@@ -995,7 +995,7 @@ footer a:hover {
     }
     100% {
         opacity: 0;
-        max-width: 1px;
+        max-width: 1.5px;
     }
 }
 
