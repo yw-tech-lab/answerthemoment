@@ -21,8 +21,10 @@
 
 .modal.show .modal-content {
     top: 0vh;
+    opacity: 1;
 }
 .modal-content {
+    opacity: 0;
     top: 100vh;
     left: 15vw;
     position: fixed;

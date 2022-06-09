@@ -200,7 +200,7 @@ label{
  ***************/
 
 #speaking {
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
     margin: 0;
 }
 
@@ -231,7 +231,7 @@ label{
 }
 
 #about {
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
     margin: 0;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -484,7 +484,7 @@ button:hover {
     column-gap: 100px; 
 }
 #bio {
-    background: #e8e8e8;
+    background: #f0f0f0;
 }
 #bio h2 {
     margin-top: 0;
@@ -568,7 +568,7 @@ footer a:hover {
     min-height: auto;
 }
 #quote2 {
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -625,6 +625,9 @@ footer a:hover {
         display: none;
     }
 
+    .speaking-summary .pic {
+        display: none;
+    }
 
     /************/
     /* Services */
@@ -691,6 +694,10 @@ footer a:hover {
     /***********/
     .section {
         padding: 10vh 5vw;
+    }
+
+    .speaking-summary .pic {
+        display: none;
     }
 
     /***********/
@@ -790,15 +797,18 @@ footer a:hover {
         flex-direction: column-reverse;
     }
     .photo-container .pic {
-        background-image: url('../images/khalilahbluedress.jpg');
-        background-size: cover;
-        width: 100vw;
-        height: 100vw;
-        min-height: 500px;
+        background-image: url(../images/khalilahbluedress.jpg);
+        background-size: contain;
+        width: 90vw;
+        height: 40vh;
+        min-height: 300px;
         background-attachment: fixed;
         background-position-x: center;
         background-repeat: no-repeat;
         background-position-y: 62px;
+        /* border: solid 1px #000; */
+        margin-left: auto;
+        margin-right: auto;
     }
     .photo-container .bio_pic {
         /* width: 100%; */
@@ -810,27 +820,13 @@ footer a:hover {
     and (max-width: 600px)
     and (orientation: portrait)
     and (min-height: 400px) {
-
-
-
-    .badge {
-        display: none;
-    }
         
     .speaking-summary .pic {
-        /* background-size: contain;
-        height: 100vw; 
-        min-height: auto;
-        background-attachment: scroll; */
         display: none;
     }
 }
 
 @media screen and (max-width: 500px) {
-
-    .badge {
-        display: none;
-    }
     #hero {
         /* background-image: url(../images/landing_image_cropped.jpeg); */
         background-size: cover;
