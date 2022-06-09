@@ -962,11 +962,11 @@ footer a:hover {
     font-weight: bold;
     color: #fff;
     margin: 0px;
-    /* animation: flip 2s forwards;
-    animation-delay: calc(.2s * var(--i)) */
+    animation: flip 2s forwards;
+    animation-delay: calc(.07s * var(--i))
 }
 
-.waviy span.flip-me {
+/* .waviy span.flip-me {
     animation: flip 2s forwards;
     animation-delay: 1.5s; 
 }
@@ -977,7 +977,7 @@ footer a:hover {
 .waviy span.shrink-me-2 {
     animation: shrink-2 1s ease-out forwards;
     animation-delay: 3.5s;   
-}
+} */
 
 @keyframes flip {
     0%,60% {
