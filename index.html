@@ -6,6 +6,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="css/main-stylesheet.css">
+        <link rel="stylesheet" href="css/badge.css">
         <link rel="stylesheet" href="js/menu/menu.css">
         <link rel="stylesheet" href="js/carousel/carousel.css">
         <link rel="stylesheet" href="js/modal/modal.css">
@@ -28,13 +29,31 @@
     <body>
         <header id="top-header">
             <div class="title-and-button">
-                <div class="top">Answer The Moment, LLC</div>
+                <div class="waviy">
+                    <span class="flip-me" style="--i:12">A</span>
+                    <span class="shrink-me-1" style="--i:2">n</span>
+                    <span class="shrink-me-1" style="--i:3">s</span>
+                    <span class="shrink-me-1" style="--i:4">w</span>
+                    <span class="shrink-me-1" style="--i:5">e</span>
+                    <span class="shrink-me-1" style="--i:6">r</span>
+                    <span class="shrink-me-1" style="--i:7">&nbsp;</span>
+                    <span class="flip-me"  style="--i:12">t</span>
+                    <span class="shrink-me-2" style="--i:9">h</span>
+                    <span class="shrink-me-2" style="--i:10">e</span>
+                    <span class="shrink-me-2" style="--i:11">&nbsp;</span>
+                    <span class="flip-me" style="--i:12">M</span>
+                    <span class="shrink-me-1" style="--i:13">o</span>
+                    <span class="shrink-me-1" style="--i:14">m</span>
+                    <span class="shrink-me-1" style="--i:15">e</span>
+                    <span class="shrink-me-1" style="--i:16">n</span>
+                    <span class="shrink-me-1" style="--i:17">t</span>
+                </div>
                 <button onclick="toggleShow()" class="menu-button"><i class="fas fa-bars"></i></button>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#overview">What I Offer</a></li>
                     <li><a href="#bio">Bio</a></li>
+                    <li><a href="#services">What I Offer</a></li>
                     <li><a href="#speaking">Talks & Podcasts</a></li>
                     <li><a href="#clients">Clients</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -44,8 +63,30 @@
 
         <main>
             <section id="hero">
-                <!-- <img id="landingpic" class="landing" src="images/landing_image_cropped.jpg"> -->
-                <img class="logo" src="images/whitelogo.png" /> 
+                <div class="badge">
+                    <main>
+                        <figure id="background">
+                          <div id="burst-one"></div>
+                          <div id="burst-two"></div>
+                          <svg id="textcircle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+                            <defs>
+                              <path d="M15,100a85,85 0 1,0 170,0a85,85 0 1,0 -170,0" id="bottomcircle" />
+                              <path d="M100,37c34.8,0,63,28.2,63,63s-28.2,63-63,63s-63-28.2-63-63S65.2,37,100,37z" id="topcircle" transform="rotate(-85 100 100)" />
+                            </defs>
+                            <text dx="26">
+                              <textPath id="curved-text-top" xlink:href="#topcircle">DEI &nbsp;Leaders</textPath>
+                            </text>
+                            <svg>
+                              <text x="15" y="126" id="main-text">Top 100</text>
+                            </svg>
+                            <text dx="70">
+                              <textPath id="curved-text-bottom" xlink:href="#bottomcircle">Mogul, 2021</textPath>
+                            </text>
+                          </svg>
+                        </figure>
+                      </main>
+                </div>
+                <!-- <img class="logo" src="images/whitelogo.png" />  -->
                 <div class="quote desktop" id="quote">
                     <h1>
                         “Culture is invisible
@@ -177,7 +218,7 @@
                 <section class="flex-container">
                     
                     <div class="services scroll-element">
-                        <div class="bg-image services btn"></div>
+                        <div class="bg-image services btn" tabindex="-1"></div>
                         <h3>Services</h3>
                         <p>
                             I offer a full suite of diversity, equity,
@@ -185,7 +226,10 @@
                             and scale your business, including facilitation, 
                              coaching, and consulting.
                         </p>
-                        <button class="btn">Learn More</button>
+                        <div class="btn-controls">
+                            <button class="btn">Learn More</button>
+                            <img class="mobile-asset" src="images/hex-dots.png" />
+                        </div>
                         <div class="modal" aria-hidden="true">
                             <!-- Modal content -->
                             <div class="modal-content">
@@ -215,14 +259,17 @@
                         </div>
                     </div>    
                     <div class="guiding-principles scroll-element">
-                        <div class="bg-image principles btn"></div>
+                        <div class="bg-image principles btn" tabindex="-1"></div>
                         <h3>Guiding Principles</h3>
                         <p>I focus on holistic 
                             strategies that allow people to be vulnerable, 
                             reflect on the nuances of their behaviors, 
                             and ultimately create transformative outcomes. 
                         </p>
-                        <button class="btn">Learn More</button>
+                        <div class="btn-controls">
+                            <button class="btn">Learn More</button>
+                            <img class="mobile-asset" src="images/triangle-dots.png" />
+                        </div>
                         <div class="modal" aria-hidden="true">
                             <!-- Modal content -->
                             <div class="modal-content">
@@ -247,13 +294,16 @@
                         </div>
                     </div>
                     <div class="expertise scroll-element">
-                        <div class="bg-image expertise btn"></div>
+                        <div class="bg-image expertise btn" tabindex="-1"></div>
                         <h3>Expertise</h3>
                         <p>I specialize in creating safe spaces for people to 
                             boldly venture into unfamiliar conversations that 
                             untap their hidden potential and activate their brilliance.
                         </p>
-                        <button class="btn">Learn More</button>
+                        <div class="btn-controls">
+                            <button class="btn">Learn More</button>
+                            <img class="mobile-asset smaller" src="images/square-circle-left.png" />
+                        </div>
                         <div class="modal" aria-hidden="true">
                             <!-- Modal content -->
                             <div class="modal-content">
@@ -290,7 +340,7 @@
 
             <section class="section scroll-element" id="speaking">
                 <div class="speaking-summary">
-                    <div class="pic speaking btn scroll-element">
+                    <div class="pic speaking btn scroll-element" tabindex="-1">
                         <img class="speaking-pic" src="images/Khalilah-Lyons.jpeg" alt="Khalila Lyons image">
                     </div>
                     <div class="summary-text scroll-element">
@@ -542,7 +592,7 @@
                 </form>
             </section>
 
-            <section class="top">
+            <section class="top-return">
                 <p><a href="#top-header">back to top</a></p>
             </section>
 

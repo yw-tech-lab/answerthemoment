@@ -12,23 +12,38 @@ function createModal(container) {
 
     // Get the <span> element that closes the modal
     var closeButton = document.querySelector(closeSelector);
-    closeButton.setAttribute('aria-hidden', 'true');
-
+    
     const attachEventHandlers = () => {
         // When the user clicks on the button, open the modal
         btns.forEach((btn, idx) => {
             btn.id = `${id}-open-modal-${idx}`;
-            console.log(btn.id);
+            // console.log(btn.id);
             btn.onclick = open;
         });
     };
 
+    const disableTabbing = () => {
+        modal.querySelectorAll('a, button').forEach(elem => {
+            elem.setAttribute('tabindex', '-1');
+        })
+    };
+
+    const enableTabbing = () => {
+        modal.querySelectorAll('a, button').forEach(elem => {
+            elem.setAttribute('tabindex', '1');
+        })
+    };
+
     const open = ev => {
+        const closeButton = modal.querySelector('.close');
         modal.classList.add('show');
         modal.classList.remove('hide');
-        modal.querySelector('.close').setAttribute('data-button-id', ev.currentTarget.id);
         modal.setAttribute('aria-hidden', 'false');
         modal.querySelector('.close').focus();
+
+        closeButton.setAttribute('data-button-id', ev.currentTarget.id);
+        enableTabbing();
+         
         document.body.style.overflowY = 'hidden';
     }
 
@@ -42,6 +57,7 @@ function createModal(container) {
         modal.classList.remove('show');
         modal.classList.add('hide');
         modal.setAttribute('aria-hidden', 'true');
+        disableTabbing();
         document.body.style.overflowY = 'auto';
     };
 
@@ -60,7 +76,7 @@ function createModal(container) {
 };
 
 createModal('#speaking');
-createModal('.guiding-principles');
 createModal('.services');
+createModal('.guiding-principles');
 createModal('.expertise');
 createModal('#bio');
