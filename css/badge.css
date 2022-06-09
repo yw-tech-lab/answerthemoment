@@ -123,21 +123,13 @@ text {
   
 
 @keyframes spin1 {
-    50% {
-        transform: rotate(50deg);
-    }
-    100% {
-        transform: rotate(20deg);
-    }
+    50% { transform: rotate(50deg); }
+    100% { transform: rotate(20deg); }
 }
 
 @keyframes spin2 {
-    50% {
-        transform: rotate(74deg);
-    }
-    100% {
-        transform: rotate(44deg);
-    }
+    50% { transform: rotate(74deg); }
+    100% { transform: rotate(44deg); }
 }
 
 #burst-one {
@@ -149,3 +141,11 @@ text {
     animation: spin2 0.5s forwards;
     animation-delay: 3s;
 }
+/* @keyframes badge-flip {
+    100% { transform: rotateY(360deg); }
+}
+.badge {
+    animation: badge-flip 0.8s forwards;
+    animation-delay: 4s;
+} */
+

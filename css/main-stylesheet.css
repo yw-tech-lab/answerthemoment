@@ -71,12 +71,6 @@ h3 {
     text-transform: uppercase;
 }
 
-
-/* #landingpic{
-    height: 80%;
-    border: solid 1px #000;
-} */
-
 #hero {
     height: 100vh;
     display: grid;
