@@ -731,7 +731,7 @@ footer a:hover {
     /* What I offer */
     /****************/
     #overview {
-        padding: 10vh 5vw;
+        padding: 0vh 5vw;
     }
     .opener-left {
         display: flex;
@@ -800,7 +800,7 @@ footer a:hover {
         background-image: url(../images/khalilahbluedress.jpg);
         background-size: contain;
         width: 90vw;
-        height: 60vh;
+        height: 40vh;
         min-height: 300px;
         background-attachment: fixed;
         background-position-x: center;
