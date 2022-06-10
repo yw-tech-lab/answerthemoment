@@ -11,7 +11,6 @@
     --text-color: #555;
     --accent-color: #e57b30;
     --link-color: #0182ab;
-    /* --badge-color: #8fc1bd; */
     --badge-color: #78b895;
     /* --landing-image: url('../images/landing-alt-resized.jpeg'); */
     --badge-size: 9rem;
@@ -134,12 +133,21 @@ h3 {
         "logo . quote .";
     background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
-    background-position:  -40px 50px;
-    background-size: 50vw auto;
+    background-size: cover;
     grid-template-columns: 20% 30% 40% 10%;
     filter: saturate(0.9);
-    /* background: radial-gradient(#ffffff, var(--hero-bg-color)); */
+    background: var(--hero-bg-color);
+    background: -webkit-radial-gradient(bottom left, #EEE, var(--hero-bg-color) 80vw);
+    overflow: hidden;
+}
+
+#hero .kl-img {
     background-image: var(--landing-image);
+    background-position:  -40px 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50vw;
 }
 
 
@@ -500,7 +508,7 @@ img.expertise {
 }
 
 button {
-    background-color: var(--hero-text-color);;
+    background-color: white;
     border: none;
     color: black;
     padding: 9px 20px;
@@ -510,7 +518,7 @@ button {
     border: solid 2px black;
 }
 button.menu-button {
-    color: var(--hero-text-color);
+    color: #fff;
 }
 
 button.close {
@@ -752,12 +760,11 @@ footer a:hover {
     /***********/
     /* Landing */
     /***********/
-    #hero {
+    /* #hero {
         background-image: var(--landing-image);
         background-size: cover;
-        /* height: calc(100vw * 1); */
         background-position-x: center;
-    }
+    } */
 
     .logo { display: none; }
     .mobile.quote {
