@@ -23,6 +23,20 @@ body * {
     box-sizing: border-box;
 }
 
+.btn-tester {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btn-tester button,
+.btn-tester button:hover {
+    border-color: var(--hero-text-color);
+    color: var(--hero-text-color);
+    background: var(--hero-bg-color);
+}
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
