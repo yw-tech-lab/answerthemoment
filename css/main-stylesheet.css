@@ -25,15 +25,38 @@ body * {
 
 .btn-tester {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-.btn-tester button,
-.btn-tester button:hover {
-    border-color: var(--hero-text-color);
+    bottom: 20px;
+    right: 20px;
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: var(--hero-text-color); */
     color: var(--hero-text-color);
     background: var(--hero-bg-color);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.btn-tester span {
+    width: 130px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.btn-tester button {
+    border-color: transparent;
+    background: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px 5px;
+    color: var(--hero-text-color);
+    background: var(--hero-bg-color);
+}
+.btn-tester button:hover {
+    background: var(--hero-text-color);
+    color: var(--hero-bg-color);
 }
 
 

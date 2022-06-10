@@ -32,7 +32,7 @@ const setColor = () => {
 
 const initColor = () => {
     setColor();
-    document.querySelector('.btn-tester button').innerHTML = `Option ${i+1} / ${colors.length}`;
+    document.querySelector('.btn-tester span').innerHTML = `Option ${i+1} / ${colors.length}`;
 };
 
 const nextColor = () => {
@@ -40,14 +40,22 @@ const nextColor = () => {
     if (i >= colors.length) {
         i = 0;
     }
-    setColor();
-    document.querySelector('.btn-tester button').innerHTML = `Option ${i+1} / ${colors.length}`;
+    initColor();
+};
+const prevColor = () => {
+    i--;
+    if (i < 0) {
+        i =  colors.length - 1;
+    }
+    initColor()
 };
 
 const initScreen = () => {
     document.querySelector('#hero').insertAdjacentHTML('beforeend', `
         <div class="btn-tester">
-            <button onclick="nextColor()">Next Option</button>
+            <button onclick="prevColor()"><i class="fas fa-chevron-left"></i></button>
+            <span></span>
+            <button onclick="nextColor()"><i class="fas fa-chevron-right"></i></button>
         </div>
     `)
 
