@@ -8,7 +8,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--hero-text-color);
     margin: 0px;
 }
 
@@ -21,7 +21,7 @@ nav a:link,
 nav a:visited,
 nav a:active {
     text-decoration: none;
-    color: white;
+    color: var(--hero-text-color);
     font-weight: 500;
     opacity: 1;
     transition: all 0.3s linear;
@@ -33,7 +33,7 @@ nav a:hover {
 }
 
 nav a {
-    color: white;
+    color: var(--hero-text-color);
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -74,7 +74,7 @@ nav ul {
     header {
         display: grid;
         grid-template-columns: 100%;
-        background-color: #5eac7b;
+        background-color: var(--nav-bg-color);
         position: fixed;
         padding: 0;
         top: 0;
@@ -96,7 +96,7 @@ nav ul {
     }
 
     .menu-button:hover {
-        border: solid 2px white;
+        border: solid 2px var(--hero-text-color);
         background: #FFFFFF22;
     }
 
@@ -124,7 +124,7 @@ nav ul {
     }
 
     nav ul a:hover, nav ul a:active, nav ul a:focus {
-        background-color: white;
+        background-color: var(--nav-bg-color);
         color: #5eac7b;
         opacity: 1;
     }

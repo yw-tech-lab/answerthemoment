@@ -1,28 +1,9 @@
-:root {
-    --badge-size: 9rem;
-    /* --badge-color: transparent; */
-    --text-color: #fff;
-    --badge-color: #5bad7d;
-    /* --badge-color: #f8decd;
-    --text-color: #0f0d08; */
-  
-    /* You'll need to change the SVG text element's attributes after tinkering with the below variables */
-    --main-text-size: 3rem;
-    --top-text-size: 1.5rem;
-    --bottom-text-size: 1.5rem;
-}
-body {
-    counter-reset: my-sec-counter;
-}
-
 .badge {
-    position: absolute;
-    left: 0vw;
-    bottom: 2vw;
+    margin-top: 50px;
 }
 
 text {
-    fill: var(--text-color);
+    fill: var(--hero-text-color);
 }
   
 #main-text {
@@ -51,7 +32,7 @@ text {
 }
   
 #background {
-    position: relative;
+    /* position: relative; */
     height: var(--badge-size);
     width: var(--badge-size);
 }
@@ -110,6 +91,8 @@ text {
 
 @media screen and (max-width: 550px) {
     .badge {
+        margin-top: 0px;
+        position: absolute;
         --badge-size: 6rem;
         left: -4vw;
     }
@@ -142,11 +125,11 @@ text {
     animation: spin2 0.5s forwards;
     animation-delay: 3s;
 }
-/* @keyframes badge-flip {
+@keyframes badge-flip {
     100% { transform: rotateY(360deg); }
 }
 .badge {
     animation: badge-flip 0.8s forwards;
     animation-delay: 4s;
-} */
+}
 

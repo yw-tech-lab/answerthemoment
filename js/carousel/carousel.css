@@ -3,7 +3,7 @@
 section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: #7fc596; 
+    background-color: var(--hero-bg-color);
 }
 
 section#testimonials h2 {
@@ -12,7 +12,7 @@ section#testimonials h2 {
 }
 
 section#testimonials h2, section#testimonials p {
-    color: white;
+    color: var(--hero-text-color);
     text-align: left;
 }
 
@@ -105,7 +105,7 @@ section#testimonials strong {
   background-position: center;
 
   font-size: 1.5rem;
-  color: white;
+  color: var(--hero-text-color);
   text-align: left;
 }
 

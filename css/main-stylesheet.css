@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 
+:root {
+    --hero-text-color: white;
+    --hero-bg-color: #7ec59f;
+    /* --hero-bg-color: #68B0AB; */
+    --nav-bg-color: #5eac7b;
+    --landing-image: url('../images/landing-image-no-bg.png');
+   
+    --gray-panel-color: #f0f0f0;
+    --text-color: #555;
+    --accent-color: #e57b30;
+    --link-color: #0182ab;
+    /* --badge-color: #8fc1bd; */
+    --badge-color: #78b895;
+    /* --landing-image: url('../images/landing-alt-resized.jpeg'); */
+    --badge-size: 9rem;
+    --main-text-size: 3rem;
+    --top-text-size: 1.5rem;
+    --bottom-text-size: 1.5rem;
+}
 body * {
     box-sizing: border-box;
 }
@@ -11,7 +30,7 @@ body {
 }
 
 p, li {
-    color: #555;
+    color: var();
     font-size: 1.1em;
     line-height: 1.6em;
 }
@@ -22,11 +41,11 @@ p:first-child {
 
 a, a:link, a:visited, a:active {
     text-decoration: none;
-    color: #0182ab;
+    color: var(--link-color);
     font-weight: bold;
 }
 a:hover {
-    color: #e57b30;
+    color: var(--accent-color); 
 }
 
 html {
@@ -58,7 +77,7 @@ h3 {
 ******************/
 
 #hero {
-    color: white;
+    color: var(--hero-text-color);
     font-family: 'League Spartan', sans-serif;
     margin: 0px;
 }
@@ -76,14 +95,14 @@ h3 {
     display: grid;
     grid-template-areas:
         "logo . quote .";
-    /* background-color: #7fc596; */
-    background-color: #7ec59f;
-    background-image: url(../images/landing-alt-resized.jpeg);
+    background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 60vw auto;
-    grid-template-columns: 20% 40% 30% 10%;
+    background-position:  -40px 50px;
+    background-size: 50vw auto;
+    grid-template-columns: 20% 30% 40% 10%;
     filter: saturate(0.9);
+    /* background: radial-gradient(#ffffff, var(--hero-bg-color)); */
+    background-image: var(--landing-image);
 }
 
 
@@ -99,16 +118,15 @@ h3 {
 
 #hero .quote {
     /* border: solid 1px black; */
-    max-width: 380px;
+    /* max-width: 380px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 180px;
     grid-area: quote;
     /* opacity: 0; */
-    /* background-color: #7ec59f; */
 }
 
 .quote h1 {
@@ -143,14 +161,14 @@ h2 {
 }
 
 #contact label {
-    color: white;
+    color: var(--hero-text-color);
     font-weight: 700;
     margin-bottom: 3px;
     font-size: 1.1em;
 }
 
 .contact-form{
-    background-color: #7fc596;
+    background-color: var(--hero-bg-color);
     padding: 30px;
     width: 100%;
 }
@@ -194,7 +212,7 @@ label{
  ***************/
 
 #speaking {
-    background-color: #f0f0f0;
+    background-color: var(--gray-panel-color);
     margin: 0;
 }
 
@@ -225,7 +243,7 @@ label{
 }
 
 #about {
-    background-color: #f0f0f0;
+    background-color: var(--gray-panel-color);
     margin: 0;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -247,7 +265,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F0F0F0;
+    background: var(--gray-panel-color);
 }
 .screenshot img {
     width: 100%;
@@ -445,7 +463,7 @@ img.expertise {
 }
 
 button {
-    background-color: white;
+    background-color: var(--hero-text-color);;
     border: none;
     color: black;
     padding: 9px 20px;
@@ -455,7 +473,7 @@ button {
     border: solid 2px black;
 }
 button.menu-button {
-    color: #fff;
+    color: var(--hero-text-color);
 }
 
 button.close {
@@ -464,7 +482,7 @@ button.close {
 
 button:hover {
     background: black;
-    color: white;
+    color: var(--hero-text-color);
 }
 
 
@@ -478,7 +496,7 @@ button:hover {
     column-gap: 100px; 
 }
 #bio {
-    background: #f0f0f0;
+    background: var(--gray-panel-color);
 }
 #bio h2 {
     margin-top: 0;
@@ -546,7 +564,7 @@ footer {
 }
 footer a, footer a:link, footer a:visited {
     margin: 20px;
-    color: #fff;
+    color: var(--hero-text-color);
     font-size: 50px;
 }
 footer a:hover {
@@ -562,14 +580,14 @@ footer a:hover {
     min-height: auto;
 }
 #quote2 {
-    background-color: #f0f0f0;
+    background-color: var(--gray-panel-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #quote2 p {
     font-size: 2.5em;
-    color: #0182ab;
+    color: var(--link-color);
     /* margin: 10vh 0; */
     font-family: 'League Spartan', sans-serif;
     text-align: center;
@@ -605,13 +623,13 @@ footer a:hover {
     /***********/
     /* Landing */
     /***********/
-    #hero {
+    /* #hero {
         background-size: 75vw auto;
         grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
         grid-template-areas: "logo . quote .";
         max-height: 730px;
         height: calc(100vh - 60px);
-    } 
+    }  */
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
@@ -698,7 +716,7 @@ footer a:hover {
     /* Landing */
     /***********/
     #hero {
-        background-image: url(../images/landing-alt-resized.jpeg);
+        background-image: var(--landing-image);
         background-size: cover;
         /* height: calc(100vw * 1); */
         background-position-x: center;
@@ -711,7 +729,7 @@ footer a:hover {
         padding: 40px;
         color: #0182ab;
         font-family: 'League Spartan', sans-serif;
-        background: #f2f2f2;
+        background: var(--gray-panel-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -822,7 +840,6 @@ footer a:hover {
 
 @media screen and (max-width: 500px) {
     #hero {
-        /* background-image: url(../images/landing_image_cropped.jpeg); */
         background-size: cover;
         height: calc(100vw * .9);
     }
@@ -847,9 +864,6 @@ footer a:hover {
         width: 80%;
     }
 }
-
-
-
 
 
 /**************/
@@ -950,7 +964,7 @@ footer a:hover {
     display: inline-block;
     font-size: 45px;
     font-weight: bold;
-    color: #fff;
+    color: var(--hero-text-color);
     margin: 0px;
     animation: flip 2s forwards;
     animation-delay: calc(.07s * var(--i))
