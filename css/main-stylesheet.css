@@ -26,11 +26,8 @@ body * {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    /* border-style: solid;
-    border-width: 2px;
-    border-color: var(--hero-text-color); */
     color: var(--hero-text-color);
-    background: var(--hero-bg-color);
+    /* background: var(--hero-bg-color); */
     font-size: 1.4em;
     font-weight: bold;
 }
@@ -452,24 +449,11 @@ img.expertise {
     left: 59px;
     position: relative;
 }
-/* .services {
-    background-image: url('../images/hexagons.png');
-    background-size: 200px 300px;
-    background-position-y: top;
-    background-repeat: no-repeat;
-} */
-
-
-
-/* .flex-container p {
-    width: 80%;
-} */
 
 #services h3 {
     margin-top: 20px;
     margin-bottom: 8px;
 }
-
 
 #services p {
     font-size: 0.95em;
@@ -858,12 +842,16 @@ footer a:hover {
     and (min-height: 400px) {
       
     #hero {
-        max-height: 65vh;
+        height: 65vh;
         grid-template-areas:
             ". landing .";
         background-color: var(--hero-bg-color) !important;
         background-repeat: no-repeat;
         grid-template-columns: 20% 80% 10%;
+    }
+
+    .btn-tester {
+        bottom: 29vh;
     }
 
     #hero .kl-img {
