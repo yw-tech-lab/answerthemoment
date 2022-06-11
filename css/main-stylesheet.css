@@ -130,33 +130,19 @@ h3 {
     height: 100vh;
     display: grid;
     grid-template-areas:
-        "logo . quote .";
+        ". landing quote .";
     background-color: var(--hero-bg-color) !important;
     background-repeat: no-repeat;
-    grid-template-columns: 20% 30% 40% 10%;
+    grid-template-columns: 10% 35% 40% 10%;
     background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%);
     overflow: hidden;
 }
 
 #hero .kl-img {
-    background-image: var(--landing-image);
-    background-position:  -40px 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     filter: saturate(0.9);
-    width: 50vw;
-}
-
-
-#hero .logo {
-    /* border: solid 1px #000; */
-    margin: 20px;
-    max-width: 18vw;
-    min-width: 200px;
     align-self: flex-end;
-    grid-area: logo;
-    /* justify-self: flex-start; */
+    max-height: 86vh;
+    grid-area: landing;
 }
 
 #hero .quote {
@@ -654,25 +640,21 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 1250px) {
-    /***********/
-    /* Landing */
-    /***********/
-    #hero {
-        max-height: calc(100vh - 60px);
-    }
-}
 @media screen and (max-width: 930px) {
     /***********/
     /* Landing */
     /***********/
-    /* #hero {
-        background-size: 75vw auto;
-        grid-template-columns: 1fr 1.1fr 1fr 0.15fr;
-        grid-template-areas: "logo . quote .";
-        max-height: 730px;
-        height: calc(100vh - 60px);
-    }  */
+    #hero {
+        grid-template-columns: 5% 50% 40% 5%;
+    }
+
+    #hero .quote {
+        margin-top: 0;
+    }
+
+    #hero .kl-img {
+        max-height: 96vh;
+    }
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
@@ -878,12 +860,15 @@ footer a:hover {
     .speaking-summary .pic {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 500px) {
     #hero {
-        background-size: cover;
         height: calc(100vw * .9);
+    }
+    #hero .kl-img {
+        max-height: 66vh;
     }
     .mobile.quote {
         height: 220px;
