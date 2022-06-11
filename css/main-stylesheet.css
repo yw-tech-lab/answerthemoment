@@ -131,13 +131,10 @@ h3 {
     display: grid;
     grid-template-areas:
         "logo . quote .";
-    background-color: var(--hero-bg-color);
+    background-color: var(--hero-bg-color) !important;
     background-repeat: no-repeat;
-    background-size: cover;
     grid-template-columns: 20% 30% 40% 10%;
-    filter: saturate(0.9);
-    background: var(--hero-bg-color);
-    background: -webkit-radial-gradient(bottom left, #EEE, var(--hero-bg-color) 80vw);
+    background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%);
     overflow: hidden;
 }
 
@@ -147,6 +144,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    filter: saturate(0.9);
     width: 50vw;
 }
 
