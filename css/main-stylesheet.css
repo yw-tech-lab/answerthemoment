@@ -856,7 +856,20 @@ footer a:hover {
     and (max-width: 600px)
     and (orientation: portrait)
     and (min-height: 400px) {
-        
+      
+    #hero {
+        max-height: 65vh;
+        grid-template-areas:
+            ". landing .";
+        background-color: var(--hero-bg-color) !important;
+        background-repeat: no-repeat;
+        grid-template-columns: 20% 80% 10%;
+    }
+
+    #hero .kl-img {
+        max-height: 60vh;
+    }
+    
     .speaking-summary .pic {
         display: none;
     }
@@ -864,12 +877,8 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
-    #hero {
-        height: calc(100vw * .9);
-    }
-    #hero .kl-img {
-        max-height: 66vh;
-    }
+    
+    
     .mobile.quote {
         height: 220px;
     }
