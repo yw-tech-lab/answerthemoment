@@ -16,7 +16,7 @@
     --badge-size: 9rem;
     --main-text-size: 3rem;
     --top-text-size: 1.5rem;
-    --bottom-text-size: 1.5rem;
+    --bottom-text-size: 1.6rem;
 }
 body * {
     box-sizing: border-box;
@@ -33,7 +33,7 @@ body * {
 }
 
 .btn-tester span {
-    width: 130px;
+    width: 150px;
     text-align: center;
     display: inline-block;
 }
@@ -133,6 +133,7 @@ h3 {
     grid-template-columns: 10% 35% 40% 10%;
     background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%);
     overflow: hidden;
+    transition: all 0.5 ease-in;
 }
 
 #hero .kl-img {
