@@ -28,6 +28,8 @@ const setColor = () => {
     root.style.setProperty('--hero-text-color', fontColor);
     root.style.setProperty('--hero-bg-color', bgColor);
     root.style.setProperty('--badge-color', bgColor);
+    root.style.setProperty('--nav-bg-color', bgColor);
+    
 };
 
 const initColor = () => {
