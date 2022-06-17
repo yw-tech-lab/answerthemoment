@@ -1,25 +1,31 @@
 let i = 0;
 const colors = [
-    ['#FFF', '#7ec59f'],
-    ['#FFF', '#68B0AB'],
+    ['#FFF', '#7ec59f', 'Original'],
     ['#FFF', '#52817d'],
     ['#FFF', '#53697b'],
-    ['#FFF', '#A5B9C7'],
-    ['#444', '#A5B9C7'],
-    ['#FFF', '#A09DAF'],
-    ['#2F3027', '#FFF'],
-    ['#261816', '#F9F3DF'],
-    ['#444', '#F7DECF'],
-    ['#444', '#F2DAA3'],
-    ['#261816', '#F6DC69'],
-    ['#fff', '#D5916B'],
-    ['#FFF', '#D4816B'],
-    ['#FFF', '#E4A87E'],
-    ['#2F3027', '#D9BEA4'],
-    ['#2F3027', '#CCB09D'],
-    ['#FFF', '#977E7E'],
-    ['#FFF', '#A17B60'],
-    ['#FFF', '#444']
+    ['#444', 'rgb(222, 227, 226)'],
+    ['#444', 'rgb(237, 201, 197)'],
+    ['#fff', 'rgb(242, 172, 126)'],
+    ['#444', 'rgb(242, 213, 126)'],
+    ['#444', '#FFF']
+
+    
+    // ['#FFF', '#68B0AB'],
+    // ['#FFF', '#A5B9C7'],
+    // ['#444', '#A5B9C7'],
+    // ['#FFF', '#A09DAF'],
+    // ['#261816', '#F9F3DF'],
+    // ['#444', '#F7DECF'],
+    // ['#444', '#F2DAA3'],
+    // ['#261816', '#F6DC69'],
+    // ['#fff', '#D5916B'],
+    // ['#FFF', '#D4816B'],
+    // ['#FFF', '#E4A87E'],
+    // ['#2F3027', '#D9BEA4'],
+    // ['#2F3027', '#CCB09D'],
+    // ['#FFF', '#977E7E'],
+    // ['#FFF', '#A17B60'],
+    // ['#FFF', '#444']
 ];
 
 const setColor = () => {
@@ -35,7 +41,12 @@ const setColor = () => {
 
 const initColor = () => {
     setColor();
-    document.querySelector('.btn-tester span').innerHTML = `Option ${i+1} / ${colors.length}`;
+    const label = document.querySelector('.btn-tester span');
+    if (colors[i][2]) {
+        label.innerHTML = colors[i][2];
+    } else {
+        label.innerHTML = `Option ${i+1} / ${colors.length}`;
+    }
 };
 
 const nextColor = () => {

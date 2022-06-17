@@ -117,9 +117,7 @@ h3 {
 .top {
     font-size: 3vw;
     font-weight: bold;
-    /* font-family: 'League Spartan', sans-serif; */
     font-family: 'Playfair Display', serif;
-    /* font-style: italic; */
     text-transform: uppercase;
 }
 
@@ -131,7 +129,8 @@ h3 {
     background-color: var(--hero-bg-color) !important;
     background-repeat: no-repeat;
     grid-template-columns: 10% 35% 40% 10%;
-    background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%);
+    /* background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%); */
+    background: radial-gradient(ellipse at -40vw 80vh, var(--hero-text-color) 0%, var(--hero-bg-color) 40%);
     overflow: hidden;
     transition: all 0.5 ease-in;
 }
