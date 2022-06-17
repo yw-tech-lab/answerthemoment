@@ -130,7 +130,7 @@ h3 {
     background-repeat: no-repeat;
     grid-template-columns: 10% 35% 40% 10%;
     /* background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%); */
-    background: radial-gradient(ellipse at -40vw 80vh, var(--hero-text-color) 0%, var(--hero-bg-color) 40%);
+    background: radial-gradient(circle at -10vw 120vh, var(--hero-text-color) 0%, var(--hero-bg-color) 30%);
     overflow: hidden;
     transition: all 0.5 ease-in;
 }
