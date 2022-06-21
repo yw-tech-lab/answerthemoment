@@ -129,8 +129,8 @@ h3 {
     background-color: var(--hero-bg-color) !important;
     background-repeat: no-repeat;
     grid-template-columns: 10% 35% 40% 10%;
-    /* background: radial-gradient(ellipse at left bottom, rgba(255,255,255,.8) 0%, var(--hero-bg-color) 40%); */
-    background: radial-gradient(circle at -10vw 120vh, var(--hero-text-color) 0%, var(--hero-bg-color) 30%);
+    background: radial-gradient(circle at -10vw 120vh, #FFF 0%, var(--hero-bg-color) 40%);
+    /* background: radial-gradient(circle at -10vw 120vh, var(--hero-text-color) 0%, var(--hero-bg-color) 30%); */
     overflow: hidden;
     transition: all 0.5 ease-in;
 }
@@ -952,7 +952,7 @@ footer a:hover {
 
     /* 3. Speaking */
     .scroll-element.pic.speaking {
-        transform: rotate(-5deg);
+        /* transform: rotate(-5deg); */
         position: relative;
         left: -50px;
     }
@@ -963,7 +963,7 @@ footer a:hover {
 
     .pic.speaking.scrolled,
     .summary-text.scrolled {
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
         left: 0;
     }
 
