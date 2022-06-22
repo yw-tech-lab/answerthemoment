@@ -137,7 +137,7 @@ h3 {
 }
 
 #hero .kl-img {
-    filter: saturate(0.9);
+    filter: saturate(0.8);
     align-self: flex-end;
     max-height: 86vh;
     grid-area: landing;

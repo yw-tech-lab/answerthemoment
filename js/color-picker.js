@@ -35,7 +35,9 @@ const setColor = () => {
     root.style.setProperty('--hero-gradient-color', gradientColor);
     root.style.setProperty('--hero-bg-color', bgColor);
     root.style.setProperty('--badge-color', bgColor);
-    root.style.setProperty('--nav-bg-color', bgColor);
+    if (i !== 0) {
+        root.style.setProperty('--nav-bg-color', bgColor);
+    }
     
 };
 
