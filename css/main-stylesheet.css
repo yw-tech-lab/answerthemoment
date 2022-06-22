@@ -7,17 +7,22 @@
     --nav-bg-color: #e99b65;
     --landing-image: url('../images/landing-image-no-bg.png');
    
-    --gray-panel-color: #f0f0f0;
+    --panel-color: #f0f0f0;
     --text-color: #555;
     --accent-color: #e57b30;
     --link-color: #0182ab;
     --badge-color: #f1ac7e;
-    /* --landing-image: url('../images/landing-alt-resized.jpeg'); */
+
+    --font-family-header: 'League Spartan', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-family-quote: 'Playfair Display', serif;
     --badge-size: 9rem;
     --main-text-size: 3rem;
     --top-text-size: 1.5rem;
     --bottom-text-size: 1.6rem;
 }
+
+
 body * {
     box-sizing: border-box;
 }
@@ -57,7 +62,7 @@ body * {
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family-body);
     margin: 0;
     overflow-x: hidden;
 }
@@ -86,7 +91,7 @@ html {
     overflow-x: hidden;
 }
 h1, h2, h3, h4 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family-header);
 }
 
 .section {
@@ -111,13 +116,13 @@ h3 {
 
 #hero {
     color: var(--hero-text-color);
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family-header);
     margin: 0px;
 }
 .top {
     font-size: 3vw;
     font-weight: bold;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-family-header);
     text-transform: uppercase;
 }
 
@@ -239,7 +244,7 @@ label{
  ***************/
 
 #speaking {
-    background-color: var(--gray-panel-color);
+    background-color: var(--panel-color);
     margin: 0;
 }
 
@@ -270,7 +275,7 @@ label{
 }
 
 #about {
-    background-color: var(--gray-panel-color);
+    background-color: var(--panel-color);
     margin: 0;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -292,7 +297,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--gray-panel-color);
+    background: var(--panel-color);
 }
 .screenshot img {
     width: 100%;
@@ -510,7 +515,7 @@ button:hover {
     column-gap: 100px; 
 }
 #bio {
-    background: var(--gray-panel-color);
+    background: var(--panel-color);
 }
 #bio h2 {
     margin-top: 0;
@@ -594,7 +599,7 @@ footer a:hover {
     min-height: auto;
 }
 #quote2 {
-    background-color: var(--gray-panel-color);
+    background-color: var(--panel-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,7 +608,7 @@ footer a:hover {
     font-size: 2.5em;
     color: var(--link-color);
     /* margin: 10vh 0; */
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family-header);
     text-align: center;
     line-height: 1.2em;
     max-width: 65vw;
@@ -611,7 +616,7 @@ footer a:hover {
 
 .quote-symbol {
     font-size: 80px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-family-quote);
     position: relative;
     position: relative;
     left: -4px;
@@ -737,8 +742,8 @@ footer a:hover {
         max-width: 100%;
         padding: 40px;
         color: #0182ab;
-        font-family: 'League Spartan', sans-serif;
-        background: var(--gray-panel-color);
+        font-family: var(--font-family-header);
+        background: var(--panel-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -980,7 +985,7 @@ footer a:hover {
 .waviy {
     display: flex;
     position: relative;
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family-header);
 }
 .waviy span {
     overflow: hidden;
