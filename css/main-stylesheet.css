@@ -2,8 +2,8 @@
 
 :root {
     --hero-text-color: white;
-    --hero-bg-color: #7ec59f;
-    /* --hero-bg-color: #68B0AB; */
+    --hero-gradient-color: #f2d57e;
+    --hero-bg-color: #f1ac7e;
     --nav-bg-color: #5eac7b;
     --landing-image: url('../images/landing-image-no-bg.png');
    
@@ -126,11 +126,12 @@ h3 {
     display: grid;
     grid-template-areas:
         ". landing quote .";
-    background-color: var(--hero-bg-color) !important;
     background-repeat: no-repeat;
     grid-template-columns: 10% 35% 40% 10%;
-    background: radial-gradient(circle at -10vw 120vh, #FFF 0%, var(--hero-bg-color) 40%);
-    /* background: radial-gradient(circle at -10vw 120vh, var(--hero-text-color) 0%, var(--hero-bg-color) 30%); */
+    background-color: var(--hero-gradient-color) !important;
+    background: radial-gradient(circle at 0vw 100vh, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
+    /* background-color: var(--hero-gradient-color) !important;
+    background: linear-gradient(90deg, var(--hero-gradient-color) 0%, var(--hero-bg-color) 28%); */
     overflow: hidden;
     transition: all 0.5 ease-in;
 }

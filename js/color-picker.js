@@ -1,12 +1,12 @@
 let i = 0;
 const colors = [
-    ['#fff', 'rgb(242, 172, 126)', 'Selected'],
-    ['#FFF', '#7ec59f', 'Original'],
-    ['#FFF', '#52817d'],
-    ['#FFF', '#53697b'],
-    ['#444', 'rgb(222, 227, 226)'],
-    ['#444', 'rgb(237, 201, 197)'],
-    ['#444', 'rgb(242, 213, 126)'] //,
+    ['#fff', '#f2d57e', 'rgb(242, 172, 126)', 'Selected'],
+    ['#FFF', '#FFF', '#7ec59f', 'Original'],
+    ['#FFF', '#FFF', '#52817d'],
+    ['#FFF', '#FFF', '#53697b'],
+    ['#444', '#FFF', 'rgb(222, 227, 226)'],
+    ['#444', '#FFF', 'rgb(237, 201, 197)'],
+    ['#444', '#FFF', 'rgb(242, 213, 126)'] //,
     // ['#444', '#FFF'],
     // ['#FFF', '#68B0AB'],
     // ['#FFF', '#A5B9C7'],
@@ -28,9 +28,11 @@ const colors = [
 
 const setColor = () => {
     const fontColor = colors[i][0];
-    const bgColor = colors[i][1];
+    const gradientColor = colors[i][1];
+    const bgColor = colors[i][2];
     const root = document.documentElement;
     root.style.setProperty('--hero-text-color', fontColor);
+    root.style.setProperty('--hero-gradient-color', gradientColor);
     root.style.setProperty('--hero-bg-color', bgColor);
     root.style.setProperty('--badge-color', bgColor);
     root.style.setProperty('--nav-bg-color', bgColor);
@@ -40,8 +42,8 @@ const setColor = () => {
 const initColor = () => {
     setColor();
     const label = document.querySelector('.btn-tester span');
-    if (colors[i][2]) {
-        label.innerHTML = colors[i][2];
+    if (colors[i][3]) {
+        label.innerHTML = colors[i][3];
     } else {
         label.innerHTML = `Option ${i+1} / ${colors.length}`;
     }
