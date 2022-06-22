@@ -4,14 +4,14 @@
     --hero-text-color: white;
     --hero-gradient-color: #f2d57e;
     --hero-bg-color: #f1ac7e;
-    --nav-bg-color: #5eac7b;
+    --nav-bg-color: #e99b65;
     --landing-image: url('../images/landing-image-no-bg.png');
    
     --gray-panel-color: #f0f0f0;
     --text-color: #555;
     --accent-color: #e57b30;
     --link-color: #0182ab;
-    --badge-color: #78b895;
+    --badge-color: #f1ac7e;
     /* --landing-image: url('../images/landing-alt-resized.jpeg'); */
     --badge-size: 9rem;
     --main-text-size: 3rem;
@@ -129,7 +129,7 @@ h3 {
     background-repeat: no-repeat;
     grid-template-columns: 10% 35% 40% 10%;
     background-color: var(--hero-gradient-color) !important;
-    background: radial-gradient(circle at 0vw 100vh, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
+    background: radial-gradient(circle at 0% 100%, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
     /* background-color: var(--hero-gradient-color) !important;
     background: linear-gradient(90deg, var(--hero-gradient-color) 0%, var(--hero-bg-color) 28%); */
     overflow: hidden;
