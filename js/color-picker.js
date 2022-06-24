@@ -78,5 +78,5 @@ const initScreen = () => {
     initColor();
 };
 
-initScreen();
+// initScreen();
 

@@ -148,6 +148,13 @@ h3 {
     grid-area: landing;
 }
 
+
+.waviy span, 
+#hero .quote h1,
+#hero .quote h2 {
+    text-shadow: 2px 2px 3px #986C4F;
+}
+
 #hero .quote {
     /* border: solid 1px black; */
     /* max-width: 380px; */
@@ -387,7 +394,7 @@ label{
     transition: background-size 1s ease-in; 
 }
 .bg-image.services {
-    background-image: url('../images/dei-services.png');
+    background-image: url('../images/dei-services-thumb.png');
 }
 .bg-image.services::before {
     content: '';
@@ -415,11 +422,11 @@ label{
     background-size: 105% 105%;
 }
 .bg-image.principles {
-    background-image: url('../images/compass-guiding-principles.jpg');
+    background-image: url('../images/guiding-principles-thumb.jpg');
     filter: saturate(1.5);
 }
 .bg-image.expertise {
-    background-image: url('../images/expertise-img.png');
+    background-image: url('../images/expertise-img-thumb.png');
 }
 .bg-image.expertise::before {
     content: '';
@@ -997,7 +1004,7 @@ footer a:hover {
     color: var(--hero-text-color);
     margin: 0px;
     animation: flip 2s forwards;
-    animation-delay: calc(.07s * var(--i))
+    animation-delay: calc(.07s * var(--i));
 }
 
 /* .waviy span.flip-me {
