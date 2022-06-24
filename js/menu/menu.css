@@ -82,9 +82,7 @@ nav ul {
         box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 9%), 0 1px 10px 0 rgb(5 5 5 / 12%);
     }
 
-    .waviy span, 
-    #hero .quote h1,
-    #hero .quote h2 {
+    .waviy span {
         text-shadow: none;
     }
 
@@ -154,3 +152,4 @@ nav ul {
         display: flex !important;
     }
 }
+
