@@ -127,8 +127,8 @@ nav ul {
     }
 
     nav ul a:hover, nav ul a:active, nav ul a:focus {
-        background-color: var(--nav-bg-color);
-        color: #5eac7b;
+        background-color: var(--hero-bg-color);
+        color: var(--hero-text-color);
         opacity: 1;
     }
 
