@@ -312,7 +312,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--panel-color);
+    background: white;
 }
 .screenshot img {
     width: 100%;
