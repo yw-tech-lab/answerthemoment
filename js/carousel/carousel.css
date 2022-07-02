@@ -3,11 +3,16 @@
 section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: #7fc596; 
+    background-color: var(--hero-bg-color);
+}
+
+section#testimonials h2 {
+    margin-left: 15vw;
+    margin-bottom: -40px;
 }
 
 section#testimonials h2, section#testimonials p {
-    color: white;
+    color: var(--hero-text-color);
     text-align: left;
 }
 
@@ -16,7 +21,7 @@ section#testimonials p {
 }
 
 section#testimonials strong {
-    color: #0182ab;
+    color: #603958;
 }
 
 .carousel {
@@ -59,7 +64,7 @@ section#testimonials strong {
     transform: translateX(calc(-100% * var(--current-slide)));
     display: flex;
     color: white;
-    height: 100vh;
+    min-height: 500px;
 }
 
 .slide {
@@ -100,7 +105,7 @@ section#testimonials strong {
   background-position: center;
 
   font-size: 1.5rem;
-  color: white;
+  color: var(--hero-text-color);
   text-align: left;
 }
 
