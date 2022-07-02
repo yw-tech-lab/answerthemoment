@@ -206,7 +206,18 @@ label{
     padding-top: 10px;
     display: inline-block;
     padding-bottom: 2px;
+    
 }
+@media screen and (max-width:900px) {
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+} 
+    
+
 
 /***************
  Janice Speaking
