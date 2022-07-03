@@ -541,6 +541,13 @@ button:hover {
     width: 25vw; 
 }
 
+#bio .embedded-video {
+    float: right; 
+    margin-left: 20px; 
+    background: #f1ac7e52; 
+    padding: 10px;
+    border: solid 0px var(--hero-bg-color);
+}
 
 /**********
  Anita
@@ -701,6 +708,22 @@ footer a:hover {
         margin-right: 10px;
     } 
 
+    /*********************/
+    /* About the Founder */
+    /*********************/
+    #bio .embedded-video {
+        float: none;
+        margin-left: 0px;
+        border: 0;
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 20px;
+        /* background: none; */
+    }
+    #bio .embedded-video iframe {
+        width: 100%;
+    }
+
 
     /*********/
     /* Logos */
@@ -802,17 +825,29 @@ footer a:hover {
     /************/
     /* Speaking */
     /************/
-    #speaking {
+    /* #speaking {
         padding: 0 0 10vh 0;
+    } */
+    .row {
+        grid-template-columns: auto;
     }
-    .speaking-summary {
+    .row .screenshot {
+        display: none;
+    }
+    .row .description {
+        padding-left: 0px;
+    }
+    .row .description p {
+        font-size: 0.95em;
+    }
+    /* .speaking-summary {
         display: flex;
         flex-direction: column;
     }
     .speaking-summary > .summary-text {
         padding: 10vh 5vw 0 5vw;
         margin-left: 0;
-    }
+    } */
 
     /*********/
     /* Logos */
@@ -835,6 +870,7 @@ footer a:hover {
     #bio {
         padding: 0 0 10vh 0;
     }
+
     #bio .text {
         padding: 10vh 5vw;
     }

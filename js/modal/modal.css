@@ -138,7 +138,7 @@
         background: #eee;
     }
     .modal .close:active, .close:focus {
-        outline: solid 1px #7ec59f;
+        outline: solid 1px var(--hero-bg-color);
     }
 }
 
