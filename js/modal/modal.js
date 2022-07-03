@@ -5,6 +5,7 @@ function createModal(container) {
     const closeSelector = container + ' .close';
     // Get the modal
     var modal = document.querySelector(modalSelector);
+    if (!modal) { return; }
     modal.setAttribute('aria-hidden', 'true');
 
     // Get the button that opens the modal
@@ -101,7 +102,6 @@ function createModal(container) {
     disableTabbing();
 };
 
-createModal('#speaking');
 createModal('.services');
 createModal('.guiding-principles');
 createModal('.expertise');
