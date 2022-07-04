@@ -10,9 +10,12 @@
     overflow: auto; 
     background-color: rgba(0,0,0,0.4);
     top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .modal.show {
-    display: block;
+    display: flex;
     top: 0vh;
 }
 
@@ -33,10 +36,10 @@
 .modal-content {
     opacity: 0;
     top: 100vh;
-    left: 15vw;
-    position: fixed;
+    /* left: 15vw; */
+    /* position: fixed; */
     background-color: #fefefe;
-    margin: 5vh 15vw 5vh 0; 
+    /* margin: 5vh 15vw 5vh 0;  */
     padding: 5px;
     border: 1px solid #888;
     width: 70vw;
@@ -45,10 +48,6 @@
     flex-direction: column;
     border-radius: 5px;
     transition: all 0.3s;
-    /* background-image: url(../../images/circle.png);
-    background-size: contain;
-    background-position: 30% 0%;
-    background-repeat: no-repeat; */
 }
 
 #speaking .modal-content {
@@ -104,14 +103,14 @@
         position: inherit;
     }
     .modal.show {
-        display: block;
+        display: flex;
         left: 0vw;
     }
     .hide {
-        display: block;
+        display: flex;
     } 
     .modal {
-        display: block;
+        display: flex;
         left: -100vw;
     }
 
