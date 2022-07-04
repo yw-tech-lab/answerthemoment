@@ -30,16 +30,14 @@
 /* Modal Content/Box */
 
 .modal.show .modal-content {
-    top: 0vh;
+    margin-top: 0vh;
     opacity: 1;
 }
 .modal-content {
     opacity: 0;
-    top: 100vh;
-    /* left: 15vw; */
-    /* position: fixed; */
+    margin-top: 100vh;
+    position: fixed;
     background-color: #fefefe;
-    /* margin: 5vh 15vw 5vh 0;  */
     padding: 5px;
     border: 1px solid #888;
     width: 70vw;
@@ -103,14 +101,14 @@
         position: inherit;
     }
     .modal.show {
-        display: flex;
+        display: block;
         left: 0vw;
     }
     .hide {
-        display: flex;
+        display: block;
     } 
     .modal {
-        display: flex;
+        display: block;
         left: -100vw;
     }
 
