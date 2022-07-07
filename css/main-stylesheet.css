@@ -811,12 +811,14 @@ footer a:hover {
     /****************/
     /* What I offer */
     /****************/
-    #overview {
+    .opener-left, .opener-right {
         padding: 0vh 5vw;
     }
     .opener-left {
         display: flex;
         flex-direction: column;
+        /* padding: 0; */
+        margin: 15vh 0vw 15vh 0vw;
     }
     .opener-left h2,
     .opener-right h2  {
@@ -827,7 +829,8 @@ footer a:hover {
     .opener-right {
         display: flex;
         flex-direction: column-reverse;
-        padding: 0vh 5vw 0vh 5vw;
+        /* padding: 0vh 5vw 0vh 5vw; */
+        margin: 0vh 0vw 15vh 0vw;
     }
 
     .flare-1, .flare-2 {
@@ -837,9 +840,9 @@ footer a:hover {
     /************/
     /* Speaking */
     /************/
-    /* #speaking {
-        padding: 0 0 10vh 0;
-    } */
+    #speaking {
+        padding: 10vh 5vw 10vh 5vw;
+    }
     .row {
         grid-template-columns: auto;
     }
@@ -918,10 +921,10 @@ footer a:hover {
     #hero {
         height: 65vh;
         grid-template-areas:
-            ". landing .";
+            ". landing quote";
         background-color: var(--hero-bg-color) !important;
         background-repeat: no-repeat;
-        grid-template-columns: 20% 80% 10%;
+        grid-template-columns: 0% 60% 40%;
     }
 
     .btn-tester {
@@ -936,10 +939,26 @@ footer a:hover {
         display: none;
     }
 
+    h2 {
+        font-size: 2.5em;
+    }
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
     
+    #hero {
+        height: 65vh;
+        grid-template-areas:
+            ". landing .";
+        background-color: var(--hero-bg-color) !important;
+        background-repeat: no-repeat;
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    #hero .quote {
+        display: none;
+    }
     
     .mobile.quote {
         height: 220px;
