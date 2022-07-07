@@ -106,3 +106,4 @@ createModal('.services');
 createModal('.guiding-principles');
 createModal('.expertise');
 createModal('#bio');
+createModal('#speaking');

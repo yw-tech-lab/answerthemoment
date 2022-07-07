@@ -312,10 +312,17 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #F0F0F0;
 }
 .screenshot img {
     width: 100%;
+}
+.screenshot.fa-microphone-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: var(--link-color);
 }
 .description {
     padding-left: 20px;
@@ -379,8 +386,12 @@ label{
 .opener-left h2,
 .opener-right h2 {
     margin-top: 40px;
-    text-align: center;
 }
+
+.opener-right h2 {
+    text-align: right;
+}   
+
 
 .flex-container {
     display: flex;
@@ -496,9 +507,10 @@ img.expertise {
     margin-top: 0px;
 }
 
-button {
+button, a.btn {
     background-color: white;
     border: none;
+    font-weight: normal;
     color: black;
     padding: 9px 20px;
     font-size: 16px;
@@ -514,7 +526,7 @@ button.close {
     border: 0px;
 }
 
-button:hover {
+button:hover, a.btn:hover {
     background: black;
     color: var(--hero-text-color);
 }
