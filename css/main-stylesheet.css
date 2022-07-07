@@ -15,7 +15,7 @@
     --nav-bg-color: #e99b65;
     --landing-image: url('../images/landing-image-no-bg.png');
    
-    --panel-color: #f0f0f0;
+    --panel-color: #f9f9f9;
     --text-color: #555;
     --accent-color: #e57b30;
     --link-color: #0182ab;
@@ -312,7 +312,7 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F0F0F0;
+    background: var(--panel-color);
 }
 .screenshot img {
     width: 100%;

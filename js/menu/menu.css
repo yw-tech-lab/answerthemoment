@@ -26,6 +26,7 @@ nav a:active {
     opacity: 1;
     transition: all 0.3s linear;
     font-size: 1.0em;
+    text-shadow: 2px 2px 3px #986C4F;
 }
 
 nav a:hover {
@@ -82,7 +83,11 @@ nav ul {
         box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 9%), 0 1px 10px 0 rgb(5 5 5 / 12%);
     }
 
-    .waviy span {
+    .waviy span,
+    nav a,
+    nav a:link,
+    nav a:visited,
+    nav a:active  {
         text-shadow: none;
     }
 
