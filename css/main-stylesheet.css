@@ -670,25 +670,26 @@ footer a:hover {
     /***********/
     #hero {
         grid-template-columns: 5% 50% 40% 5%;
+        height: calc(100vh - 60px);
     }
 
     #hero .quote {
         margin-top: 0;
     }
 
-    #hero .kl-img {
+    /* #hero .kl-img {
         max-height: 96vh;
-    }
+    } */
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
-    section#testimonials h2 {
+    /* section#testimonials h2 {
         display: none;
     }
 
     .speaking-summary .pic {
         display: none;
-    }
+    } */
 
     /************/
     /* Services */
@@ -798,7 +799,6 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         height: 225px;
-        /* opacity: 0; */
     }
     .desktop { display: none !important; }
     .mobile { display: inherit; }
@@ -806,6 +806,16 @@ footer a:hover {
     #hero .quote h1,
     #hero .quote h2 {
         text-shadow: none;
+    }
+
+    #hero .quote {
+        justify-content: flex-end;
+    }
+    #hero .badge-flip {
+        margin-bottom: 30px;
+    }
+    #hero .badge-flip img {
+        width: 100px;
     }
 
     /****************/
@@ -855,14 +865,6 @@ footer a:hover {
     .row .description p {
         font-size: 0.95em;
     }
-    /* .speaking-summary {
-        display: flex;
-        flex-direction: column;
-    }
-    .speaking-summary > .summary-text {
-        padding: 10vh 5vw 0 5vw;
-        margin-left: 0;
-    } */
 
     /*********/
     /* Logos */
@@ -945,7 +947,19 @@ footer a:hover {
 
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 500px) {
+    #hero .quote {
+        justify-content: flex-end;
+    }
+    #hero .badge-flip {
+        margin-bottom: 30px;
+    }
+    #hero .badge-flip img {
+        width: 100px;
+    }
+} */
+
+@media screen and (max-width: 375px) {
     
     #hero {
         height: 65vh;
