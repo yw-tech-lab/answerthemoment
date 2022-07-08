@@ -218,6 +218,7 @@ h2 {
     background-color: var(--hero-bg-color);
     padding: 30px;
     width: 100%;
+    text-shadow: 2px 2px 3px #986C4F;
 }
 .form-annotation {
     padding: 0px 30px;
@@ -238,6 +239,7 @@ h2 {
 input, textarea{
     width: 100%; 
     height: 40px;
+    border: 1px solid grey;
 }
 select {
     width: 100%; 
@@ -508,16 +510,19 @@ img.expertise {
 }
 
 button, a.btn {
-    background-color: white;
+    font-family: var(--font-family-body);
+    background-color: #FCF1E9;
     border: none;
-    font-weight: normal;
+    font-weight: bold;
     color: black;
     padding: 9px 20px;
     font-size: 16px;
     text-align: center;
     transition: all 0.2s ease-in;
-    border: solid 2px black;
+    width: 100%;
+    height: 45px;
 }
+
 button.menu-button {
     color: #fff;
 }
