@@ -213,7 +213,11 @@ h2 {
     background-color: var(--panel-color);
     margin: 15px;
     width: 100%;
+    padding: 20px;
 } 
+.contact-form > div {
+    padding: 10px 0px;
+}
 
 .contact-form .submitbtn{
     margin-top: 10px;
@@ -226,9 +230,6 @@ h2 {
 }
 .contact-form .submitbtn:hover {
     background-color: #0182ab99;
-}
-.contact-form > div {
-    padding: 15px 10px 5px 10px;
 }
 
 .validation-error {

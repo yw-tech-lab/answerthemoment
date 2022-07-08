@@ -92,7 +92,11 @@ function createModal(container) {
         modal.setAttribute('aria-hidden', 'true');
         disableTabbing();
         enableScrolling();
-
+        
+        // a hack to replace content (so that iframe doesn't keep playing).
+        const content = modal.querySelector('.modal-body').innerHTML;
+        modal.querySelector('.modal-body').innerHTML = content;
+        
     };
 
     // When the user clicks on <span> (x), close the modal

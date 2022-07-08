@@ -1,14 +1,8 @@
 const atLeast3 = elem => {
-    if (elem.value.length >= 3) {
-        return true;
-    }
-    return false;
+    return (elem.value.length >= 3) ? true : false;
 }
 const notEmpty = elem => {
-    if (elem.value.length > 0) {
-        return true;
-    }
-    return false;
+    return (elem.value.length > 0) ? true : false;
 }
 
 const email = elem => {
@@ -56,17 +50,6 @@ const rules = {
         validator: notEmpty
     }
 }
-// const clearMessage = ev => {
-//     console.log('clear message');
-//     ev.currentTarget.setCustomValidity('');
-// }
-
-// const showErrorMessage = ev => {
-//     const elem = ev.currentTarget;
-//     const message = rules['#' + elem.id].message;
-//     console.log(elem, message);
-//     elem.setCustomValidity(message);
-// }
 
 const validateAndSubmit = ev => {
     let isFormValid = true;
@@ -94,17 +77,5 @@ const validateAndSubmit = ev => {
     }
 };
 
-const initForm = () => {
-    // for (key in rules) {
-    //     const message = rules[key].message;
-    //     const elem = document.querySelector(key)
-    //     const errorElement = elem.nextElementSibling; 
-    //     errorElement.innerHTML = message;
-    //     errorElement.classList.add('active');
-    //     // document.querySelector(key).addEventListener('input', clearMessage);
-    //     // document.querySelector(key).addEventListener('invalid', showErrorMessage);
-    // }
-    document.querySelector('form').addEventListener('submit', validateAndSubmit);
-};
-
-initForm();
+// add form validation event handler:
+document.querySelector('form').addEventListener('submit', validateAndSubmit);

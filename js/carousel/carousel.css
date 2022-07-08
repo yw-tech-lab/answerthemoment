@@ -77,7 +77,7 @@ section#testimonials strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding: 0vh 15vw;
     box-sizing: border-box;
 }
@@ -118,6 +118,12 @@ section#testimonials strong {
 }
 
 @media only screen and (max-width: 600px) {
+    section#testimonials h2 {
+        margin-left: 10vw;
+        margin-bottom: -40px;
+        color: white;
+    }
+    
     section#testimonials p, section#testimonials cite {
         padding: 0; 
         font-size: 1.1rem;
