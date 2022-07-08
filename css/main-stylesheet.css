@@ -211,9 +211,8 @@ h2 {
 
 .contact-form {
     background-color: var(--panel-color);
-    padding: 30px;
+    margin: 15px;
     width: 100%;
-    /* text-shadow: 2px 2px 3px #986C4F; */
 } 
 
 .contact-form .submitbtn{
@@ -227,6 +226,25 @@ h2 {
 }
 .contact-form .submitbtn:hover {
     background-color: #0182ab99;
+}
+.contact-form > div {
+    padding: 15px 10px 5px 10px;
+}
+
+.validation-error {
+    display: none;
+}
+.validation-error.active {
+    color: #9c1111;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-form div.invalid input,
+.contact-form div.invalid select,
+.contact-form div.invalid textarea {
+    color: #495057;
+    border-color: #9c1111;
+    box-shadow: 0 0 0 0.2rem #9c111108;
 }
 
 .contact-form input, 
@@ -245,6 +263,7 @@ h2 {
 }
 .contact-form textarea {
     height: 200px;
+    font-family: var(--font-family-body);
 }
 
 .contact-form input:focus,
@@ -261,7 +280,7 @@ h2 {
     color: #222;
     font-weight: 600;
     margin-bottom: 3px;
-    padding-top: 10px;
+    padding-top: 0px;
     display: inline-block;
     padding-bottom: 2px;
     /* font-size: 1.1em; */
@@ -280,7 +299,6 @@ h2 {
 }
 .form-annotation p {
     margin-top: 0;
-    /* font-size: 1.5em; */
 }
 
 

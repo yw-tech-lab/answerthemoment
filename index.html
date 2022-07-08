@@ -589,28 +589,28 @@
                 </div>
                 <form class="contact-form" target="_blank" action="https://formsubmit.co/5087aaa752c7a70df1e7054b0e82d754" method="POST"> 
                     <div>
-                        <label for="fname">First name</label><br>
-                        <input type="text" minlength="3" id="fname" name="first-name" required>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" minlength="3" id="fname" name="first-name">
+                        <span class="validation-error"></span>
                     </div>
                     <div>
-                        <label for="lname">Last name</label><br>
-                        <input type="text" minlength="3" id="lname" name="last-name" required>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" minlength="3" id="lname" name="last-name">
+                        <span class="validation-error"></span>
                     </div>
                     <div>
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" 
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-                            required>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email">
+                        <span class="validation-error"></span>
                     </div>
                     <div>
-                        <label for="phone">Phone (e.g., 123-456-7890)</label><br>
-                        <input type="tel" id="phone" name="phone"
-                            placeholder="123-456-7890" 
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="phone">Phone (optional):</label><br>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="validation-error"></span>
                     </div>
                     <div>
                         <label for="how">How did you hear about me?</label>
-                        <select id="how" name="how-did-you-hear-about-me" required>
+                        <select id="how" name="how-did-you-hear-about-me">
                             <option value="" disabled selected>Select an option</option>
                             <option value="wordofmouth">Word of Mouth</option>
                             <option value="linkedin">LinkedIn</option>
@@ -618,16 +618,21 @@
                             <option value="search-engine">Search Engine</option>
                             <option value="other">Other</option>
                         </select>
+                        <span class="validation-error"></span>
                     </div>
                     <div>
-                        <label for="ifother">If other, please specify</label>
-                        <input type="text" id="ifother" name="more-detail-how-you-heard-about-me"><br>
+                        <label for="ifother">If other, please specify:</label>
+                        <input type="text" id="ifother" name="more-detail-how-you-heard-about-me">
+                        <span class="validation-error"></span>
                     </div>
                     <div>
                         <label for="about-business">Tell me about your business and why you're ready to partner.</label><br>
-                        <textarea id="about-business" name="about-my-business" required></textarea>
+                        <textarea id="about-business" name="about-my-business"></textarea>
+                        <span class="validation-error"></span>
                     </div>
-                    <button type="submit" class="submitbtn">Contact Khalilah</button>
+                    <div>
+                        <button type="submit" class="submitbtn">Contact Khalilah</button>
+                    </div>
                 </form>
             </section>
 
