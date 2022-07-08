@@ -200,6 +200,11 @@ h2 {
  ***************/
 .submitbtn{
     margin-top: 10px;
+    width: 100%;
+    background-color: #FCF1E9;
+    font-family: var(--font-family-body);
+    font-weight: bold;
+
 }
 
 #contact {
@@ -239,7 +244,6 @@ h2 {
 input, textarea{
     width: 100%; 
     height: 40px;
-    border: 1px solid grey;
 }
 select {
     width: 100%; 
@@ -510,19 +514,16 @@ img.expertise {
 }
 
 button, a.btn {
-    font-family: var(--font-family-body);
-    background-color: #FCF1E9;
+    background-color: white;
     border: none;
-    font-weight: bold;
+    font-weight: normal;
     color: black;
     padding: 9px 20px;
     font-size: 16px;
     text-align: center;
     transition: all 0.2s ease-in;
-    width: 100%;
-    height: 45px;
+    border: solid 2px black;
 }
-
 button.menu-button {
     color: #fff;
 }
@@ -1001,6 +1002,12 @@ footer a:hover {
     }
 }
 
+/**************/
+/* Testimonials */
+/**************/
+#testimonials{
+    text-shadow: 2px 2px 3px #986C4F;
+}
 
 /**************/
 /* Animations */
