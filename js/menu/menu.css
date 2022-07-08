@@ -22,11 +22,11 @@ nav a:visited,
 nav a:active {
     text-decoration: none;
     color: var(--hero-text-color);
-    font-weight: 500;
+    font-weight: 600;
     opacity: 1;
     transition: all 0.3s linear;
     font-size: 1.0em;
-    text-shadow: 2px 2px 3px #986C4F;
+    text-shadow: 1px 1px 1px #734629;
 }
 
 nav a:hover {

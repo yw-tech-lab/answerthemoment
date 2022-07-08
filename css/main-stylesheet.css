@@ -10,16 +10,23 @@
 }
 :root {
     --hero-text-color: white;
-    --hero-gradient-color: #f2d57e;
+    --sunflower-color: #f2d57e;
+    --hero-gradient-color: #f2f68a;
     --hero-bg-color: #f1ac7e;
     --nav-bg-color: #e99b65;
+    --coral-pink: #f88379;
     --landing-image: url('../images/landing-image-no-bg.png');
    
+    --light-green: #bde8d3;
     --panel-color: #f4f4f4;
     --text-color: #555;
     --accent-color: #e57b30;
+    --accent-color-1: #23967F;
     --link-color: #0182ab;
+    --testimonial-color: #458ba1;
+    --testimonial-accent-color: #f2f68a;
     --badge-color: #f1ac7e;
+    --light-peach: #fcf1e8;
 
     --font-family-header: 'League Spartan', sans-serif;
     --font-family-body: 'Open Sans', sans-serif;
@@ -76,7 +83,7 @@ body {
 }
 
 p, li {
-    color: var();
+    color: var(--text-color);
     font-size: 1.1em;
     line-height: 1.6em;
 }
@@ -143,8 +150,6 @@ h3 {
     grid-template-columns: 10% 35% 40% 10%;
     background-color: var(--hero-gradient-color) !important;
     background: radial-gradient(circle at 0% 100%, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
-    /* background-color: var(--hero-gradient-color) !important;
-    background: linear-gradient(90deg, var(--hero-gradient-color) 0%, var(--hero-bg-color) 28%); */
     overflow: hidden;
     transition: all 0.5 ease-in;
 }
@@ -198,33 +203,70 @@ h2 {
 /***************
  Janice Form
  ***************/
-.submitbtn{
-    margin-top: 10px;
-    width: 100%;
-    background-color: #FCF1E9;
-    font-family: var(--font-family-body);
-    font-weight: bold;
-
-}
 
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
 }
 
-#contact label {
-    color: var(--hero-text-color);
-    font-weight: 700;
-    margin-bottom: 3px;
-    font-size: 1.1em;
-}
-
-.contact-form{
-    background-color: var(--hero-bg-color);
+.contact-form {
+    background-color: var(--panel-color);
     padding: 30px;
     width: 100%;
-    text-shadow: 2px 2px 3px #986C4F;
+    /* text-shadow: 2px 2px 3px #986C4F; */
+} 
+
+.contact-form .submitbtn{
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--link-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    border: 1px solid #999;
 }
+.contact-form .submitbtn:hover {
+    background-color: #0182ab99;
+}
+
+.contact-form input, 
+.contact-form select,
+.contact-form textarea {
+    color: #495057;
+    width: 100%; 
+    height: 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--link-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #0182ab33;
+}
+
+.contact-form label {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 3px;
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 2px;
+    /* font-size: 1.1em; */
+}
+
 .form-annotation {
     padding: 0px 30px;
     display: flex;
@@ -241,23 +283,9 @@ h2 {
     /* font-size: 1.5em; */
 }
 
-input, textarea{
-    width: 100%; 
-    height: 40px;
-}
-select {
-    width: 100%; 
-    height: 40px;
-}  
-
 
 #about-business{
     height: 150px;
-}
-label{
-    padding-top: 10px;
-    display: inline-block;
-    padding-bottom: 2px;
 }
 
 /***************
@@ -267,6 +295,8 @@ label{
 #speaking {
     background-color: var(--panel-color);
     margin: 0;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 #speaking p {
@@ -561,10 +591,25 @@ button:hover, a.btn:hover {
 
 #bio .embedded-video {
     float: right; 
+    margin: 0; 
     margin-left: 20px; 
     background: #f1ac7e52; 
     padding: 10px;
     border: solid 0px var(--hero-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#bio .embedded-video iframe {
+    width: 29vw;
+    height: 17vw;
+}
+
+#bio .embedded-video figcaption {
+    font-weight: 600;
+    text-align: center;
 }
 
 /**********
@@ -639,7 +684,7 @@ footer a:hover {
     min-height: auto;
 }
 #quote2 {
-    background-color: var(--panel-color);
+    /* background-color: var(--panel-color); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -669,6 +714,23 @@ footer a:hover {
     top: 55px;
 }
 
+@media screen and (max-width: 1100px) {
+    /***********/
+    /* Contact */
+    /***********/
+
+    .u-turn-asset {
+        display: none;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .form-annotation {
+        padding: 0;
+    }
+}
+
 
 @media screen and (max-width: 930px) {
     /***********/
@@ -689,13 +751,24 @@ footer a:hover {
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
-    /* section#testimonials h2 {
-        display: none;
+    
+    /*********************/
+    /* About the Founder */
+    /*********************/
+    #bio .embedded-video {
+        float: none;
+        margin-left: 0px;
+        border: 0;
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 20px;
     }
-
-    .speaking-summary .pic {
-        display: none;
-    } */
+    #bio .embedded-video iframe {
+        width: 74vw;
+        height: 42vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     /************/
     /* Services */
@@ -727,23 +800,6 @@ footer a:hover {
         margin-right: 10px;
     } 
 
-    /*********************/
-    /* About the Founder */
-    /*********************/
-    #bio .embedded-video {
-        float: none;
-        margin-left: 0px;
-        border: 0;
-        width: 100%;
-        padding: 30px;
-        margin-bottom: 20px;
-        /* background: none; */
-    }
-    #bio .embedded-video iframe {
-        width: 100%;
-    }
-
-
     /*********/
     /* Logos */
     /*********/
@@ -753,22 +809,8 @@ footer a:hover {
         width: 50%;
     }
 
-     /***********/
-    /* Contact */
-    /***********/
-
-    .u-turn-asset {
-        display: none;
-    }
     #quote2 p {
         max-width: 100%;
-    }
-    #contact {
-        display: flex;
-        flex-direction: column;
-    }
-    #contact .form-annotation {
-        padding: 0;
     }
 }
 
@@ -1005,9 +1047,9 @@ footer a:hover {
 /**************/
 /* Testimonials */
 /**************/
-#testimonials{
+/* #testimonials{
     text-shadow: 2px 2px 3px #986C4F;
-}
+} */
 
 /**************/
 /* Animations */

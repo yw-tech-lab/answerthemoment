@@ -20,7 +20,8 @@
         <script src="js/carousel/carousel.js" defer></script>
         <script src="js/menu/menu.js" defer></script>
         <script src="js/scrolling-animations.js" defer></script>
-        <script src="js/color-picker.js" defer></script>
+        <script src="js/form-validation.js" defer></script>
+        <!-- <script src="js/color-picker.js" defer></script> -->
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWWQYHDGSS"></script>
@@ -57,8 +58,9 @@
             </div>
             <nav>
                 <ul>
+                    <li><a href="#overview">About</a></li>
                     <li><a href="#bio">Bio</a></li>
-                    <li><a href="#services">What I Offer</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#speaking">Talks & Podcasts</a></li>
                     <li><a href="#clients">Clients</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -91,7 +93,7 @@
                 <h2>-Khalilah Lyons, Founder</h2>
             </div>
 
-            <section class="section">
+            <section class="section" id="overview">
                 <h2>What DEI can do for you</h2>
                 <p>
                     Organizations that embrace diverse viewpoints, etc. are more innovative,
@@ -146,9 +148,12 @@
                                 <button class="close" aria-label="close">&times;</button>
                                 <div class="modal-body">
                                     <h2>About the Founder</h2>
-                                    <div class="embedded-video">
-                                        <iframe src="https://player.vimeo.com/video/726519218?h=7a1c8e684a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&byline=0&title=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="440" height="300"></iframe>
-                                    </div>
+                                    <figure class="embedded-video">
+                                        <iframe src="https://player.vimeo.com/video/726519218?h=7a1c8e684a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&byline=0&title=0" 
+                                        frameborder="0" 
+                                        allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                                        <figcaption>What "Answering the Moment" means in DEI work.</figcaption>
+                                    </figure>
                                     <p> 
                                         Khalilah is a disrupter of dominant cultural norms 
                                         at start ups, small corporations, consulting firms, VCs, 
@@ -359,7 +364,7 @@
                         non-profit organizations, Fortune 500 companies, universities, start-ups,
                         and the broader public. 
                     </p>
-                    <button class="btn">Listen Now</button>
+                    <button class="btn">Listen Now <i class="fas fa-microphone"></i></button>
                 </div>
 
                 <div class="modal" aria-hidden="true">
@@ -582,27 +587,47 @@
                     
                     <img class="u-turn-asset" src="images/u-turn.png" alt="KLpic">
                 </div>
-                <form class="contact-form" target="_blank" action="https://formsubmit.co/a5bfd5afd84a442f747a21f47bedd746" method="POST"> 
-                    <label for="fname">*First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">*Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="mailto">*Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="phone">Phone:</label><br>
-                    <input type="tel" id="phone" name="phone"><br>
-                    <label for="how">How did you hear about me?</label>
-                    <select id="how" name="how">
-                        <option value="" disabled selected>Select an option</option>                        <option value="wordofmouth">Word of Mouth</option>
-                        <option value="linkedin">LinkedIn</option>
-                        <option value="website">Website</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <label for="ifother">If other, please specify</label>
-                    <input type="text" id="ifother" name="ifother"><br>
-                    <label for="about-business">Tell me about your business and why you're ready to partner.</label><br>
-                    <textarea id="about-business"></textarea>
-                    <button type="submit" class="submitbtn">Submit Form</button>
+                <form class="contact-form" target="_blank" action="https://formsubmit.co/5087aaa752c7a70df1e7054b0e82d754" method="POST"> 
+                    <div>
+                        <label for="fname">First name</label><br>
+                        <input type="text" minlength="3" id="fname" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last name</label><br>
+                        <input type="text" minlength="3" id="lname" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                            required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone (e.g., 123-456-7890)</label><br>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="123-456-7890" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                        <label for="how">How did you hear about me?</label>
+                        <select id="how" name="how-did-you-hear-about-me" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="wordofmouth">Word of Mouth</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="website">Website</option>
+                            <option value="search-engine">Search Engine</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ifother">If other, please specify</label>
+                        <input type="text" id="ifother" name="more-detail-how-you-heard-about-me"><br>
+                    </div>
+                    <div>
+                        <label for="about-business">Tell me about your business and why you're ready to partner.</label><br>
+                        <textarea id="about-business" name="about-my-business" required></textarea>
+                    </div>
+                    <button type="submit" class="submitbtn">Contact Khalilah</button>
                 </form>
             </section>
 

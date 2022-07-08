@@ -3,16 +3,17 @@
 section#testimonials {
     margin: 0px;
     padding: 5vh 5vw;
-    background-color: var(--hero-bg-color);
+    background-color: var(--testimonial-color) !important;
 }
 
 section#testimonials h2 {
     margin-left: 15vw;
     margin-bottom: -40px;
+    color: white;
 }
 
-section#testimonials h2, section#testimonials p {
-    color: var(--hero-text-color);
+section#testimonials p {
+    color: white;
     text-align: left;
 }
 
@@ -21,7 +22,7 @@ section#testimonials p {
 }
 
 section#testimonials strong {
-    color: #603958;
+    color: var(--testimonial-accent-color);
 }
 
 .carousel {
@@ -35,7 +36,7 @@ section#testimonials strong {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    color: white;
+    color: black;
 
     /* basic styling */
     padding: 0;
@@ -83,7 +84,7 @@ section#testimonials strong {
 
 .slide cite {
     text-transform: uppercase;
-    color: #603958;
+    color: black;
     font-style: normal;
   }
 
@@ -128,6 +129,6 @@ section#testimonials strong {
     }
 
     section#testimonials {
-        padding: 0vh 2vw;
+        padding: 5vh 2vw;
     }
 }
