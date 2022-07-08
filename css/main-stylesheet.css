@@ -200,6 +200,11 @@ h2 {
  ***************/
 .submitbtn{
     margin-top: 10px;
+    width: 100%;
+    background-color: #FCF1E9;
+    font-family: var(--font-family-body);
+    font-weight: bold;
+
 }
 
 #contact {
@@ -218,6 +223,7 @@ h2 {
     background-color: var(--hero-bg-color);
     padding: 30px;
     width: 100%;
+    text-shadow: 2px 2px 3px #986C4F;
 }
 .form-annotation {
     padding: 0px 30px;
@@ -996,6 +1002,12 @@ footer a:hover {
     }
 }
 
+/**************/
+/* Testimonials */
+/**************/
+#testimonials{
+    text-shadow: 2px 2px 3px #986C4F;
+}
 
 /**************/
 /* Animations */
