@@ -129,11 +129,6 @@ h3 {
  Laciasha's CSS
 ******************/
 
-#hero {
-    color: var(--hero-text-color);
-    font-family: var(--font-family-header);
-    margin: 0px;
-}
 .top {
     font-size: 3vw;
     font-weight: bold;
@@ -142,12 +137,15 @@ h3 {
 }
 
 #hero {
+    color: var(--hero-text-color);
+    font-family: var(--font-family-header);
+    margin: 0px;
     height: 100vh;
     display: grid;
     grid-template-areas:
         ". landing quote .";
     background-repeat: no-repeat;
-    grid-template-columns: 10% 35% 40% 10%;
+    grid-template-columns: 10% 35% 50% 0%;
     background-color: var(--hero-gradient-color) !important;
     background: radial-gradient(circle at 0% 100%, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
     overflow: hidden;
@@ -178,6 +176,8 @@ h3 {
     text-align: center;
     margin-top: 180px;
     grid-area: quote;
+    padding-left: 20px;
+    max-width: 500px;
     /* opacity: 0; */
 }
 
@@ -764,9 +764,6 @@ footer a:hover {
         margin-top: 0;
     }
 
-    /* #hero .kl-img {
-        max-height: 96vh;
-    } */
     .quote h1 { font-size: 2.0em; }
     .quote h2 { font-size: 1.8em; }
 
@@ -834,6 +831,25 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
+
+    /***********/
+    /* Landing */
+    /***********/
+    #hero {
+        grid-template-columns: 0% 45% 55% 0%;
+        height: 500px;
+    }
+    #hero .kl-img {
+        max-height: 66vh;
+    }
+    #hero .quote {
+        justify-content: flex-end;
+        margin-bottom: 40px;
+        padding: 0px 40px;
+    }
+    #hero .badge-flip img {
+        width: 100px;
+    }
     /***********/
     /* General */
     /***********/
@@ -845,45 +861,7 @@ footer a:hover {
         display: none;
     }
 
-    /***********/
-    /* Landing */
-    /***********/
-    /* #hero {
-        background-image: var(--landing-image);
-        background-size: cover;
-        background-position-x: center;
-    } */
-
-    .logo { display: none; }
-    .mobile.quote {
-        width: 100%;
-        max-width: 100%;
-        padding: 40px;
-        color: #0182ab;
-        font-family: var(--font-family-header);
-        background: var(--panel-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 225px;
-    }
-    .desktop { display: none !important; }
-    .mobile { display: inherit; }
-    .waviy span, 
-    #hero .quote h1,
-    #hero .quote h2 {
-        text-shadow: none;
-    }
-
-    #hero .quote {
-        justify-content: flex-end;
-    }
-    #hero .badge-flip {
-        margin-bottom: 30px;
-    }
-    #hero .badge-flip img {
-        width: 100px;
-    }
+ 
 
     /****************/
     /* What I offer */
@@ -972,12 +950,10 @@ footer a:hover {
         background-position-x: center;
         background-repeat: no-repeat;
         background-position-y: 62px;
-        /* border: solid 1px #000; */
         margin-left: auto;
         margin-right: auto;
     }
     .photo-container .bio_pic {
-        /* width: 100%; */
         display: none;
     }
 }
@@ -986,14 +962,16 @@ footer a:hover {
     and (max-width: 600px)
     and (orientation: portrait)
     and (min-height: 400px) {
-      
-    #hero {
-        height: 65vh;
-        grid-template-areas:
-            ". landing quote";
-        background-color: var(--hero-bg-color) !important;
-        background-repeat: no-repeat;
-        grid-template-columns: 0% 60% 40%;
+
+    #hero .quote {
+        padding: 0px 10px;
+    }
+
+    #hero .quote h1 {
+        font-size: 1.8em;
+    }
+    #hero .quote h2 {
+        font-size: 1.4em;
     }
 
     .btn-tester {
@@ -1014,38 +992,50 @@ footer a:hover {
 
 }
 
-/* @media screen and (max-width: 500px) {
-    #hero .quote {
-        justify-content: flex-end;
-    }
-    #hero .badge-flip {
-        margin-bottom: 30px;
-    }
-    #hero .badge-flip img {
-        width: 100px;
-    }
-} */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 530px) {
     
+    /***********/
+    /* Landing */
+    /***********/
+
     #hero {
-        height: 65vh;
+        height: 450px;
         grid-template-areas:
             ". landing .";
-        background-color: var(--hero-bg-color) !important;
-        background-repeat: no-repeat;
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 20% 70% 10%;
     }
 
     #hero .quote {
         display: none;
     }
-    
+
+    .logo { display: none; }
     .mobile.quote {
-        height: 220px;
+        width: 100%;
+        max-width: 100%;
+        padding: 40px;
+        color: #0182ab;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
     }
-    .quote h1 { font-size: 1.8em; }
-    .quote h2 { font-size: 1.6em; }
+    .mobile.quote h1,
+    .mobile.quite h2 {
+        font-family: var(--font-family-header);
+        font-size: 2.5em;
+    }
+
+    hr.mobile {
+        width: 60%;
+        height: 0px;
+        background: transparent;
+        margin-top: 50px;
+        border: 0;
+        border-bottom: solid 1px #000;
+        display: inherit;
+    }
 
     /*********/
     /* Logos */
