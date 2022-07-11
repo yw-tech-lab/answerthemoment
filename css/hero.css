@@ -45,14 +45,14 @@
 }
 
 .quote h1 {
-    font-size: 3.5vw;
+    font-size: calc(max(2.3vw, 2.5em));
     line-height: 1.1em;
     margin: 0;
     text-align: center;
 }
 
 .quote h2 {
-    font-size: 3.2vw;
+    font-size: calc(max(2.1vw, 2.3em));
     line-height: 1.1em;
     text-align: center;
     margin-bottom: 0;

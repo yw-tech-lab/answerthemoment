@@ -148,12 +148,13 @@ h2 {
 
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 5fr 6fr;
+    grid-column: 20px;
 }
 
 .contact-form {
     background-color: var(--panel-color);
-    margin: 15px;
+    margin: 0;
     width: 100%;
     padding: 20px;
 } 
