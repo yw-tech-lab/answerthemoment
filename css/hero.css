@@ -1,0 +1,190 @@
+/*******************/
+/* Landing Desktop */
+/*******************/
+#hero {
+    color: var(--hero-text-color);
+    font-family: var(--font-family-header);
+    margin: 0px;
+    height: 100vh;
+    grid-auto-rows: minmax(500px, auto);
+    display: grid;
+    grid-template-areas:
+        ". landing quote .";
+    background-repeat: no-repeat;
+    grid-template-columns: 10% 35% 55% 0%;
+    background-color: var(--hero-gradient-color) !important;
+    background: radial-gradient(circle at 0% 100%, var(--hero-gradient-color) 0%, var(--hero-bg-color) 50%);
+    overflow: hidden;
+    transition: all 0.5 ease-in;
+}
+
+#hero .kl-img {
+    filter: saturate(0.7);
+    height: 90%;
+    grid-area: landing;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+
+.waviy span, 
+#hero .quote h1,
+#hero .quote h2 {
+    text-shadow: 2px 2px 3px #986C4F;
+}
+
+#hero .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+    grid-area: quote;
+    padding: 0px 40px;
+}
+
+.quote h1 {
+    font-size: 3.5vw;
+    line-height: 1.1em;
+    margin: 0;
+    text-align: center;
+}
+
+.quote h2 {
+    font-size: 3.2vw;
+    line-height: 1.1em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*************/
+/* iPad Pro */
+/*************/
+@media screen and 
+    (min-width: 1000px) and 
+    (min-height: 1350px) and 
+    (orientation: portrait) {
+    #hero {
+        max-height: 1000px;
+    }
+    #hero .quote {
+        margin-top: 0;
+        padding: 0px 40px;
+    }
+}
+
+/********************/
+/* Tablet Landscape */
+/********************/
+@media screen and 
+    (max-width: 930px) and 
+    (orientation: landscape) {
+    #hero {
+        min-height: 600px;
+    }
+    #hero .quote {
+        margin-top: 0;
+        padding: 0px 40px;
+    }
+}
+
+/*******************/
+/* Tablet Portrait */
+/*******************/
+@media screen and 
+    (max-width: 930px) 
+    and (orientation: portrait) {
+
+    #hero {
+        grid-template-columns: 5% 50% 40% 5%;
+        height: calc(100vh - 60px);
+        min-height: 500px;
+        max-height: 600px;
+    }
+
+    #hero .quote {
+        margin-top: 0;
+        padding: 0px;
+    }
+
+    .quote h1 { font-size: 2.0em; }
+    .quote h2 { font-size: 1.8em; }
+}
+
+@media screen and (max-width: 700px) {
+
+    #hero {
+        height: 500px;
+        min-height: 500px;
+    }
+
+    #hero .badge-flip img {
+        width: 100px;
+    }
+}
+
+
+/*******************/
+/* Mobile Portrait */
+/*******************/
+@media screen and (max-width: 530px) {
+
+    #hero {
+        height: 450px;
+        grid-template-areas:
+            ". landing .";
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    #hero .quote {
+        display: none;
+    }
+
+    .logo { display: none; }
+    .mobile.quote {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px;
+        color: #0182ab;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .mobile.quote h1,
+    .mobile.quite h2 {
+        font-family: var(--font-family-header);
+        font-size: 2.5em;
+    }
+
+    hr.mobile {
+        width: 60%;
+        height: 0px;
+        background: transparent;
+        margin-top: 50px;
+        border: 0;
+        border-bottom: solid 1px #000;
+        display: inherit;
+    }
+}
+
+
+/*******************/
+/* Badge Animation */
+/*******************/
+@keyframes badge-flip {
+    100% { 
+        transform: rotateY(360deg);
+        filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.3)) invert(1);
+    }
+}
+.badge-flip img {
+    animation: badge-flip 0.8s forwards;
+    animation-delay: 3.5s;
+}
+
+.badge-flip img {
+    width: 9vw;
+    filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.3)) invert(1);
+}
