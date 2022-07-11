@@ -1007,37 +1007,3 @@ footer a:hover {
         transform: rotateY(360deg);
     }
 }
-
-@keyframes shrink-1 {
-    0% {
-        opacity: 1;
-        max-width: 60px;
-    }
-    100% {
-        opacity: 0;
-        max-width: 0.5px;
-    }
-}
-@keyframes shrink-2 {
-    0% {
-        opacity: 1;
-        max-width: 60px;
-    }
-    100% {
-        opacity: 0;
-        max-width: 1.5px;
-    }
-}
-
-
-/* Quote at Top */
-@keyframes fadein-quote {
-    0% {
-        margin-top: 100px;
-        opacity: 0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
