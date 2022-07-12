@@ -45,14 +45,14 @@
 }
 
 .quote h1 {
-    font-size: calc(max(2.3vw, 2.5em));
+    font-size: calc(max(2.1vw, 2.5em));
     line-height: 1.1em;
     margin: 0;
     text-align: center;
 }
 
 .quote h2 {
-    font-size: calc(max(2.1vw, 2.3em));
+    font-size: calc(max(1.9vw, 2.3em));
     line-height: 1.1em;
     text-align: center;
     margin-bottom: 0;
@@ -165,12 +165,8 @@
     }
 
     hr.mobile {
-        width: 60%;
-        height: 0px;
-        background: transparent;
         margin-top: 50px;
-        border: 0;
-        border-bottom: solid 1px #000;
+        margin-bottom: 0px;
         display: inherit;
     }
 }

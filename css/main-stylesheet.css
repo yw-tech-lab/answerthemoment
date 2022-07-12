@@ -112,10 +112,21 @@ h1, h2, h3, h4 {
 .section {
     padding: 10vh 15vw;
 }
+hr {
+    display:block;
+    border:0px;
+    height: 40px;
+    background-image:url('../images/hr-dark.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    margin: 40px auto 100px auto;
+}
 
 h2 {
     /* font-size: 2.4em; */
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 5vh;
 }
 
@@ -140,6 +151,37 @@ h3 {
 h2 { 
     font-style:normal;  
 }
+
+/*********/
+/* Stats */
+/*********/
+.stats {
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    /* min-height: 150px; */
+}
+.stat { 
+    width: calc(33% - 40px); 
+    top: 40px;
+    position: relative;
+}
+
+
+.stat h3 { 
+    font-size: 1.4em; 
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+.stat p {
+    margin-top: 0px;
+    font-size: 1.0em;
+    color: #777;
+    line-height: 1.5em;
+}
+
+.stat i { color: var(--accent-color-1); }
+.stat a { font-weight: normal; }
 
 
 /***************
@@ -343,7 +385,7 @@ h2 {
 }
 
 .opener-left {
-    margin: 15vh 15vw 15vh 15vw;
+    margin: 0vh 15vw 15vh 15vw;
     grid-template-columns: 1fr 2fr;
 }
 
@@ -651,7 +693,7 @@ footer a:hover {
     justify-content: center;
     align-items: center;
 }
-#quote2 p {
+#quote2 p, .quote2 {
     font-size: 2.5em;
     color: var(--link-color);
     /* margin: 10vh 0; */
@@ -680,6 +722,10 @@ footer a:hover {
     /***********/
     /* Contact */
     /***********/
+
+    .section {
+        padding: 10vh 10vw;
+    }
 
     .u-turn-asset {
         display: none;
@@ -769,6 +815,14 @@ footer a:hover {
 
     .speaking-summary .pic {
         display: none;
+    }
+
+    /**************/
+    /* Statistics */
+    /**************/
+
+    .stat {
+        width: 100%;
     }
 
     /****************/
@@ -903,19 +957,24 @@ footer a:hover {
 /**************/
 /* Animations */
 /**************/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 100px) {
 
     /* General Rules */
     .scroll-element {
         opacity: 0;
         transition-delay: 0s;
         transition-property: all;
-        transition-duration: 1s;
+        transition-duration: 0.75s;
         transition-timing-function: ease-in;
     }
 
     .scroll-element.scrolled {
         opacity: 1;
+    }
+
+    .scroll-element.scrolled .stat {
+        margin-top: 0;
+        top: 0;
     }
 
     /* 1. Bio */
@@ -927,6 +986,16 @@ footer a:hover {
     .scroll-element.text {
         left: -50px;
         position: relative;
+    }
+    .scroll-element.stat.scrolled {
+        margin-top: 0px;
+        top: 0px;
+    }
+    .scroll-element.stat2 {
+        transition-delay: 0.5s;
+    }
+    .scroll-element.stat3 {
+        transition-delay: 1s;
     }
 
     .scroll-element.pic.bio.scrolled,
