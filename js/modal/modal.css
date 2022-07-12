@@ -58,7 +58,8 @@
 
 .modal-body {
     padding: 0px 30px 30px 30px;
-    height: 70vh;
+    height: auto;
+    max-height: 80vh;
     overflow-y: auto;
     margin-right: 7px;
 }

@@ -109,7 +109,7 @@
     }
 
     .quote h1 { font-size: 2.0em; }
-    .quote h2 { font-size: 1.8em; }
+    .quote h2 { font-size: 1.5em !important; }
 }
 
 @media screen and (max-width: 800px) {
@@ -151,7 +151,7 @@
     .mobile.quote {
         width: 100%;
         max-width: 100%;
-        padding: 40px;
+        padding: 40px 0px 40px 10px;
         color: #0182ab;
         display: flex;
         flex-direction: column;
@@ -161,7 +161,8 @@
     .mobile.quote h1,
     .mobile.quite h2 {
         font-family: var(--font-family-header);
-        font-size: 2.5em;
+        font-size: 2.0em;
+        line-height: 1.2em;
     }
 
     hr.mobile {
