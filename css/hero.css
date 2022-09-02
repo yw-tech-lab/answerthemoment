@@ -119,9 +119,15 @@
         min-height: 500px;
     }
 
-    #hero .quote {
+    /* #hero .quote {
         margin-top: 20vh;
+    } */
+
+    #hero .quote {
+        justify-content: flex-end;
+        padding-bottom: 40px;
     }
+
     .quote h1 { font-size: 5vw; }
     .quote h2 { font-size: 4vw; }
 
@@ -139,12 +145,22 @@
     #hero {
         height: 450px;
         grid-template-areas:
-            ". landing .";
-        grid-template-columns: 10% 80% 10%;
+            ". landing quote";
+        grid-template-columns: 10% 60% 30%;
     }
 
     #hero .quote {
+        justify-content: center;
+        /* padding-bottom: 20px; */
+    }
+
+    #hero .quote h1, #hero .quote h2 {
         display: none;
+    }
+    
+    #hero .quote .badge-flip img {
+        width: 20vw;
+        min-width: 100px;
     }
 
     .logo { display: none; }
